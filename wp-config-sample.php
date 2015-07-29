@@ -78,3 +78,10 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+$currenthost = "http://".$_SERVER['HTTP_HOST'];
+$currentpath = preg_replace('@/+$@','',dirname($_SERVER['SCRIPT_NAME']));
+$currentpath = preg_replace('/\/wp.+/','',$currentpath);
+define('WP_HOME',$currenthost.$currentpath);
+define('WP_SITEURL',$currenthost.$currentpath);
+define('DOMAIN_CURRENT_SITE', $currenthost.$currentpath );
