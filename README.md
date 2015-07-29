@@ -10,3 +10,4 @@ To set up a local staging version of this site, follow these steps:
 *  Run `git pull origin master` to get the latest changes.
 *  Copy wp-config-sample.php to wp-config.php. This file should have everything you need already.
 *  Run a simple web server in the directory using `php -S localhost:80`. If it give you a permission issue, you might need to run it as sudo.
+*  Viola! You can now make edits as normal and track your changes locally.
