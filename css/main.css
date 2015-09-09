@@ -1,0 +1,108 @@
+* {
+  font-family: "Avenir Next", Arial, sans-serif; }
+
+.accented_text {
+  color: #e24e34;
+  font-weight: 500; }
+
+.navbar-default {
+  background-color: #fff;
+  border-color: #fff;
+  min-height: 85px; }
+
+.navbar-brand img {
+  height: 50px;
+  margin-left: 2em; }
+
+.navbar-nav > li > a {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px; }
+
+.container-fluid > .navbar-collapse {
+  margin-right: 2em; }
+
+nav {
+  color: #63686c;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.navbar {
+  margin-bottom: 0; }
+
+.jumbotron {
+  background: url(../img/landing_hero@2x.png);
+  background-size: cover;
+  height: 500px;
+  position: relative; }
+  .jumbotron p {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-bottom: 2em; }
+
+.top_banner {
+  margin-top: 3em;
+  margin-bottom: 2em;
+  color: #63686c;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px; }
+  .top_banner li {
+    display: inline-block; }
+
+.vertical_divider {
+  border-right: 2px solid rgba(99, 104, 108, 0.2);
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.hero_btn_group {
+  text-align: center; }
+
+.hero_btn {
+  display: inline-block;
+  border-radius: 0; }
+  .hero_btn:nth-of-type(1) {
+    margin-right: 20px; }
+
+.btn-primary {
+  color: #007964;
+  border: 2px solid #007964;
+  font-weight: 500;
+  text-transform: uppercase; }
+  .btn-primary:link {
+    background-color: transparent;
+    border-color: #007964;
+    color: #007964; }
+  .btn-primary:hover {
+    background-color: #007964;
+    border-color: #007964;
+    color: #f1f2f2; }
+  .btn-primary:active {
+    background-color: #007964;
+    border-color: #007964;
+    color: #f1f2f2;
+    box-shadow: none; }
+  .btn-primary:focus {
+    background-color: #007964;
+    border-color: #007964;
+    color: #f1f2f2;
+    outline: 5px auto #007964; }
+  .btn-primary:active:focus {
+    background-color: #007964;
+    border-color: #007964;
+    color: #f1f2f2;
+    outline: 5px auto #007964; }
+  .btn-primary:visited {
+    background-color: #007964;
+    border-color: #007964; }
+
+.btn-group-lg > .btn, .btn-lg {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 12px 24px;
+  margin-right: .7em; }
+
+/*# sourceMappingURL=main.css.map */
