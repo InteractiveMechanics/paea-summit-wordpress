@@ -1,0 +1,36 @@
+.grid {
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-bottom: 70px;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+	position: relative;
+  float: left;
+	height: 200px;
+	width: 200px;
+	margin: 15px;
+	background: #ff0000;
+}
+
+.grid-item--rectangle {
+		width: 430px;
+	}
+
+.grid-item--lg-square {
+		width: 430px;
+		height: 430px;
+	}
+
+.grid-item--portrait-rectangle {
+		width: 215px;
+		height: 430px;	
+	}
+

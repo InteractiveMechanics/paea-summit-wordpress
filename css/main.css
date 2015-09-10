@@ -1,9 +1,48 @@
+.grid {
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 70px; }
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.grid-item {
+  position: relative;
+  float: left;
+  height: 200px;
+  width: 200px;
+  margin: 15px;
+  background: #ff0000; }
+
+.grid-item--rectangle {
+  width: 430px; }
+
+.grid-item--lg-square {
+  width: 430px;
+  height: 430px; }
+
+.grid-item--portrait-rectangle {
+  width: 215px;
+  height: 430px; }
+
 * {
   font-family: "Avenir Next", Arial, sans-serif; }
 
 .accented_text {
   color: #e24e34;
   font-weight: 500; }
+
+h3, .top_banner {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Avenir Next Condensed", Arial, sans-serif; }
+
+.white_text {
+  color: #f1f2f2; }
 
 .navbar-default {
   background-color: #fff;
@@ -35,21 +74,19 @@ nav {
   background-size: cover;
   height: 500px;
   position: relative; }
-  .jumbotron p {
+  .jumbotron h2 {
     text-align: center;
     font-size: 36px;
+    margin-top: 0px;
     font-weight: 400;
     line-height: 1.4em;
-    margin-bottom: 2em; }
+    margin-bottom: 1.7em; }
 
 .top_banner {
   margin-top: 3em;
   margin-bottom: 2em;
   color: #63686c;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 16px; }
+  text-align: center; }
   .top_banner li {
     display: inline-block; }
 
@@ -62,16 +99,17 @@ nav {
   text-align: center; }
 
 .hero_btn {
-  display: inline-block;
-  border-radius: 0; }
+  display: inline-block; }
   .hero_btn:nth-of-type(1) {
     margin-right: 20px; }
 
 .btn-primary {
+  font-family: "Avenir Next Condensed", Arial, sans-serif;
   color: #007964;
   border: 2px solid #007964;
   font-weight: 500;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border-radius: 0; }
   .btn-primary:link {
     background-color: transparent;
     border-color: #007964;
@@ -85,12 +123,7 @@ nav {
     border-color: #007964;
     color: #f1f2f2;
     box-shadow: none; }
-  .btn-primary:focus {
-    background-color: #007964;
-    border-color: #007964;
-    color: #f1f2f2;
-    outline: 5px auto #007964; }
-  .btn-primary:active:focus {
+  .btn-primary:focus, .btn-primary:active:focus {
     background-color: #007964;
     border-color: #007964;
     color: #f1f2f2;
@@ -104,5 +137,84 @@ nav {
   font-size: 16px;
   padding: 12px 24px;
   margin-right: .7em; }
+
+.grid-item {
+  padding: 10px; }
+  .grid-item h3, .grid-item .top_banner {
+    padding: 15px 10px 5px 25px; }
+  .grid-item p {
+    padding: 10px 25px; }
+
+#about-block {
+  background: #e24e34;
+  color: #f1f2f2; }
+  #about-block p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.6; }
+
+.about-block-button {
+  margin-left: 25px;
+  font-family: "Avenir Next Condensed", Arial, sans-serif;
+  color: #f1f2f2;
+  border: 2px solid #f1f2f2;
+  margin-bottom: 20px;
+  margin-top: 0px; }
+  .about-block-button:link {
+    background-color: transparent;
+    border-color: #f1f2f2;
+    color: #f1f2f2; }
+  .about-block-button:hover {
+    background-color: #f1f2f2;
+    border-color: #f1f2f2;
+    color: #e24e34; }
+  .about-block-button:active {
+    background-color: #f1f2f2;
+    border-color: #f1f2f2;
+    color: #e24e34;
+    box-shadow: none; }
+  .about-block-button:focus, .about-block-button:active:focus {
+    background-color: #f1f2f2;
+    border-color: #f1f2f2;
+    color: #e24e34;
+    outline: 5px auto #f1f2f2; }
+  .about-block-button:visited {
+    background-color: #f1f2f2;
+    border-color: #f1f2f2; }
+  .about-block-button svg {
+    width: 35px;
+    margin-left: 25px;
+    fill: #f1f2f2; }
+    .about-block-button svg line {
+      stroke: #f1f2f2; }
+  .about-block-button:hover polygon, .about-block-button:focus polygon, .about-block-button:active:focus polygon {
+    fill: #e24e34; }
+  .about-block-button:hover line, .about-block-button:focus line, .about-block-button:active:focus line {
+    stroke: #e24e34; }
+
+.discussion-block {
+  background: #63686c;
+  color: #f1f2f2; }
+  .discussion-block p {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px; }
+
+.after-summit-block {
+  background: #007964;
+  text-align: center; }
+  .after-summit-block p {
+    color: #f1f2f2;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 60px 5px; }
+
+.logistics-block {
+  background: #f4f5f5;
+  text-align: center; }
+  .logistics-block p {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 60px 5px; }
 
 /*# sourceMappingURL=main.css.map */

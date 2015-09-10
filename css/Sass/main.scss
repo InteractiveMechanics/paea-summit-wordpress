@@ -1,6 +1,9 @@
+
+
 // VARIABLES
 
 $primary_font: "Avenir Next", Arial, sans-serif; // local only - need files
+$secondary_font: "Avenir Next Condensed", Arial, sans-serif;
 $accent_color: #007964; // green
 $primary_color-light: #7fcac3;
 $pink_orange: #e24e34;  
@@ -10,6 +13,42 @@ $pearl: #f4f5f5;
 $black: #000000;
 $grey: #63686c; // dark grey
 $transition: all 0.5s ease-in-out;
+
+// PARTIALS 
+
+@import "grid";
+
+@mixin big-button($color_1, $color_2) {
+	font-family: $secondary_font;
+	color: $color_1;
+	border: 2px solid $color_1;
+	&:link {
+		background-color: transparent;
+		border-color: $color_1;
+		color: $color_1;
+	}
+	&:hover {
+		background-color: $color_1;
+		border-color: $color_1;
+		color: $color_2;
+	}
+	&:active {
+		background-color: $color_1;
+		border-color: $color_1;
+		color: $color_2;
+		box-shadow: none;
+	}
+	&:focus, &:active:focus {
+		background-color: $color_1;
+		border-color: $color_1;
+		color: $color_2;
+		outline: 5px auto $color_1;
+	}
+	&:visited {
+		background-color: $color_1;
+		border-color: $color_1;
+	}
+}
 
 // TYPOGRAPHY 
 
@@ -21,6 +60,18 @@ $transition: all 0.5s ease-in-out;
 	color: $pink_orange;
 	font-weight: 500;
 }
+
+h3 {
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: $secondary_font;
+}
+
+.white_text {
+	color: $white;
+}
+
 
 
 // HEADER
@@ -63,12 +114,13 @@ nav {
 	background-size: cover;
 	height: 500px;
 	position: relative;
-	p {
+	h2 {
 		text-align: center;
 		font-size: 36px;
+		margin-top: 0px;
 		font-weight: 400;
 		line-height: 1.4em;
-		margin-bottom: 2em;
+		margin-bottom: 1.7em;
 	}
 }
 
@@ -77,11 +129,9 @@ nav {
 .top_banner {
 	margin-top: 3em;
 	margin-bottom: 2em;
+	@extend h3;
 	color: $grey;
-	font-weight: 600;
-	text-transform: uppercase;
 	text-align: center;
-	font-size: 16px;
 	li {
 	display: inline-block;
 	}
@@ -99,7 +149,7 @@ nav {
 
 .hero_btn  {
 	display: inline-block;
-	border-radius: 0;
+
 	&:nth-of-type(1) {
 		margin-right: 20px;
 	}
@@ -108,42 +158,10 @@ nav {
 //BUTTONS
 
 .btn-primary {
-	color: $accent_color;
-	border: 2px solid $accent_color;
+	@include big-button($accent_color, $white);
 	font-weight: 500;
 	text-transform: uppercase;
-	&:link {
-		background-color: transparent;
-		border-color: $accent_color;
-		color: $accent_color;
-	}
-	&:hover {
-		background-color: $accent_color;
-		border-color: $accent_color;
-		color: $white;
-	}
-	&:active {
-		background-color: $accent_color;
-		border-color: $accent_color;
-		color: $white;
-		box-shadow: none;
-	}
-	&:focus {
-		background-color: $accent_color;
-		border-color: $accent_color;
-		color: $white;
-		outline: 5px auto $accent_color;
-	}
-	&:active:focus {
-		background-color: $accent_color;
-		border-color: $accent_color;
-		color: $white;
-		outline: 5px auto $accent_color;
-	}
-	&:visited {
-		background-color: $accent_color;
-		border-color: $accent_color;
-	}
+	border-radius: 0;
 }
 
 .btn-group-lg>.btn, .btn-lg {
@@ -152,4 +170,82 @@ nav {
 	padding: 12px 24px;
 	margin-right: .7em;
 }
+
+
+.grid-item {
+	padding: 10px;
+	h3 {
+		padding: 15px 10px 5px 25px;
+	}
+	p {
+		padding: 10px 25px;
+	}
+}
+
+#about-block {
+	background: $pink-orange;
+	color: $white;
+	p {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 1.6;
+	}
+}
+
+.about-block-button {
+	margin-left: 25px;
+	@include big-button($white, $pink_orange);
+	margin-bottom: 20px;
+	margin-top: 0px;
+	svg {
+		width: 35px;
+		margin-left: 25px;
+		fill: $white;
+		line {
+			stroke: $white;
+		}
+	}
+	&:hover, &:focus, &:active:focus  {
+			polygon {
+			fill: $pink_orange;
+			}
+			line {
+			stroke: $pink_orange;
+			}
+		}
+}
+
+.discussion-block {
+	background: $grey;
+	color: $white;
+	p {
+		font-size: 24px;
+		font-weight: 300;
+		margin-bottom: 20px;
+	}
+}
+
+.after-summit-block {
+	background: $accent_color;
+	text-align: center;
+	p {
+		color: $white;
+		font-size: 20px;
+		font-weight: 300;
+		padding: 60px 5px;
+	}
+}
+
+.logistics-block {
+	background: $pearl;
+	text-align: center;
+	p {
+		font-size: 20px;
+		font-weight: 300;
+		padding: 60px 5px;
+	}
+}
+
+// FOOTER
+
 
