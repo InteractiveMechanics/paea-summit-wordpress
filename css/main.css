@@ -11,6 +11,20 @@
   padding-top: 25px;
   padding-bottom: 10px;
   padding-left: 25px; }
+  .navbar-nav > li > a:hover {
+    position: relative;
+    color: #007964 !important; }
+    .navbar-nav > li > a:hover:after {
+      content: "";
+      border-bottom: 1px dashed #63686c;
+      position: absolute;
+      width: 78%;
+      margin-left: 25px;
+      left: 0;
+      right: 0;
+      bottom: 0px; }
+  .navbar-nav > li > a:visited {
+    color: #007964; }
 
 .container-fluid > .navbar-collapse {
   margin-right: 2em; }
@@ -22,6 +36,92 @@ nav {
 
 .navbar {
   margin-bottom: 0; }
+
+footer {
+  background: #63686c;
+  color: #e8e8e8; }
+  footer a {
+    color: #f1f2f2; }
+    footer a:hover, footer a:active, footer a:focus {
+      color: #f1f2f2; }
+  footer .email-sign-up {
+    padding: 20px 0 40px 10px;
+    margin-bottom: 25px; }
+    footer .email-sign-up h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 300;
+      margin-top: 5px; }
+    footer .email-sign-up h4 {
+      color: #f1f2f2;
+      font-size: 15px;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: "Avenir Next Condensed", Arial, sans-serif;
+      font-weight: 500;
+      margin-top: 30px;
+      margin-bottom: 0; }
+  footer .input-group {
+    width: 50%;
+    margin: 0 auto; }
+  footer .input-group .form-control {
+    border: 1px solid #A1A4A7; }
+  footer .btn-default {
+    border-radius: 0 !important;
+    border: 1px solid transparent;
+    height: 55px;
+    background: transparent;
+    position: absolute;
+    right: 26px;
+    color: #f1f2f2;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out; }
+    footer .btn-default:hover, footer .btn-default:active, footer .btn-default:focus {
+      background: transparent;
+      color: #007964;
+      border-color: transparent;
+      box-shadow: none; }
+  footer .form-control {
+    margin-left: 3em;
+    margin-top: 1em;
+    height: 55px;
+    border-radius: 0px !important;
+    border: 1px solid #f1f2f2;
+    padding: 20px 15px;
+    font-size: 20px;
+    border: 1px solid #A1A4A7;
+    background-color: transparent;
+    color: #f1f2f2;
+    font-family: "Avenir Next Condensed", Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: none;
+    transition: all 0.5s ease-in-out; }
+    footer .form-control:focus, footer .form-control:active, footer .form-control:hover {
+      background-color: #B1B4B7;
+      border-color: #A1A4A7;
+      box-shadow: none; }
+  footer .btn {
+    transition: all 0.5s ease-in-out; }
+    footer .btn:active, footer .btn:focus {
+      outline: initial;
+      outline-color: none;
+      background-color: transparent; }
+  footer .btn:active:focus, footer .btn:focus {
+    outline: initial;
+    background-color: transparent;
+    border-color: transparent; }
+  footer ul {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center; }
+    footer ul li {
+      display: inline-block; }
+      footer ul li:nth-of-type(1) {
+        margin-right: 20px;
+        color: #A1A4A7; }
+      footer ul li:nth-of-type(2) {
+        margin-right: 20px; }
 
 .grid {
   margin-left: 70px;
@@ -133,7 +233,7 @@ a {
   margin-right: 10px; }
 
 .bottom_divider {
-  border-bottom: 1px dotted #A1A4A7; }
+  border-bottom: 1px dashed #A1A4A7; }
 
 .jumbotron {
   background: url(../img/landing_hero@2x.png);
@@ -276,90 +376,122 @@ a {
 .twitter-handle {
   margin-left: 25px; }
 
-footer {
-  background: #63686c;
-  color: #e8e8e8; }
-  footer a {
-    color: #f1f2f2; }
-    footer a:hover, footer a:active, footer a:focus {
-      color: #f1f2f2; }
-  footer .email-sign-up {
-    padding: 20px 0 40px 10px;
-    margin-bottom: 25px; }
-    footer .email-sign-up h2 {
-      text-align: center;
-      font-size: 32px;
-      font-weight: 300;
-      margin-top: 5px; }
-    footer .email-sign-up h4 {
-      color: #f1f2f2;
-      font-size: 15px;
-      text-transform: uppercase;
-      text-align: center;
-      font-family: "Avenir Next Condensed", Arial, sans-serif;
-      font-weight: 500;
-      margin-top: 30px;
-      margin-bottom: 0; }
-  footer .input-group {
-    width: 50%;
-    margin: 0 auto; }
-  footer .input-group .form-control {
-    border: 1px solid #A1A4A7; }
-  footer .btn-default {
-    border-radius: 0 !important;
-    border: 1px solid transparent;
-    height: 55px;
-    background: transparent;
-    position: absolute;
-    right: 26px;
-    color: #f1f2f2;
-    font-size: 16px;
-    transition: all 0.5s ease-in-out; }
-    footer .btn-default:hover, footer .btn-default:active, footer .btn-default:focus {
-      background: transparent;
-      color: #007964;
-      border-color: transparent;
-      box-shadow: none; }
-  footer .form-control {
-    margin-left: 3em;
-    margin-top: 1em;
-    height: 55px;
-    border-radius: 0px !important;
-    border: 1px solid #f1f2f2;
-    padding: 20px 15px;
+.about-page, #objectives, .after-the-summit {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .about-page h3, .about-page .top_banner, #objectives h3, #objectives .top_banner, .after-the-summit h3, .after-the-summit .top_banner {
+    color: #e24e34; }
+  .about-page p, #objectives p, .after-the-summit p {
+    color: #000000;
     font-size: 20px;
-    border: 1px solid #A1A4A7;
-    background-color: transparent;
+    font-weight: 300;
+    line-height: 1.6; }
+
+.infographic {
+  border-bottom: 1px dashed #63686c;
+  padding-bottom: 60px;
+  margin-bottom: 20px; }
+
+.graphic-placeholder, .graphic-caption {
+  height: 275px;
+  margin-bottom: 40px; }
+
+.graphic-placeholder {
+  background: #ec9428; }
+
+.graphic-caption {
+  background: #e8e8e8;
+  padding: 25px 35px 25px 25px; }
+  .graphic-caption p {
+    font-weight: 300;
+    line-height: 1.6;
+    color: #63686c;
+    font-size: 18px;
+    margin-top: 15px; }
+
+#quote {
+  background: #007964;
+  margin-bottom: 20px; }
+  #quote p {
     color: #f1f2f2;
-    font-family: "Avenir Next Condensed", Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    box-shadow: none;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 1.6;
+    margin-top: 70px; }
+  #quote .accented_text {
+    color: #f1f2f2; }
+  #quote h3, #quote .top_banner {
+    color: #f1f2f2; }
+
+.photo-placeholder {
+  height: 175px;
+  width: 250px;
+  background: #f4f5f5;
+  margin: 70px 35px 70px 70px; }
+
+.resource-type {
+  position: relative;
+  top: -3px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 5px;
+  padding: 6px 12px;
+  border-radius: 7px;
+  color: #e24e34;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid #e24e34; }
+
+.right-arrow {
+  height: 0px;
+  width: 0px;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 12.124px solid rgba(35, 31, 32, 0.25);
+  float: right;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  transition: all 0.5s ease-in-out; }
+
+#button-text {
+  font-size: 19px;
+  font-weight: 500;
+  text-transform: initial; }
+
+.pdf-button {
+  background-color: #f1f2f2; }
+
+.btn-default {
+  width: 100%;
+  border: 1px solid transparent;
+  color: #000000;
+  margin: 20px 0;
+  padding: 10px 16px;
+  border-radius: 5px;
+  text-align: left;
+  transition: all 0.5s ease-in-out; }
+  .btn-default .resource-type {
     transition: all 0.5s ease-in-out; }
-    footer .form-control:focus, footer .form-control:active, footer .form-control:hover {
-      background-color: #B1B4B7;
-      border-color: #A1A4A7;
-      box-shadow: none; }
-  footer .btn {
-    transition: all 0.5s ease-in-out; }
-    footer .btn:active, footer .btn:focus {
-      outline: initial;
-      outline-color: none;
-      background-color: transparent; }
-  footer .btn:active:focus, footer .btn:focus {
-    outline: initial;
-    background-color: transparent;
-    border-color: transparent; }
-  footer ul {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    text-align: center; }
-    footer ul li {
-      display: inline-block; }
-      footer ul li:nth-of-type(1) {
-        margin-right: 20px;
-        color: #A1A4A7; }
-      footer ul li:nth-of-type(2) {
-        margin-right: 20px; }
+  .btn-default:hover, .btn-default:active, .btn-default:focus {
+    border: 1px solid transparent;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); }
+    .btn-default:hover .resource-type, .btn-default:active .resource-type, .btn-default:focus .resource-type {
+      color: #fff;
+      background-color: #e24e34; }
+    .btn-default:hover .right-arrow, .btn-default:active .right-arrow, .btn-default:focus .right-arrow {
+      border-left: 12.124px solid rgba(35, 31, 32, 0.5); }
+  .btn-default h4 {
+    display: inline-block;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+.after-the-summit {
+  background: url(../img/landing_hero.png);
+  height: 400px;
+  margin-top: 40px;
+  margin-bottom: 40px; }
 
 /*# sourceMappingURL=main.css.map */

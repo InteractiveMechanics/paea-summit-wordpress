@@ -1,0 +1,114 @@
+// FOOTER
+
+footer {
+	background: $grey;
+	color: $light_grey;
+	a {
+		color: $white;
+		&:hover, &:active, &:focus {
+			color: $white;
+		}
+	}
+	.email-sign-up {
+		padding: 20px 0 40px 10px;
+		margin-bottom: 25px;
+		h2 {
+			text-align: center;
+			font-size: 32px;
+			font-weight: 300;
+			margin-top: 5px;
+		}
+		h4 {
+			color: $white;
+			font-size: 15px;
+			text-transform: uppercase;
+			text-align: center;
+			font-family: $secondary_font;
+			font-weight: 500;
+			margin-top: 30px;
+			margin-bottom: 0;
+		}
+	}
+
+	.input-group {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.input-group .form-control {
+		border: 1px solid $medium_grey;
+	}
+
+	.btn-default {
+		border-radius: 0 !important;
+		border: 1px solid transparent;
+		height: 55px;
+		background: transparent;
+		position: absolute;
+		right: 26px;
+		color: $white;
+		font-size: 16px;
+		transition: $transition;
+		&:hover, &:active, &:focus {
+			background: transparent;
+			color: $accent_color;
+			border-color: transparent;
+			box-shadow: none;
+		}
+	}
+
+	.form-control {
+		margin-left: 3em;
+		margin-top: 1em;
+		height: 55px;
+		border-radius: 0px !important;
+		border: 1px solid $white;
+		padding: 20px 15px;
+		font-size: 20px;
+		border: 1px solid $medium_grey;
+		background-color: transparent;
+		color: $white;
+		font-family: $secondary_font;
+		text-transform: uppercase;
+		font-weight: 500;
+		box-shadow: none;
+		transition: $transition;
+		&:focus, &:active, &:hover {
+			background-color: #B1B4B7;
+			border-color: $medium_grey;
+			box-shadow: none;
+		}
+	}
+
+	.btn {
+		transition: $transition;
+		&:active, &:focus {
+			outline: initial;
+			outline-color: none;
+			background-color: transparent;
+		}
+	}
+
+	.btn:active:focus, .btn:focus {
+		outline: initial;
+		background-color: transparent;
+		border-color: transparent;
+	}
+
+
+	ul { 
+		margin-top: 25px;
+		margin-bottom: 25px;
+		text-align: center;
+		li {
+		display: inline-block;
+			&:nth-of-type(1) {
+				margin-right: 20px;
+				color: $medium_grey;
+			}
+			&:nth-of-type(2) {
+				margin-right: 20px;
+			}
+		}
+	}
+}
