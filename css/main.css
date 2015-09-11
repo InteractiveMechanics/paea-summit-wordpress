@@ -1,49 +1,3 @@
-.grid {
-  margin-left: 70px;
-  margin-right: 70px;
-  margin-bottom: 70px; }
-
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both; }
-
-.grid-item {
-  position: relative;
-  float: left;
-  height: 200px;
-  width: 200px;
-  margin: 15px;
-  background: #ff0000; }
-
-.grid-item--rectangle {
-  width: 430px; }
-
-.grid-item--lg-square {
-  width: 430px;
-  height: 430px; }
-
-.grid-item--portrait-rectangle {
-  width: 215px;
-  height: 430px; }
-
-* {
-  font-family: "Avenir Next", Arial, sans-serif; }
-
-.accented_text {
-  color: #e24e34;
-  font-weight: 500; }
-
-h3, .top_banner {
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Avenir Next Condensed", Arial, sans-serif; }
-
-.white_text {
-  color: #f1f2f2; }
-
 .navbar-default {
   background-color: #fff;
   border-color: #fff;
@@ -69,6 +23,118 @@ nav {
 .navbar {
   margin-bottom: 0; }
 
+.grid {
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 25px; }
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.grid-item {
+  position: relative;
+  float: left;
+  height: 225px;
+  width: 225px;
+  margin: 15px;
+  background: #ff0000; }
+
+.grid-item--rectangle {
+  width: 480px; }
+
+.grid-item--lg-square {
+  width: 480px;
+  height: 480px; }
+
+.grid-item--portrait-rectangle {
+  width: 240px;
+  height: 480px; }
+
+.grid-item {
+  padding: 10px; }
+  .grid-item h3, .grid-item .top_banner {
+    padding: 15px 10px 5px 25px; }
+  .grid-item p {
+    padding: 10px 25px; }
+
+#about-block {
+  background: #e24e34;
+  color: #f1f2f2; }
+  #about-block p {
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.6; }
+
+.discussion-block {
+  background: #63686c;
+  color: #f1f2f2; }
+  .discussion-block p {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px; }
+
+.after-summit-block {
+  background: #007964;
+  text-align: center; }
+  .after-summit-block p {
+    color: #f1f2f2;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 75px 15px; }
+
+.logistics-block {
+  background: #f4f5f5;
+  text-align: center; }
+  .logistics-block p {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 75px 15px; }
+
+.twitter-block {
+  background: #f4f5f5; }
+  .twitter-block p {
+    padding: 25px 25px 0px 25px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.6; }
+
+* {
+  font-family: "Avenir Next", Arial, sans-serif; }
+
+.accented_text {
+  color: #e24e34;
+  font-weight: 500; }
+
+h3, .top_banner {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Avenir Next Condensed", Arial, sans-serif; }
+
+.white_text {
+  color: #f1f2f2; }
+
+a {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out; }
+
+.hashtag {
+  color: #007964;
+  font-weight: 600;
+  text-decoration: underline; }
+
+.vertical_divider {
+  border-right: 2px solid rgba(99, 104, 108, 0.2);
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.bottom_divider {
+  border-bottom: 1px dotted #A1A4A7; }
+
 .jumbotron {
   background: url(../img/landing_hero@2x.png);
   background-size: cover;
@@ -90,11 +156,6 @@ nav {
   .top_banner li {
     display: inline-block; }
 
-.vertical_divider {
-  border-right: 2px solid rgba(99, 104, 108, 0.2);
-  margin-left: 10px;
-  margin-right: 10px; }
-
 .hero_btn_group {
   text-align: center; }
 
@@ -107,6 +168,7 @@ nav {
   font-family: "Avenir Next Condensed", Arial, sans-serif;
   color: #007964;
   border: 2px solid #007964;
+  transition: all 0.5s ease-in-out;
   font-weight: 500;
   text-transform: uppercase;
   border-radius: 0; }
@@ -138,28 +200,14 @@ nav {
   padding: 12px 24px;
   margin-right: .7em; }
 
-.grid-item {
-  padding: 10px; }
-  .grid-item h3, .grid-item .top_banner {
-    padding: 15px 10px 5px 25px; }
-  .grid-item p {
-    padding: 10px 25px; }
-
-#about-block {
-  background: #e24e34;
-  color: #f1f2f2; }
-  #about-block p {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 1.6; }
-
 .about-block-button {
   margin-left: 25px;
   font-family: "Avenir Next Condensed", Arial, sans-serif;
   color: #f1f2f2;
   border: 2px solid #f1f2f2;
+  transition: all 0.5s ease-in-out;
   margin-bottom: 20px;
-  margin-top: 0px; }
+  margin-top: 20px; }
   .about-block-button:link {
     background-color: transparent;
     border-color: #f1f2f2;
@@ -192,29 +240,126 @@ nav {
   .about-block-button:hover line, .about-block-button:focus line, .about-block-button:active:focus line {
     stroke: #e24e34; }
 
-.discussion-block {
-  background: #63686c;
-  color: #f1f2f2; }
-  .discussion-block p {
-    font-size: 24px;
-    font-weight: 300;
-    margin-bottom: 20px; }
+.video-container {
+  position: relative;
+  margin: 0px 85px 40px 85px;
+  background: url(../img/video_placeholder@2x.png);
+  background-size: cover;
+  height: 500px; }
 
-.after-summit-block {
-  background: #007964;
-  text-align: center; }
-  .after-summit-block p {
+.video-caption {
+  background-color: rgba(0, 121, 100, 0.7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px 15px 15px 30px; }
+  .video-caption p {
+    font-size: 18px;
+    font-weight: 600;
     color: #f1f2f2;
-    font-size: 20px;
-    font-weight: 300;
-    padding: 60px 5px; }
+    text-transform: uppercase; }
+  .video-caption:hover {
+    background-color: rgba(0, 121, 100, 0.9); }
 
-.logistics-block {
-  background: #f4f5f5;
-  text-align: center; }
-  .logistics-block p {
+.twitter-feed {
+  background: #e8e8e8;
+  padding-top: 50px; }
+  .twitter-feed h3, .twitter-feed .top_banner {
+    margin-left: 85px;
+    color: #e24e34; }
+  .twitter-feed h4 {
+    font-family: "Avenir Next Condensed", Arial, sans-serif;
+    display: inline-block;
+    color: #A1A4A7;
+    text-transform: uppercase; }
+
+.twitter-handle {
+  margin-left: 25px; }
+
+footer {
+  background: #63686c;
+  color: #e8e8e8; }
+  footer a {
+    color: #f1f2f2; }
+    footer a:hover, footer a:active, footer a:focus {
+      color: #f1f2f2; }
+  footer .email-sign-up {
+    padding: 20px 0 40px 10px;
+    margin-bottom: 25px; }
+    footer .email-sign-up h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 300;
+      margin-top: 5px; }
+    footer .email-sign-up h4 {
+      color: #f1f2f2;
+      font-size: 15px;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: "Avenir Next Condensed", Arial, sans-serif;
+      font-weight: 500;
+      margin-top: 30px;
+      margin-bottom: 0; }
+  footer .input-group {
+    width: 50%;
+    margin: 0 auto; }
+  footer .input-group .form-control {
+    border: 1px solid #A1A4A7; }
+  footer .btn-default {
+    border-radius: 0 !important;
+    border: 1px solid transparent;
+    height: 55px;
+    background: transparent;
+    position: absolute;
+    right: 26px;
+    color: #f1f2f2;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out; }
+    footer .btn-default:hover, footer .btn-default:active, footer .btn-default:focus {
+      background: transparent;
+      color: #007964;
+      border-color: transparent;
+      box-shadow: none; }
+  footer .form-control {
+    margin-left: 3em;
+    margin-top: 1em;
+    height: 55px;
+    border-radius: 0px !important;
+    border: 1px solid #f1f2f2;
+    padding: 20px 15px;
     font-size: 20px;
-    font-weight: 300;
-    padding: 60px 5px; }
+    border: 1px solid #A1A4A7;
+    background-color: transparent;
+    color: #f1f2f2;
+    font-family: "Avenir Next Condensed", Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: none;
+    transition: all 0.5s ease-in-out; }
+    footer .form-control:focus, footer .form-control:active, footer .form-control:hover {
+      background-color: #B1B4B7;
+      border-color: #A1A4A7;
+      box-shadow: none; }
+  footer .btn {
+    transition: all 0.5s ease-in-out; }
+    footer .btn:active, footer .btn:focus {
+      outline: initial;
+      outline-color: none;
+      background-color: transparent; }
+  footer .btn:active:focus, footer .btn:focus {
+    outline: initial;
+    background-color: transparent;
+    border-color: transparent; }
+  footer ul {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center; }
+    footer ul li {
+      display: inline-block; }
+      footer ul li:nth-of-type(1) {
+        margin-right: 20px;
+        color: #A1A4A7; }
+      footer ul li:nth-of-type(2) {
+        margin-right: 20px; }
 
 /*# sourceMappingURL=main.css.map */

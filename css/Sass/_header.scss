@@ -1,0 +1,32 @@
+// HEADER
+.navbar-default {
+	background-color: #fff;
+	border-color: #fff;
+	min-height: 85px;
+}
+
+.navbar-brand img {
+	height: 50px;
+	margin-left: 2em;
+}
+
+.navbar-nav>li>a {
+	padding-top: 25px;
+	padding-bottom: 10px;
+	padding-left: 25px;
+
+}
+
+.container-fluid>.navbar-collapse {
+	margin-right: 2em;
+}
+
+nav {
+	color: $grey;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
