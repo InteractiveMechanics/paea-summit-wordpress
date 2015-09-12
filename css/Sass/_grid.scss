@@ -20,6 +20,14 @@
 	width: 225px;
 	margin: 15px;
 	background: #ff0000;
+	padding: 10px;
+	h3 {
+		padding: 15px 10px 5px 25px;
+	}
+	p {
+		padding: 10px 25px;
+	}
+
 }
 
 .grid-item--rectangle {
@@ -36,14 +44,21 @@
 		height: 480px;	
 	}
 
-.grid-item {
-	padding: 10px;
-	h3 {
-		padding: 15px 10px 5px 25px;
-	}
-	p {
-		padding: 10px 25px;
-	}
+.grid-item--sm-rectangle {
+	width: 480px;
+	background: $grey;
+}
+
+.grid-item--long {
+	width: 510px;
+}
+
+.right-margin {
+	margin-left: 0px;
+}
+
+.left-margin {
+	margin-right: 0px;
 }
 
 #about-block {

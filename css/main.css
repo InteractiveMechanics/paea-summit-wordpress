@@ -140,7 +140,12 @@ footer {
   height: 225px;
   width: 225px;
   margin: 15px;
-  background: #ff0000; }
+  background: #ff0000;
+  padding: 10px; }
+  .grid-item h3, .grid-item .top_banner {
+    padding: 15px 10px 5px 25px; }
+  .grid-item p {
+    padding: 10px 25px; }
 
 .grid-item--rectangle {
   width: 480px; }
@@ -153,12 +158,18 @@ footer {
   width: 240px;
   height: 480px; }
 
-.grid-item {
-  padding: 10px; }
-  .grid-item h3, .grid-item .top_banner {
-    padding: 15px 10px 5px 25px; }
-  .grid-item p {
-    padding: 10px 25px; }
+.grid-item--sm-rectangle {
+  width: 480px;
+  background: #63686c; }
+
+.grid-item--long {
+  width: 510px; }
+
+.right-margin {
+  margin-left: 0px; }
+
+.left-margin {
+  margin-right: 0px; }
 
 #about-block {
   background: #e24e34;
@@ -217,6 +228,9 @@ h3, .top_banner {
 
 .white_text {
   color: #f1f2f2; }
+
+#active_page {
+  color: #007964; }
 
 a {
   text-decoration: none;
@@ -392,22 +406,19 @@ a {
   padding-bottom: 60px;
   margin-bottom: 20px; }
 
-.graphic-placeholder, .graphic-caption {
-  height: 275px;
-  margin-bottom: 40px; }
-
 .graphic-placeholder {
   background: #ec9428; }
 
 .graphic-caption {
-  background: #e8e8e8;
-  padding: 25px 35px 25px 25px; }
+  background: #e8e8e8; }
+  .graphic-caption h3, .graphic-caption .top_banner {
+    padding-top: 10px;
+    padding-bottom: 0; }
   .graphic-caption p {
     font-weight: 300;
     line-height: 1.6;
     color: #63686c;
-    font-size: 18px;
-    margin-top: 15px; }
+    font-size: 18px; }
 
 #quote {
   background: #007964;

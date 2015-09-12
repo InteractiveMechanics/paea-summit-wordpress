@@ -29,6 +29,10 @@ h3 {
 	color: $white;
 }
 
+#active_page {
+	color: $accent_color;
+}
+
 a {
 	text-decoration: none;
 	transition: $transition;
@@ -200,8 +204,8 @@ a {
 }
 
 .graphic-placeholder, .graphic-caption {
-	height: 275px;
-	margin-bottom: 40px;
+	//height: 275px;
+	//margin-bottom: 40px;
 }
 
 .graphic-placeholder {
@@ -210,13 +214,15 @@ a {
 
 .graphic-caption {
 	background: $light_grey;
-	padding: 25px 35px 25px 25px;;
+	h3 {
+		padding-top: 10px;
+		padding-bottom: 0;
+	}
 	p {
 		font-weight: 300;
 		line-height: 1.6;
 		color: $grey;
 		font-size: 18px;
-		margin-top: 15px;
 	}
 }
 
