@@ -1,7 +1,7 @@
 // HEADER
 .navbar-default {
-	background-color: #fff;
-	border-color: #fff;
+	background-color: $white;
+	border-color: $white;
 	min-height: 85px;
 }
 
@@ -29,9 +29,13 @@
 			}
 		}
 		&:visited {
-			color: $accent_color;
+			color: $grey;
 		}
 
+}
+
+#active_page {
+	color: $accent_color;
 }
 
 .container-fluid>.navbar-collapse {

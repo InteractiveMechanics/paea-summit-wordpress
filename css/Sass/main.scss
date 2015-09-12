@@ -29,10 +29,6 @@ h3 {
 	color: $white;
 }
 
-#active_page {
-	color: $accent_color;
-}
-
 a {
 	text-decoration: none;
 	transition: $transition;
@@ -183,7 +179,7 @@ a {
 
 // ABOUT PAGE
 
-.about-page, #objectives, .after-the-summit  {
+.about-page, #objectives, .after-the-summit, #attendees-page  {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	h3 {
@@ -331,5 +327,36 @@ a {
 	height: 400px;
 	margin-top: 40px;
 	margin-bottom: 40px;
+}
+
+
+
+#attendees-page {
+	.bottom_divider {
+		margin-top: 60px;
+		margin-bottom: 20px;
+	}
+	.accented_text {
+	color: $accent_color;
+	}
+	.graphic-caption>p {
+		font-size: 18px;
+	}
+	.grid {
+		margin-bottom: 0;
+	}
+	#grey-section {
+		background: $grey;
+		padding: 30px;
+		h3 {
+			color: $white;
+		}
+		p {
+			color: $white;
+			padding: 10px 20px 20px 0;
+
+			font-size: 16px;
+		}
+	}
 }
 

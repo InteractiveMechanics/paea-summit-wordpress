@@ -1,6 +1,6 @@
 .navbar-default {
-  background-color: #fff;
-  border-color: #fff;
+  background-color: #f1f2f2;
+  border-color: #f1f2f2;
   min-height: 85px; }
 
 .navbar-brand img {
@@ -24,7 +24,10 @@
       right: 0;
       bottom: 0px; }
   .navbar-nav > li > a:visited {
-    color: #007964; }
+    color: #63686c; }
+
+#active_page {
+  color: #007964; }
 
 .container-fluid > .navbar-collapse {
   margin-right: 2em; }
@@ -154,6 +157,11 @@ footer {
   width: 480px;
   height: 480px; }
 
+.grid-item--sm-square {
+  width: 50%;
+  height: 400px;
+  margin: 0; }
+
 .grid-item--portrait-rectangle {
   width: 240px;
   height: 480px; }
@@ -228,9 +236,6 @@ h3, .top_banner {
 
 .white_text {
   color: #f1f2f2; }
-
-#active_page {
-  color: #007964; }
 
 a {
   text-decoration: none;
@@ -390,12 +395,12 @@ a {
 .twitter-handle {
   margin-left: 25px; }
 
-.about-page, #objectives, .after-the-summit {
+.about-page, #objectives, .after-the-summit, #attendees-page {
   padding-top: 60px;
   padding-bottom: 60px; }
-  .about-page h3, .about-page .top_banner, #objectives h3, #objectives .top_banner, .after-the-summit h3, .after-the-summit .top_banner {
+  .about-page h3, .about-page .top_banner, #objectives h3, #objectives .top_banner, .after-the-summit h3, .after-the-summit .top_banner, #attendees-page h3, #attendees-page .top_banner {
     color: #e24e34; }
-  .about-page p, #objectives p, .after-the-summit p {
+  .about-page p, #objectives p, .after-the-summit p, #attendees-page p {
     color: #000000;
     font-size: 20px;
     font-weight: 300;
@@ -504,5 +509,24 @@ a {
   height: 400px;
   margin-top: 40px;
   margin-bottom: 40px; }
+
+#attendees-page .bottom_divider {
+  margin-top: 60px;
+  margin-bottom: 20px; }
+#attendees-page .accented_text {
+  color: #007964; }
+#attendees-page .graphic-caption > p {
+  font-size: 18px; }
+#attendees-page .grid {
+  margin-bottom: 0; }
+#attendees-page #grey-section {
+  background: #63686c;
+  padding: 30px; }
+  #attendees-page #grey-section h3, #attendees-page #grey-section .top_banner {
+    color: #f1f2f2; }
+  #attendees-page #grey-section p {
+    color: #f1f2f2;
+    padding: 10px 20px 20px 0;
+    font-size: 16px; }
 
 /*# sourceMappingURL=main.css.map */
