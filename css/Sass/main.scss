@@ -47,7 +47,7 @@ a {
 }
 
 .bottom_divider {
-	border-bottom: 1px dashed $medium_grey;
+	border-bottom: 1px dotted $medium_grey;
 }
 
 //JUMBOTRON
@@ -179,7 +179,7 @@ a {
 
 // ABOUT PAGE
 
-.about-page, #objectives, .after-the-summit, #attendees-page  {
+.about-page, #objectives, .after-the-summit, #attendees-page, #discussion-page  {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	h3 {
@@ -199,10 +199,6 @@ a {
 	margin-bottom: 20px;
 }
 
-.graphic-placeholder, .graphic-caption {
-	//height: 275px;
-	//margin-bottom: 40px;
-}
 
 .graphic-placeholder {
 	background: $orange;
@@ -359,4 +355,63 @@ a {
 		}
 	}
 }
+
+
+#discussion-page {
+	p {
+		&:nth-of-type(1) {
+		margin-bottom: 40px;
+		}
+	}
+	.bottom_divider {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+.discussion-question {
+	position: relative;
+	margin-top: 20px;
+	ul {
+		padding-left: 0;
+		li {
+			display: inline-block;
+			color: $grey;
+			font-family: $secondary_font;
+			text-transform: uppercase;
+			padding-left: 0;
+			}
+	}
+	p {
+		font-size: 28px !important;
+		padding-bottom: 0;
+	}
+
+	svg {
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 30%;
+		left: 0;
+		right: 0;
+		width: 50px;
+		polygon {
+			fill: $grey;
+		}
+		line {
+			stroke: $grey;
+		}
+		&:hover, &:focus, &:active:focus  {
+			polygon {
+			fill: $pink_orange;
+			}
+			line {
+			stroke: $pink_orange;
+			}
+		}
+	}
+
+}
+
+
 

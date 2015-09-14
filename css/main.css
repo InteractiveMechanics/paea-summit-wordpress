@@ -252,7 +252,7 @@ a {
   margin-right: 10px; }
 
 .bottom_divider {
-  border-bottom: 1px dashed #A1A4A7; }
+  border-bottom: 1px dotted #A1A4A7; }
 
 .jumbotron {
   background: url(../img/landing_hero@2x.png);
@@ -395,12 +395,12 @@ a {
 .twitter-handle {
   margin-left: 25px; }
 
-.about-page, #objectives, .after-the-summit, #attendees-page {
+.about-page, #objectives, .after-the-summit, #attendees-page, #discussion-page {
   padding-top: 60px;
   padding-bottom: 60px; }
-  .about-page h3, .about-page .top_banner, #objectives h3, #objectives .top_banner, .after-the-summit h3, .after-the-summit .top_banner, #attendees-page h3, #attendees-page .top_banner {
+  .about-page h3, .about-page .top_banner, #objectives h3, #objectives .top_banner, .after-the-summit h3, .after-the-summit .top_banner, #attendees-page h3, #attendees-page .top_banner, #discussion-page h3, #discussion-page .top_banner {
     color: #e24e34; }
-  .about-page p, #objectives p, .after-the-summit p, #attendees-page p {
+  .about-page p, #objectives p, .after-the-summit p, #attendees-page p, #discussion-page p {
     color: #000000;
     font-size: 20px;
     font-weight: 300;
@@ -528,5 +528,42 @@ a {
     color: #f1f2f2;
     padding: 10px 20px 20px 0;
     font-size: 16px; }
+
+#discussion-page p:nth-of-type(1) {
+  margin-bottom: 40px; }
+#discussion-page .bottom_divider {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.discussion-question {
+  position: relative;
+  margin-top: 20px; }
+  .discussion-question ul {
+    padding-left: 0; }
+    .discussion-question ul li {
+      display: inline-block;
+      color: #63686c;
+      font-family: "Avenir Next Condensed", Arial, sans-serif;
+      text-transform: uppercase;
+      padding-left: 0; }
+  .discussion-question p {
+    font-size: 28px !important;
+    padding-bottom: 0; }
+  .discussion-question svg {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30%;
+    left: 0;
+    right: 0;
+    width: 50px; }
+    .discussion-question svg polygon {
+      fill: #63686c; }
+    .discussion-question svg line {
+      stroke: #63686c; }
+    .discussion-question svg:hover polygon, .discussion-question svg:focus polygon, .discussion-question svg:active:focus polygon {
+      fill: #e24e34; }
+    .discussion-question svg:hover line, .discussion-question svg:focus line, .discussion-question svg:active:focus line {
+      stroke: #e24e34; }
 
 /*# sourceMappingURL=main.css.map */
