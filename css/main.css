@@ -258,7 +258,8 @@ a {
   background: url(../img/landing_hero@2x.png);
   background-size: cover;
   height: 500px;
-  position: relative; }
+  position: relative;
+  margin-bottom: 0; }
   .jumbotron h2 {
     text-align: center;
     font-size: 36px;
@@ -565,5 +566,51 @@ a {
       fill: #e24e34; }
     .discussion-question svg:hover line, .discussion-question svg:focus line, .discussion-question svg:active:focus line {
       stroke: #e24e34; }
+
+#comments {
+  background: #e8e8e8; }
+  #comments #comments-container {
+    margin-top: -20%;
+    margin-bottom: 5em;
+    background: #f1f2f2;
+    border: 5px solid rgba(170, 170, 170, 0.3);
+    padding-bottom: 30px;
+    background-clip: padding-box;
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding; }
+  #comments .comments-header {
+    padding-top: 30px;
+    padding-bottom: 40px; }
+    #comments .comments-header h3, #comments .comments-header .top_banner {
+      color: #007964;
+      font-size: 20px;
+      margin-left: 20px; }
+  #comments .comments-body {
+    padding-bottom: 30px; }
+    #comments .comments-body img {
+      margin: 40px 10px 10px 10px; }
+      #comments .comments-body img:nth-of-type(1) {
+        margin-top: 20px; }
+    #comments .comments-body h5 {
+      font-family: "Avenir Next Condensed", Arial, sans-serif;
+      text-transform: uppercase;
+      color: #000000; }
+    #comments .comments-body h5, #comments .comments-body h6 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 30px;
+      margin-left: 20px; }
+    #comments .comments-body p {
+      color: #000000;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-left: 20px; }
+    #comments .comments-body textarea {
+      margin: 20px 10px 10px 10px; }
+    #comments .comments-body .comment-detail {
+      padding-bottom: 30px; }
+    #comments .comments-body .comment-border {
+      padding-top: 15px;
+      border-bottom: 1px solid #e8e8e8; }
 
 /*# sourceMappingURL=main.css.map */

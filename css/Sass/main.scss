@@ -57,6 +57,7 @@ a {
 	background-size: cover;
 	height: 500px;
 	position: relative;
+	margin-bottom: 0;
 	h2 {
 		text-align: center;
 		font-size: 36px;
@@ -412,6 +413,77 @@ a {
 	}
 
 }
+
+#comments {
+		background: $light_grey;
+
+		#comments-container {
+			margin-top: -20%;
+			margin-bottom: 5em;
+			background: $white;
+			border: 5px solid rgba(170, 170, 170, 0.3);
+			padding-bottom: 30px; 
+			background-clip: padding-box;
+			-webkit-background-clip: padding;
+			-moz-background-clip: padding;
+		}
+
+		.comments-header {
+			padding-top: 30px;
+			padding-bottom: 40px;
+			h3 {
+				color: $accent_color;
+				font-size: 20px;
+				margin-left: 20px;
+			}
+		}
+
+		.comments-body {
+			padding-bottom: 30px;
+			img {
+				margin: 40px 10px 10px 10px;
+				&:nth-of-type(1) {
+					margin-top: 20px;
+				}
+			}
+
+
+			h5 {
+				font-family: $secondary_font;
+				text-transform: uppercase;
+				color: $black;
+			}
+			
+			h5, h6 {
+				font-size: 16px;
+				font-weight: 600;
+				margin-top: 30px;
+				margin-left: 20px;
+			}
+
+			p {
+				color: $black;
+				font-size: 16px;
+				line-height: 1.6;
+				margin-left: 20px;
+			}
+
+			textarea {
+				margin: 20px 10px 10px 10px;
+			}
+
+			.comment-detail {
+				padding-bottom: 30px;				
+			}
+
+			.comment-border {
+				padding-top: 15px;
+				border-bottom: 1px solid $light_grey;
+			}
+		}
+
+	}
+
 
 
 
