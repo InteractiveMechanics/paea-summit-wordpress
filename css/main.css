@@ -1,6 +1,50 @@
+* {
+  font-family: "Avenir Next", Arial, sans-serif; }
+
+.accented_text {
+  color: #e24e34;
+  font-weight: 500; }
+
+h3, .top_banner {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Avenir Next Condensed", Arial, sans-serif; }
+
+.white_text {
+  color: #f1f2f2; }
+
+a {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out; }
+
+.hashtag {
+  color: #007964;
+  font-weight: 600;
+  text-decoration: underline; }
+
+.vertical_divider {
+  border-right: 2px solid rgba(99, 104, 108, 0.2);
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.bottom_divider {
+  border-bottom: 1px dotted #A1A4A7; }
+
+.about-page, #objectives, .after-the-summit, #attendees-page, #discussion-page {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .about-page h3, .about-page .top_banner, #objectives h3, #objectives .top_banner, .after-the-summit h3, .after-the-summit .top_banner, #attendees-page h3, #attendees-page .top_banner, #discussion-page h3, #discussion-page .top_banner {
+    color: #e24e34; }
+  .about-page p, #objectives p, .after-the-summit p, #attendees-page p, #discussion-page p {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6; }
+
 .navbar-default {
-  background-color: #f1f2f2;
-  border-color: #f1f2f2;
+  background-color: #fff;
+  border-color: #fff;
   min-height: 85px; }
 
 .navbar-brand img {
@@ -221,39 +265,6 @@ footer {
     font-size: 18px;
     line-height: 1.6; }
 
-* {
-  font-family: "Avenir Next", Arial, sans-serif; }
-
-.accented_text {
-  color: #e24e34;
-  font-weight: 500; }
-
-h3, .top_banner {
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Avenir Next Condensed", Arial, sans-serif; }
-
-.white_text {
-  color: #f1f2f2; }
-
-a {
-  text-decoration: none;
-  transition: all 0.5s ease-in-out; }
-
-.hashtag {
-  color: #007964;
-  font-weight: 600;
-  text-decoration: underline; }
-
-.vertical_divider {
-  border-right: 2px solid rgba(99, 104, 108, 0.2);
-  margin-left: 10px;
-  margin-right: 10px; }
-
-.bottom_divider {
-  border-bottom: 1px dotted #A1A4A7; }
-
 .jumbotron {
   background: url(../img/landing_hero@2x.png);
   background-size: cover;
@@ -396,56 +407,6 @@ a {
 .twitter-handle {
   margin-left: 25px; }
 
-.about-page, #objectives, .after-the-summit, #attendees-page, #discussion-page {
-  padding-top: 60px;
-  padding-bottom: 60px; }
-  .about-page h3, .about-page .top_banner, #objectives h3, #objectives .top_banner, .after-the-summit h3, .after-the-summit .top_banner, #attendees-page h3, #attendees-page .top_banner, #discussion-page h3, #discussion-page .top_banner {
-    color: #e24e34; }
-  .about-page p, #objectives p, .after-the-summit p, #attendees-page p, #discussion-page p {
-    color: #000000;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.6; }
-
-.infographic {
-  border-bottom: 1px dashed #63686c;
-  padding-bottom: 60px;
-  margin-bottom: 20px; }
-
-.graphic-placeholder {
-  background: #ec9428; }
-
-.graphic-caption {
-  background: #e8e8e8; }
-  .graphic-caption h3, .graphic-caption .top_banner {
-    padding-top: 10px;
-    padding-bottom: 0; }
-  .graphic-caption p {
-    font-weight: 300;
-    line-height: 1.6;
-    color: #63686c;
-    font-size: 18px; }
-
-#quote {
-  background: #007964;
-  margin-bottom: 20px; }
-  #quote p {
-    color: #f1f2f2;
-    font-weight: 300;
-    font-size: 28px;
-    line-height: 1.6;
-    margin-top: 70px; }
-  #quote .accented_text {
-    color: #f1f2f2; }
-  #quote h3, #quote .top_banner {
-    color: #f1f2f2; }
-
-.photo-placeholder {
-  height: 175px;
-  width: 250px;
-  background: #f4f5f5;
-  margin: 70px 35px 70px 70px; }
-
 .resource-type {
   position: relative;
   top: -3px;
@@ -504,6 +465,45 @@ a {
     color: #000000;
     margin-top: 10px;
     margin-bottom: 10px; }
+
+.infographic {
+  border-bottom: 1px dashed #63686c;
+  padding-bottom: 60px;
+  margin-bottom: 20px; }
+
+.graphic-placeholder {
+  background: #ec9428; }
+
+.graphic-caption {
+  background: #e8e8e8; }
+  .graphic-caption h3, .graphic-caption .top_banner {
+    padding-top: 10px;
+    padding-bottom: 0; }
+  .graphic-caption p {
+    font-weight: 300;
+    line-height: 1.6;
+    color: #63686c;
+    font-size: 18px; }
+
+#quote {
+  background: #007964;
+  margin-bottom: 20px; }
+  #quote p {
+    color: #f1f2f2;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 1.6;
+    margin-top: 70px; }
+  #quote .accented_text {
+    color: #f1f2f2; }
+  #quote h3, #quote .top_banner {
+    color: #f1f2f2; }
+
+.photo-placeholder {
+  height: 175px;
+  width: 250px;
+  background: #f4f5f5;
+  margin: 70px 35px 70px 70px; }
 
 .after-the-summit {
   background: url(../img/landing_hero.png);
