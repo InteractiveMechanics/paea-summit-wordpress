@@ -52,19 +52,25 @@
 
 .grid-item--sm-rectangle {
 	width: 480px;
+	height: 320px;
+	margin: 20px;
 	background: $grey;
 }
 
 .grid-item--long {
 	width: 510px;
+	height: 296px;
+	margin: 20px;
 }
 
 .right-margin {
 	margin-left: 0px;
+	//margin-right: 15px;
 }
 
 .left-margin {
 	margin-right: 0px;
+	//margin-left: 15px;
 }
 
 #about-block {

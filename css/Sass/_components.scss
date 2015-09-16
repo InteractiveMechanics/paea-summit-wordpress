@@ -144,16 +144,16 @@
 	border: 1px solid $pink_orange;
 }
 
-.right-arrow {
-	height: 0px;
-	width: 0px;
-	border-top: 7px solid transparent;
-	border-bottom: 7px solid transparent;	
-	border-left: 12.124px solid rgba(35,31,32,0.25); // to make equilateral triangle: (border-top width + border-bottom width) * 0.866
+.down-arrow {	
 	float: right;
-	margin-top: 12px;
-	margin-bottom: 16px;
+	margin-top: 6px;
 	transition: $transition;
+	svg {
+		width: 14px;
+		polygon {
+			fill: $medium_grey;
+		}
+	}
 	
 }
 
@@ -186,9 +186,6 @@
 		.resource-type {
 			color: #fff;
 			background-color: $pink_orange;
-		}
-		.right-arrow {
-			border-left: 12.124px solid rgba(35,31,32,0.5);
 		}
 	}
 	h4 {

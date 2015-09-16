@@ -212,10 +212,14 @@ footer {
 
 .grid-item--sm-rectangle {
   width: 480px;
+  height: 320px;
+  margin: 20px;
   background: #63686c; }
 
 .grid-item--long {
-  width: 510px; }
+  width: 510px;
+  height: 296px;
+  margin: 20px; }
 
 .right-margin {
   margin-left: 0px; }
@@ -421,16 +425,14 @@ footer {
   font-weight: 600;
   border: 1px solid #e24e34; }
 
-.right-arrow {
-  height: 0px;
-  width: 0px;
-  border-top: 7px solid transparent;
-  border-bottom: 7px solid transparent;
-  border-left: 12.124px solid rgba(35, 31, 32, 0.25);
+.down-arrow {
   float: right;
-  margin-top: 12px;
-  margin-bottom: 16px;
+  margin-top: 6px;
   transition: all 0.5s ease-in-out; }
+  .down-arrow svg {
+    width: 14px; }
+    .down-arrow svg polygon {
+      fill: #A1A4A7; }
 
 #button-text {
   font-size: 19px;
@@ -457,8 +459,6 @@ footer {
     .btn-default:hover .resource-type, .btn-default:active .resource-type, .btn-default:focus .resource-type {
       color: #fff;
       background-color: #e24e34; }
-    .btn-default:hover .right-arrow, .btn-default:active .right-arrow, .btn-default:focus .right-arrow {
-      border-left: 12.124px solid rgba(35, 31, 32, 0.5); }
   .btn-default h4 {
     display: inline-block;
     font-size: 16px;
@@ -472,10 +472,18 @@ footer {
   margin-bottom: 20px; }
 
 .graphic-placeholder {
-  background: #ec9428; }
+  background: transparent;
+  padding: 0;
+  margin-top: 0px; }
+  .graphic-placeholder img {
+    width: 480px;
+    margin-top: 4px;
+    margin-bottom: 40px; }
 
 .graphic-caption {
-  background: #e8e8e8; }
+  background: #e8e8e8;
+  margin-top: 20px;
+  margin-bottom: 40px; }
   .graphic-caption h3, .graphic-caption .top_banner {
     padding-top: 10px;
     padding-bottom: 0; }
@@ -485,6 +493,15 @@ footer {
     color: #63686c;
     font-size: 18px; }
 
+#collaborate {
+  margin-top: 29px; }
+
+#educate {
+  margin-top: 27px; }
+
+/*#innovate {
+	margin-top: 27px;
+}*/
 #quote {
   background: #007964;
   margin-bottom: 20px; }
@@ -506,7 +523,7 @@ footer {
   margin: 70px 35px 70px 70px; }
 
 .after-the-summit {
-  background: url(../img/landing_hero.png);
+  background: url(../img/outcomes_background@2x.jpg);
   height: 400px;
   margin-top: 40px;
   margin-bottom: 40px; }
@@ -557,7 +574,7 @@ footer {
     margin-top: 30%;
     left: 0;
     right: 0;
-    width: 50px; }
+    width: 40px; }
     .discussion-question svg polygon {
       fill: #63686c; }
     .discussion-question svg line {
