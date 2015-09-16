@@ -26,7 +26,11 @@
             <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="joe@website.com">
             <span class="input-group-btn">
                <div style="position: absolute; left: -5000px;"><input type="text" name="b_c1336de511800dd633b850bd9_66efaba916" tabindex="-1" value=""></div>
-              <input class="btn btn-default" type="submit" name="subscribe" id="mc-embedded-subscribe" value="Submit">
+              <button class="btn btn-default" type="submit" name="subscribe" id="mc-embedded-subscribe" value="">
+                <svg version="1.1" id="right-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="-2 -3.4 38.6 16.4" enable-background="new -2 -3.4 38.6 16.4" xml:space="preserve">
+                  <polygon fill="#FFFFFF" points="27.8,-3.4 26.5,-1.9 32.6,3.8 -2,3.8 -2,5.8 32.6,5.8 26.5,11.5 27.8,13 36.6,4.8 "/>
+                </svg>
+              </button
             </span>
           </div>
         </form>
@@ -53,7 +57,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.1/isotope.pkgd.js"></script>
-  <script src="main.js"></script>
+  <script src="<?php printThemePath(); ?>/main.js"></script>
 
 </body>
 </html>

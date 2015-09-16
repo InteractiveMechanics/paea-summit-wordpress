@@ -1,0 +1,629 @@
+* {
+  font-family: "Avenir Next", Arial, sans-serif; }
+
+.accented_text {
+  color: #e24e34;
+  font-weight: 500; }
+
+h3, .top_banner {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Avenir Next Condensed", Arial, sans-serif; }
+
+.white_text {
+  color: #f1f2f2; }
+
+a {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out; }
+
+.hashtag {
+  color: #007964;
+  font-weight: 600;
+  text-decoration: underline; }
+
+.vertical_divider {
+  border-right: 2px solid rgba(99, 104, 108, 0.2);
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.bottom_divider {
+  border-bottom: 1px dotted #A1A4A7; }
+
+.about-page, #objectives, .after-the-summit, #attendees-page, #discussion-page {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .about-page h3, .about-page .top_banner, #objectives h3, #objectives .top_banner, .after-the-summit h3, .after-the-summit .top_banner, #attendees-page h3, #attendees-page .top_banner, #discussion-page h3, #discussion-page .top_banner {
+    color: #e24e34; }
+  .about-page p, #objectives p, .after-the-summit p, #attendees-page p, #discussion-page p {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6; }
+
+.navbar-default {
+  background-color: #fff;
+  border-color: #fff;
+  min-height: 85px; }
+
+.navbar-brand img {
+  height: 50px;
+  margin-left: 2em; }
+
+.navbar-nav > li > a {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px; }
+  .navbar-nav > li > a:hover {
+    position: relative;
+    color: #007964 !important; }
+    .navbar-nav > li > a:hover:after {
+      content: "";
+      border-bottom: 1px dashed #63686c;
+      position: absolute;
+      width: 78%;
+      margin-left: 25px;
+      left: 0;
+      right: 0;
+      bottom: 0px; }
+  .navbar-nav > li > a:visited {
+    color: #63686c; }
+
+#active_page {
+  color: #007964; }
+
+.container-fluid > .navbar-collapse {
+  margin-right: 2em; }
+
+nav {
+  color: #63686c;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.navbar {
+  margin-bottom: 0; }
+
+footer {
+  background: #63686c;
+  color: #e8e8e8; }
+  footer a {
+    color: #f1f2f2; }
+    footer a:hover, footer a:active, footer a:focus {
+      color: #f1f2f2; }
+  footer .email-sign-up {
+    padding: 20px 0 40px 10px;
+    margin-bottom: 25px; }
+    footer .email-sign-up h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 300;
+      margin-top: 5px; }
+    footer .email-sign-up h4 {
+      color: #f1f2f2;
+      font-size: 15px;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: "Avenir Next Condensed", Arial, sans-serif;
+      font-weight: 500;
+      margin-top: 30px;
+      margin-bottom: 0; }
+  footer .input-group {
+    width: 50%;
+    margin: 0 auto; }
+  footer .input-group .form-control {
+    border: 1px solid #A1A4A7; }
+  footer .btn-default {
+    border-radius: 0 !important;
+    border: 1px solid transparent;
+    height: 55px;
+    background: transparent;
+    position: absolute;
+    right: 26px;
+    color: #f1f2f2;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out; }
+    footer .btn-default svg {
+      margin-top: 5px;
+      width: 35px;
+      opacity: 0.5;
+      transition: all 0.5s ease-in-out; }
+      footer .btn-default svg:hover, footer .btn-default svg:active, footer .btn-default svg:focus {
+        opacity: 1.0; }
+    footer .btn-default:hover, footer .btn-default:active, footer .btn-default:focus {
+      background: transparent;
+      border-color: transparent;
+      box-shadow: none; }
+  footer .form-control {
+    margin-left: 2em;
+    margin-top: 1em;
+    height: 55px;
+    border-radius: 0px !important;
+    border: 1px solid #f1f2f2;
+    padding: 20px 15px;
+    font-size: 20px;
+    border: 1px solid #A1A4A7;
+    background-color: transparent;
+    color: #f1f2f2;
+    font-family: "Avenir Next Condensed", Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: none;
+    transition: all 0.5s ease-in-out; }
+    footer .form-control:focus, footer .form-control:active, footer .form-control:hover {
+      background-color: transparent;
+      border-color: #A1A4A7;
+      color: #000000;
+      box-shadow: none; }
+  footer .btn {
+    transition: all 0.5s ease-in-out; }
+    footer .btn:active, footer .btn:focus {
+      outline: initial;
+      outline-color: none;
+      background-color: transparent; }
+  footer .btn:active:focus, footer .btn:focus {
+    outline: initial;
+    background-color: transparent;
+    border-color: transparent; }
+  footer ul {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center; }
+    footer ul li {
+      display: inline-block; }
+      footer ul li:nth-of-type(1) {
+        margin-right: 20px;
+        color: #A1A4A7; }
+      footer ul li:nth-of-type(2) {
+        margin-right: 20px; }
+
+.grid {
+  margin: 25px 70px; }
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.grid-item {
+  position: relative;
+  float: left;
+  height: 225px;
+  width: 225px;
+  margin: 15px;
+  background: #ff0000;
+  padding: 10px; }
+  .grid-item h3, .grid-item .top_banner {
+    padding: 15px 10px 5px 25px; }
+  .grid-item p {
+    padding: 10px 25px; }
+
+.grid-item--rectangle {
+  width: 480px; }
+
+.grid-item--lg-square {
+  width: 480px;
+  height: 480px; }
+
+.grid-item--sm-square {
+  width: 50%;
+  height: 400px;
+  margin: 0; }
+
+.grid-item--portrait-rectangle {
+  width: 240px;
+  height: 480px; }
+
+.grid-item--sm-rectangle {
+  width: 480px;
+  background: #63686c; }
+
+.grid-item--long {
+  width: 510px; }
+
+.right-margin {
+  margin-left: 0px; }
+
+.left-margin {
+  margin-right: 0px; }
+
+#about-block {
+  background: #e24e34;
+  color: #f1f2f2; }
+  #about-block p {
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.6; }
+
+.discussion-block {
+  background: #63686c;
+  color: #f1f2f2; }
+  .discussion-block p {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px; }
+
+.after-summit-block {
+  background: #007964;
+  text-align: center; }
+  .after-summit-block p {
+    color: #f1f2f2;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 75px 15px; }
+
+.logistics-block {
+  background: #f4f5f5;
+  text-align: center; }
+  .logistics-block p {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 75px 15px; }
+
+.twitter-block {
+  background: #f4f5f5; }
+  .twitter-block p {
+    padding: 25px 25px 0px 25px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.6; }
+    .twitter-block p svg {
+      width: 18px;
+      margin-left: 5px; }
+
+.jumbotron {
+  background: url(../img/landing_hero@2x.png);
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  margin-bottom: 0; }
+  .jumbotron h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 0px;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-bottom: 1.7em; }
+
+.top_banner {
+  margin-top: 3em;
+  margin-bottom: 2em;
+  color: #63686c;
+  text-align: center; }
+  .top_banner li {
+    display: inline-block; }
+
+.hero_btn_group {
+  text-align: center; }
+
+.hero_btn {
+  display: inline-block; }
+  .hero_btn:nth-of-type(1) {
+    margin-right: 20px; }
+
+.btn-primary {
+  font-family: "Avenir Next Condensed", Arial, sans-serif;
+  color: #007964;
+  border: 2px solid #007964;
+  transition: all 0.5s ease-in-out;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 0; }
+  .btn-primary:link {
+    background-color: transparent;
+    border-color: #007964;
+    color: #007964; }
+  .btn-primary:hover {
+    background-color: #007964;
+    border-color: #007964;
+    color: #f1f2f2; }
+  .btn-primary:active {
+    background-color: #007964;
+    border-color: #007964;
+    color: #f1f2f2;
+    box-shadow: none; }
+  .btn-primary:focus, .btn-primary:active:focus {
+    background-color: #007964;
+    border-color: #007964;
+    color: #f1f2f2;
+    outline: 5px auto #007964; }
+  .btn-primary:visited {
+    background-color: #007964;
+    border-color: #007964; }
+
+.btn-group-lg > .btn, .btn-lg {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 12px 24px;
+  margin-right: .7em; }
+
+.about-block-button {
+  margin-left: 25px;
+  font-family: "Avenir Next Condensed", Arial, sans-serif;
+  color: #f1f2f2;
+  border: 2px solid #f1f2f2;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: #transition; }
+  .about-block-button:link {
+    background-color: transparent;
+    border-color: #f1f2f2;
+    color: #f1f2f2; }
+  .about-block-button:hover {
+    background-color: #f1f2f2;
+    border-color: #f1f2f2;
+    color: #e24e34; }
+  .about-block-button:active {
+    background-color: #f1f2f2;
+    border-color: #f1f2f2;
+    color: #e24e34;
+    box-shadow: none; }
+  .about-block-button:focus, .about-block-button:active:focus {
+    background-color: #f1f2f2;
+    border-color: #f1f2f2;
+    color: #e24e34;
+    outline: 5px auto #f1f2f2; }
+  .about-block-button:visited {
+    background-color: #f1f2f2;
+    border-color: #f1f2f2; }
+  .about-block-button svg {
+    width: 35px;
+    margin-left: 25px;
+    fill: #f1f2f2;
+    transition: all 0.5s ease-in-out; }
+  .about-block-button:hover polygon, .about-block-button:focus polygon, .about-block-button:active:focus polygon {
+    fill: #e24e34; }
+
+.video-container {
+  position: relative;
+  margin: 0px 85px 40px 85px;
+  background: url(../img/video_placeholder@2x.png);
+  background-size: cover;
+  height: 500px; }
+
+.video-caption {
+  background-color: rgba(0, 121, 100, 0.7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px 15px 15px 30px;
+  transition: all 0.5s ease-in-out; }
+  .video-caption svg {
+    width: 35px;
+    margin-top: 6px;
+    margin-right: 17px;
+    float: left;
+    display: inline-block; }
+  .video-caption p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f1f2f2;
+    text-transform: uppercase; }
+  .video-caption:hover {
+    background-color: rgba(0, 121, 100, 0.9); }
+
+.twitter-feed {
+  background: #e8e8e8;
+  padding-top: 50px; }
+  .twitter-feed h3, .twitter-feed .top_banner {
+    margin-left: 85px;
+    color: #e24e34; }
+  .twitter-feed h4 {
+    font-family: "Avenir Next Condensed", Arial, sans-serif;
+    display: inline-block;
+    color: #A1A4A7;
+    text-transform: uppercase; }
+
+.twitter-handle {
+  margin-left: 25px; }
+
+.resource-type {
+  position: relative;
+  top: -3px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 5px;
+  padding: 6px 12px;
+  border-radius: 7px;
+  color: #e24e34;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid #e24e34; }
+
+.right-arrow {
+  height: 0px;
+  width: 0px;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 12.124px solid rgba(35, 31, 32, 0.25);
+  float: right;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  transition: all 0.5s ease-in-out; }
+
+#button-text {
+  font-size: 19px;
+  font-weight: 500;
+  text-transform: initial; }
+
+.pdf-button {
+  background-color: #f1f2f2; }
+
+.btn-default {
+  width: 100%;
+  border: 1px solid transparent;
+  color: #000000;
+  margin: 20px 0;
+  padding: 10px 16px;
+  border-radius: 5px;
+  text-align: left;
+  transition: all 0.5s ease-in-out; }
+  .btn-default .resource-type {
+    transition: all 0.5s ease-in-out; }
+  .btn-default:hover, .btn-default:active, .btn-default:focus {
+    border: 1px solid transparent;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); }
+    .btn-default:hover .resource-type, .btn-default:active .resource-type, .btn-default:focus .resource-type {
+      color: #fff;
+      background-color: #e24e34; }
+    .btn-default:hover .right-arrow, .btn-default:active .right-arrow, .btn-default:focus .right-arrow {
+      border-left: 12.124px solid rgba(35, 31, 32, 0.5); }
+  .btn-default h4 {
+    display: inline-block;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+.infographic {
+  border-bottom: 1px dashed #63686c;
+  padding-bottom: 60px;
+  margin-bottom: 20px; }
+
+.graphic-placeholder {
+  background: #ec9428; }
+
+.graphic-caption {
+  background: #e8e8e8; }
+  .graphic-caption h3, .graphic-caption .top_banner {
+    padding-top: 10px;
+    padding-bottom: 0; }
+  .graphic-caption p {
+    font-weight: 300;
+    line-height: 1.6;
+    color: #63686c;
+    font-size: 18px; }
+
+#quote {
+  background: #007964;
+  margin-bottom: 20px; }
+  #quote p {
+    color: #f1f2f2;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 1.6;
+    margin-top: 70px; }
+  #quote .accented_text {
+    color: #f1f2f2; }
+  #quote h3, #quote .top_banner {
+    color: #f1f2f2; }
+
+.photo-placeholder {
+  height: 175px;
+  width: 250px;
+  background: #f4f5f5;
+  margin: 70px 35px 70px 70px; }
+
+.after-the-summit {
+  background: url(../img/landing_hero.png);
+  height: 400px;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+#attendees-page .bottom_divider {
+  margin-top: 60px;
+  margin-bottom: 20px; }
+#attendees-page .accented_text {
+  color: #007964; }
+#attendees-page .graphic-caption > p {
+  font-size: 18px; }
+#attendees-page .grid {
+  margin-bottom: 0; }
+#attendees-page #grey-section {
+  background: #63686c;
+  padding: 30px; }
+  #attendees-page #grey-section h3, #attendees-page #grey-section .top_banner {
+    color: #f1f2f2; }
+  #attendees-page #grey-section p {
+    color: #f1f2f2;
+    padding: 10px 20px 20px 0;
+    font-size: 16px; }
+
+#discussion-page p:nth-of-type(1) {
+  margin-bottom: 40px; }
+#discussion-page .bottom_divider {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.discussion-question {
+  position: relative;
+  margin-top: 20px; }
+  .discussion-question ul {
+    padding-left: 0; }
+    .discussion-question ul li {
+      display: inline-block;
+      color: #63686c;
+      font-family: "Avenir Next Condensed", Arial, sans-serif;
+      text-transform: uppercase;
+      padding-left: 0; }
+  .discussion-question p {
+    font-size: 28px !important;
+    padding-bottom: 0; }
+  .discussion-question svg {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30%;
+    left: 0;
+    right: 0;
+    width: 50px; }
+    .discussion-question svg polygon {
+      fill: #63686c; }
+    .discussion-question svg line {
+      stroke: #63686c; }
+    .discussion-question svg:hover polygon, .discussion-question svg:focus polygon, .discussion-question svg:active:focus polygon {
+      fill: #e24e34; }
+    .discussion-question svg:hover line, .discussion-question svg:focus line, .discussion-question svg:active:focus line {
+      stroke: #e24e34; }
+
+#comments {
+  background: #e8e8e8; }
+  #comments #comments-container {
+    margin-top: -20%;
+    margin-bottom: 5em;
+    background: #f1f2f2;
+    border: 5px solid rgba(170, 170, 170, 0.3);
+    padding-bottom: 30px;
+    background-clip: padding-box;
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding; }
+  #comments .comments-header {
+    padding-top: 30px;
+    padding-bottom: 40px; }
+    #comments .comments-header h3, #comments .comments-header .top_banner {
+      color: #007964;
+      font-size: 20px;
+      margin-left: 20px; }
+  #comments .comments-body {
+    padding-bottom: 30px; }
+    #comments .comments-body img {
+      margin: 40px 10px 10px 10px; }
+      #comments .comments-body img:nth-of-type(1) {
+        margin-top: 20px; }
+    #comments .comments-body h5 {
+      font-family: "Avenir Next Condensed", Arial, sans-serif;
+      text-transform: uppercase;
+      color: #000000; }
+    #comments .comments-body h5, #comments .comments-body h6 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 30px;
+      margin-left: 20px; }
+    #comments .comments-body p {
+      color: #000000;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-left: 20px; }
+    #comments .comments-body textarea {
+      margin: 20px 10px 10px 10px; }
+    #comments .comments-body .comment-detail {
+      padding-bottom: 30px; }
+    #comments .comments-body .comment-border {
+      padding-top: 15px;
+      border-bottom: 1px solid #e8e8e8; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,223 @@
+// ABOUT PAGE
+
+.infographic {
+	border-bottom: 1px dashed $grey;
+	padding-bottom: 60px;
+	margin-bottom: 20px;
+}
+
+
+.graphic-placeholder {
+	background: $orange;
+}
+
+.graphic-caption {
+	background: $light_grey;
+	h3 {
+		padding-top: 10px;
+		padding-bottom: 0;
+	}
+	p {
+		font-weight: 300;
+		line-height: 1.6;
+		color: $grey;
+		font-size: 18px;
+	}
+}
+
+#quote {
+	background: $accent_color;
+	margin-bottom: 20px;
+	p {
+		color: $white;
+		font-weight: 300;
+		font-size: 28px;
+		line-height: 1.6;
+		margin-top: 70px;
+	}
+	.accented_text {
+		color: $white;
+	}
+
+	h3 {
+		color: $white;
+	}
+}
+
+.photo-placeholder {
+
+	height: 175px;
+	width: 250px;
+	background: $pearl;
+	margin: 70px 35px 70px 70px;;
+}
+
+
+
+.after-the-summit {
+	background: url(../img/landing_hero.png);
+	height: 400px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+// FOR ATTENDEES PAGE 
+
+#attendees-page {
+	.bottom_divider {
+		margin-top: 60px;
+		margin-bottom: 20px;
+	}
+	.accented_text {
+	color: $accent_color;
+	}
+	.graphic-caption>p {
+		font-size: 18px;
+	}
+	.grid {
+		margin-bottom: 0;
+	}
+	#grey-section {
+		background: $grey;
+		padding: 30px;
+		h3 {
+			color: $white;
+		}
+		p {
+			color: $white;
+			padding: 10px 20px 20px 0;
+
+			font-size: 16px;
+		}
+	}
+}
+
+// DISCUSSSION PAGE
+
+#discussion-page {
+	p {
+		&:nth-of-type(1) {
+		margin-bottom: 40px;
+		}
+	}
+	.bottom_divider {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+.discussion-question {
+	position: relative;
+	margin-top: 20px;
+	ul {
+		padding-left: 0;
+		li {
+			display: inline-block;
+			color: $grey;
+			font-family: $secondary_font;
+			text-transform: uppercase;
+			padding-left: 0;
+			}
+	}
+	p {
+		font-size: 28px !important;
+		padding-bottom: 0;
+	}
+
+	svg {
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 30%;
+		left: 0;
+		right: 0;
+		width: 50px;
+		polygon {
+			fill: $grey;
+		}
+		line {
+			stroke: $grey;
+		}
+		&:hover, &:focus, &:active:focus  {
+			polygon {
+			fill: $pink_orange;
+			}
+			line {
+			stroke: $pink_orange;
+			}
+		}
+	}
+
+}
+
+// DISCUSSION DETAIL PAGE
+
+#comments {
+		background: $light_grey;
+
+		#comments-container {
+			margin-top: -20%;
+			margin-bottom: 5em;
+			background: $white;
+			border: 5px solid rgba(170, 170, 170, 0.3);
+			padding-bottom: 30px; 
+			background-clip: padding-box;
+			-webkit-background-clip: padding;
+			-moz-background-clip: padding;
+		}
+
+		.comments-header {
+			padding-top: 30px;
+			padding-bottom: 40px;
+			h3 {
+				color: $accent_color;
+				font-size: 20px;
+				margin-left: 20px;
+			}
+		}
+
+		.comments-body {
+			padding-bottom: 30px;
+			img {
+				margin: 40px 10px 10px 10px;
+				&:nth-of-type(1) {
+					margin-top: 20px;
+				}
+			}
+
+
+			h5 {
+				font-family: $secondary_font;
+				text-transform: uppercase;
+				color: $black;
+			}
+			
+			h5, h6 {
+				font-size: 16px;
+				font-weight: 600;
+				margin-top: 30px;
+				margin-left: 20px;
+			}
+
+			p {
+				color: $black;
+				font-size: 16px;
+				line-height: 1.6;
+				margin-left: 20px;
+			}
+
+			textarea {
+				margin: 20px 10px 10px 10px;
+			}
+
+			.comment-detail {
+				padding-bottom: 30px;				
+			}
+
+			.comment-border {
+				padding-top: 15px;
+				border-bottom: 1px solid $light_grey;
+			}
+		}
+
+	}

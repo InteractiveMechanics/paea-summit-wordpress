@@ -1,0 +1,205 @@
+//JUMBOTRON
+
+.jumbotron {
+	background: url(../img/landing_hero@2x.png);
+	background-size: cover;
+	height: 500px;
+	position: relative;
+	margin-bottom: 0;
+	h2 {
+		text-align: center;
+		font-size: 36px;
+		margin-top: 0px;
+		font-weight: 400;
+		line-height: 1.4em;
+		margin-bottom: 1.7em;
+	}
+}
+
+.top_banner {
+	margin-top: 3em;
+	margin-bottom: 2em;
+	@extend h3;
+	color: $grey;
+	text-align: center;
+	li {
+	display: inline-block;
+	}
+}
+
+.hero_btn_group {
+	text-align: center;
+}
+
+.hero_btn  {
+	display: inline-block;
+
+	&:nth-of-type(1) {
+		margin-right: 20px;
+	}
+}
+
+//BUTTONS
+
+.btn-primary {
+	@include big-button($accent_color, $white);
+	font-weight: 500;
+	text-transform: uppercase;
+	border-radius: 0;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 12px 24px;
+	margin-right: .7em;
+}
+
+.about-block-button {
+	margin-left: 25px;
+	@include big-button($white, $pink_orange);
+	margin-bottom: 20px;
+	margin-top: 20px;
+	transition: #transition;
+	svg {
+		width: 35px;
+		margin-left: 25px;
+		fill: $white;
+		transition: $transition;
+	}
+	&:hover, &:focus, &:active:focus  {
+			polygon {
+			fill: $pink_orange;
+			}
+	}
+}
+
+// VIDEO SECTION ON MAIN PAGE
+
+.video-container {
+	position: relative;
+	margin: 0px 85px 40px 85px;
+	background: url(../img/video_placeholder@2x.png);
+	background-size: cover;
+	height: 500px;
+}
+
+.video-caption {
+	background-color: rgba(0, 121, 100, 0.7);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 15px 15px 15px 30px;
+	transition: $transition;
+	svg {
+		width: 35px;
+    margin-top: 6px;
+    margin-right: 17px;
+    float: left;
+    display: inline-block;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 600;
+		color: $white;
+		text-transform: uppercase;
+	}
+	&:hover {
+		background-color: rgba(0, 121, 100, 0.9);
+	}
+}
+
+// TWITTER FEED
+
+.twitter-feed {
+	background: $light_grey;
+	padding-top: 50px;
+	h3 {
+		margin-left: 85px;
+		color: $pink_orange;
+	}
+	h4 {
+		font-family: $secondary_font;
+		display: inline-block;
+		color: $medium_grey;
+		text-transform: uppercase;
+	}
+}
+
+.twitter-handle {
+	margin-left: 25px;
+}
+
+
+// INITIATIVES & RESOURCES BUTTONS 
+
+.resource-type {
+	position: relative;
+	top: -3px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 5px;
+	padding: 6px 12px;
+	border-radius: 7px;
+	color: $pink_orange;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 600;
+	border: 1px solid $pink_orange;
+}
+
+.right-arrow {
+	height: 0px;
+	width: 0px;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;	
+	border-left: 12.124px solid rgba(35,31,32,0.25); // to make equilateral triangle: (border-top width + border-bottom width) * 0.866
+	float: right;
+	margin-top: 12px;
+	margin-bottom: 16px;
+	transition: $transition;
+	
+}
+
+#button-text {
+	font-size: 19px;
+	font-weight: 500;
+	text-transform: initial;
+}
+
+.pdf-button {
+	background-color: $white;
+}
+
+
+.btn-default {
+	width: 100%;
+	border: 1px solid transparent;
+	color: $black;
+	margin: 20px 0;
+	padding: 10px 16px;
+	border-radius: 5px;
+	text-align: left;
+	transition: $transition;
+	.resource-type {
+		transition: $transition;
+	}
+	&:hover, &:active, &:focus {
+		border: 1px solid transparent;
+		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+		.resource-type {
+			color: #fff;
+			background-color: $pink_orange;
+		}
+		.right-arrow {
+			border-left: 12.124px solid rgba(35,31,32,0.5);
+		}
+	}
+	h4 {
+		display: inline-block;
+		font-size: 16px;
+		color: $black;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}

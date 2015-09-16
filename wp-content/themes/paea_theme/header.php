@@ -29,7 +29,8 @@
 		<!-- STYLESHEETS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   	<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/3aadffeb-0b44-4d31-a24a-0f039bb78dd3.css"/>
-  	<link rel="stylesheet" href="style.css">
+  	<link rel="stylesheet" href="<?php printThemePath(); ?>/style.css">
+    <link rel="stylesheet" href="<?php printThemePath(); ?>/css/main.css">
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
@@ -47,7 +48,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="PAEA logo"</a>
+            <a class="navbar-brand" href="index.html"><img src="<?php printThemePath(); ?>/img/logo.png" alt="PAEA logo"</a>
             <h1 class="sr-only">PAEA 2016 Stakeholder Summit</h1>
           </div>
 
