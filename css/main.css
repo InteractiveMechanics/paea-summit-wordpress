@@ -5,8 +5,13 @@
   color: #e24e34;
   font-weight: 500; }
 
+h2 {
+  font-size: 20px; }
+
 h3, .top_banner {
-  font-size: 16px;
+  font-size: 16px; }
+
+h2, h3, .top_banner {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Avenir Next Condensed", Arial, sans-serif; }
@@ -34,7 +39,7 @@ a {
 .about-page, #objectives, .after-the-summit, #attendees-page, #discussion-page, #schedule-page, #faq-page {
   padding-top: 60px;
   padding-bottom: 60px; }
-  .about-page h3, .about-page .top_banner, #objectives h3, #objectives .top_banner, .after-the-summit h3, .after-the-summit .top_banner, #attendees-page h3, #attendees-page .top_banner, #discussion-page h3, #discussion-page .top_banner, #schedule-page h3, #schedule-page .top_banner, #faq-page h3, #faq-page .top_banner {
+  .about-page h2, .about-page h3, .about-page .top_banner, #objectives h2, #objectives h3, #objectives .top_banner, .after-the-summit h2, .after-the-summit h3, .after-the-summit .top_banner, #attendees-page h2, #attendees-page h3, #attendees-page .top_banner, #discussion-page h2, #discussion-page h3, #discussion-page .top_banner, #schedule-page h2, #schedule-page h3, #schedule-page .top_banner, #faq-page h2, #faq-page h3, #faq-page .top_banner {
     color: #e24e34; }
   .about-page p, #objectives p, .after-the-summit p, #attendees-page p, #discussion-page p, #schedule-page p, #faq-page p {
     color: #000000;
@@ -95,6 +100,8 @@ footer {
     padding: 20px 0 40px 10px;
     margin-bottom: 25px; }
     footer .email-sign-up h2 {
+      font-family: "Avenir Next", Arial, sans-serif;
+      text-transform: initial;
       text-align: center;
       font-size: 32px;
       font-weight: 300;
@@ -269,7 +276,7 @@ footer {
   height: 500px;
   position: relative;
   margin-bottom: 0; }
-  .jumbotron h2 {
+  .jumbotron p {
     text-align: center;
     font-size: 36px;
     margin-top: 0px;
@@ -381,7 +388,15 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 15px 15px 15px 30px; }
+  padding: 15px 15px 15px 30px;
+  transition: all 0.5s ease-in-out; }
+  .video-caption svg {
+    display: inline-block;
+    width: 30px;
+    margin-top: 10px;
+    float: left;
+    margin-right: 10px;
+    transition: all 0.5s ease-in-out; }
   .video-caption p {
     font-size: 18px;
     font-weight: 600;
