@@ -134,7 +134,7 @@
 }
 
 
-#schedule-summary {
+#schedule-summary, #faq-summary {
 	padding-bottom: 50px;
 }
 
@@ -282,3 +282,13 @@
 		}
 
 	}
+
+	// FAQ PAGE 
+
+.question {
+	padding-top: 10px;
+}
+
+.answer {
+	padding-bottom: 20px;
+}	
