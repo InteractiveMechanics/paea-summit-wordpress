@@ -9,10 +9,11 @@ $( window ).load(function() {
 	  layoutMode: 'masonry'
 	});
 
+
 	$('.grid').isotope(
   masonry: {
     columnWidth: 220
   }
-});
+})
 
 });

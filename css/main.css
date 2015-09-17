@@ -29,7 +29,7 @@ a {
   margin-right: 10px; }
 
 .bottom_divider {
-  border-bottom: 1px dotted #A1A4A7; }
+  border-bottom: 1px dashed #A1A4A7; }
 
 .about-page, #objectives, .after-the-summit, #attendees-page, #discussion-page {
   padding-top: 60px;
@@ -182,7 +182,6 @@ footer {
   clear: both; }
 
 .grid-item {
-  position: relative;
   float: left;
   height: 225px;
   width: 225px;
@@ -216,16 +215,11 @@ footer {
   margin: 20px;
   background: #63686c; }
 
-.grid-item--long {
-  width: 510px;
-  height: 296px;
-  margin: 20px; }
-
 .right-margin {
-  margin-left: 0px; }
+  margin-left: -1px; }
 
 .left-margin {
-  margin-right: 0px; }
+  margin-right: -3px; }
 
 #about-block {
   background: #e24e34;
@@ -472,36 +466,45 @@ footer {
   margin-bottom: 20px; }
 
 .graphic-placeholder {
+  display: inline-block;
   background: transparent;
   padding: 0;
   margin-top: 0px; }
   .graphic-placeholder img {
-    width: 480px;
-    margin-top: 4px;
-    margin-bottom: 40px; }
+    width: 480px; }
+
+.infographic-section {
+  margin-bottom: 50px; }
 
 .graphic-caption {
-  background: #e8e8e8;
-  margin-top: 20px;
-  margin-bottom: 40px; }
+  display: inline-block;
+  width: 510px;
+  height: 297px;
+  padding: 10px;
+  background: #e8e8e8; }
   .graphic-caption h3, .graphic-caption .top_banner {
     padding-top: 10px;
+    padding-left: 10px;
     padding-bottom: 0; }
   .graphic-caption p {
     font-weight: 300;
+    padding-left: 10px;
     line-height: 1.6;
     color: #63686c;
     font-size: 18px; }
 
-#collaborate {
-  margin-top: 29px; }
+#communicate {
+  margin-top: -9px; }
+
+#communicate-caption {
+  height: 294px; }
 
 #educate {
-  margin-top: 27px; }
+  margin-top: -6px; }
 
-/*#innovate {
-	margin-top: 27px;
-}*/
+#innovate {
+  margin-top: -4px; }
+
 #quote {
   background: #007964;
   margin-bottom: 20px; }
@@ -524,6 +527,7 @@ footer {
 
 .after-the-summit {
   background: url(../img/outcomes_background@2x.jpg);
+  background-size: contain;
   height: 400px;
   margin-top: 40px;
   margin-bottom: 40px; }

@@ -8,44 +8,54 @@
 
 
 .graphic-placeholder {
+	display: inline-block;
 	background: transparent;
 	padding: 0;
 	margin-top: 0px;
 	img {
 		width: 480px;
-		margin-top: 4px;
-		margin-bottom: 40px;
 	}
 }
 
+.infographic-section {
+	margin-bottom: 50px;
+}
 
 .graphic-caption {
+	display: inline-block;
+	width: 510px;
+	height: 297px;
+	padding: 10px;
 	background: $light_grey;
-	margin-top: 20px;
-	margin-bottom: 40px;
 	h3 {
 		padding-top: 10px;
+		padding-left: 10px;
 		padding-bottom: 0;
 	}
 	p {
 		font-weight: 300;
+		padding-left: 10px;
 		line-height: 1.6;
 		color: $grey;
 		font-size: 18px;
 	}
 }
 
-#collaborate {
-	margin-top: 29px;
+#communicate {
+	margin-top: -9px;
+}
+
+#communicate-caption {
+	height: 294px;
 }
 
 #educate {
-	margin-top: 27px;
+	margin-top: -6px;
 }
 
-/*#innovate {
-	margin-top: 27px;
-}*/
+#innovate {
+	margin-top: -4px;
+}
 
 #quote {
 	background: $accent_color;
@@ -78,6 +88,7 @@
 
 .after-the-summit {
 	background: url(../img/outcomes_background@2x.jpg);
+	background-size: contain;
 	height: 400px;
 	margin-top: 40px;
 	margin-bottom: 40px;
