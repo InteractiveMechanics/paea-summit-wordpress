@@ -125,6 +125,34 @@
 	}
 }
 
+// SCHEDULE PAGE 
+
+#schedule-page {
+	.bottom_divider {
+		padding-bottom: 20px;
+	}
+}
+
+
+#schedule-summary {
+	padding-bottom: 50px;
+}
+
+.schedule-item {
+	position: relative;
+	margin-top: 20px;
+	ul {
+		padding-left: 0;
+		li {
+			display: inline-block;
+			color: $grey;
+			font-family: $secondary_font;
+			text-transform: uppercase;
+			padding-left: 0;
+			}
+	}
+}
+
 // DISCUSSSION PAGE
 
 #discussion-page {

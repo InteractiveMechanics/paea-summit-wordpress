@@ -31,12 +31,12 @@ a {
 .bottom_divider {
   border-bottom: 1px dashed #A1A4A7; }
 
-.about-page, #objectives, .after-the-summit, #attendees-page, #discussion-page {
+.about-page, #objectives, .after-the-summit, #attendees-page, #discussion-page, #schedule-page {
   padding-top: 60px;
   padding-bottom: 60px; }
-  .about-page h3, .about-page .top_banner, #objectives h3, #objectives .top_banner, .after-the-summit h3, .after-the-summit .top_banner, #attendees-page h3, #attendees-page .top_banner, #discussion-page h3, #discussion-page .top_banner {
+  .about-page h3, .about-page .top_banner, #objectives h3, #objectives .top_banner, .after-the-summit h3, .after-the-summit .top_banner, #attendees-page h3, #attendees-page .top_banner, #discussion-page h3, #discussion-page .top_banner, #schedule-page h3, #schedule-page .top_banner {
     color: #e24e34; }
-  .about-page p, #objectives p, .after-the-summit p, #attendees-page p, #discussion-page p {
+  .about-page p, #objectives p, .after-the-summit p, #attendees-page p, #discussion-page p, #schedule-page p {
     color: #000000;
     font-size: 20px;
     font-weight: 300;
@@ -554,6 +554,24 @@ footer {
     color: #f1f2f2;
     padding: 10px 20px 20px 0;
     font-size: 16px; }
+
+#schedule-page .bottom_divider {
+  padding-bottom: 20px; }
+
+#schedule-summary {
+  padding-bottom: 50px; }
+
+.schedule-item {
+  position: relative;
+  margin-top: 20px; }
+  .schedule-item ul {
+    padding-left: 0; }
+    .schedule-item ul li {
+      display: inline-block;
+      color: #63686c;
+      font-family: "Avenir Next Condensed", Arial, sans-serif;
+      text-transform: uppercase;
+      padding-left: 0; }
 
 #discussion-page p:nth-of-type(1) {
   margin-bottom: 40px; }
