@@ -186,7 +186,7 @@ footer {
   height: 225px;
   width: 225px;
   margin: 15px;
-  background: #ff0000;
+  background: #f4f5f5;
   padding: 10px; }
   .grid-item h3, .grid-item .top_banner {
     padding: 15px 10px 5px 25px; }
@@ -419,14 +419,18 @@ footer {
   font-weight: 600;
   border: 1px solid #e24e34; }
 
-.down-arrow {
+.down-arrow, .right-arrow {
   float: right;
-  margin-top: 6px;
+  margin-top: 12px;
   transition: all 0.5s ease-in-out; }
-  .down-arrow svg {
-    width: 14px; }
-    .down-arrow svg polygon {
-      fill: #A1A4A7; }
+  .down-arrow svg polygon, .right-arrow svg polygon {
+    fill: #A1A4A7; }
+
+.right-arrow svg {
+  width: 20px; }
+
+.down-arrow svg {
+  width: 14px; }
 
 #button-text {
   font-size: 19px;

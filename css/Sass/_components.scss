@@ -144,17 +144,27 @@
 	border: 1px solid $pink_orange;
 }
 
-.down-arrow {	
+.down-arrow, .right-arrow{	
 	float: right;
-	margin-top: 6px;
+	margin-top: 12px;
 	transition: $transition;
 	svg {
-		width: 14px;
 		polygon {
 			fill: $medium_grey;
 		}
+	}	
+}
+
+.right-arrow {
+	svg {
+		width: 20px;
 	}
-	
+}
+
+.down-arrow {
+	svg {
+		width: 14px;
+	}
 }
 
 #button-text {
