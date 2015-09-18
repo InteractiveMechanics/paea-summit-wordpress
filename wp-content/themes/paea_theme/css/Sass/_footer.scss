@@ -49,24 +49,16 @@ footer {
 		color: $white;
 		font-size: 16px;
 		transition: $transition;
-		svg {
-			margin-top: 5px;
-			width: 35px;
-			opacity: 0.5;
-			transition: $transition;
-			&:hover, &:active, &:focus {
-				opacity: 1.0;
-			}
-		}
 		&:hover, &:active, &:focus {
 			background: transparent;
+			color: $accent_color;
 			border-color: transparent;
 			box-shadow: none;
 		}
 	}
 
 	.form-control {
-		margin-left: 2em;
+		margin-left: 3em;
 		margin-top: 1em;
 		height: 55px;
 		border-radius: 0px !important;
@@ -82,9 +74,8 @@ footer {
 		box-shadow: none;
 		transition: $transition;
 		&:focus, &:active, &:hover {
-			background-color: transparent;
+			background-color: #B1B4B7;
 			border-color: $medium_grey;
-			color: $black;
 			box-shadow: none;
 		}
 	}

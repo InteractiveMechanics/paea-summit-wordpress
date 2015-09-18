@@ -60,18 +60,22 @@
 	@include big-button($white, $pink_orange);
 	margin-bottom: 20px;
 	margin-top: 20px;
-	transition: #transition;
 	svg {
 		width: 35px;
 		margin-left: 25px;
 		fill: $white;
-		transition: $transition;
+		line {
+			stroke: $white;
+		}
 	}
 	&:hover, &:focus, &:active:focus  {
 			polygon {
 			fill: $pink_orange;
 			}
-	}
+			line {
+			stroke: $pink_orange;
+			}
+		}
 }
 
 // VIDEO SECTION ON MAIN PAGE
@@ -90,14 +94,6 @@
 	bottom: 0;
 	left: 0;
 	padding: 15px 15px 15px 30px;
-	transition: $transition;
-	svg {
-		width: 35px;
-    margin-top: 6px;
-    margin-right: 17px;
-    float: left;
-    display: inline-block;
-	}
 	p {
 		font-size: 18px;
 		font-weight: 600;
@@ -148,16 +144,16 @@
 	border: 1px solid $pink_orange;
 }
 
-.right-arrow {
-	height: 0px;
-	width: 0px;
-	border-top: 7px solid transparent;
-	border-bottom: 7px solid transparent;	
-	border-left: 12.124px solid rgba(35,31,32,0.25); // to make equilateral triangle: (border-top width + border-bottom width) * 0.866
+.down-arrow {	
 	float: right;
-	margin-top: 12px;
-	margin-bottom: 16px;
+	margin-top: 6px;
 	transition: $transition;
+	svg {
+		width: 14px;
+		polygon {
+			fill: $medium_grey;
+		}
+	}
 	
 }
 
@@ -190,9 +186,6 @@
 		.resource-type {
 			color: #fff;
 			background-color: $pink_orange;
-		}
-		.right-arrow {
-			border-left: 12.124px solid rgba(35,31,32,0.5);
 		}
 	}
 	h4 {

@@ -8,11 +8,21 @@
 
 
 .graphic-placeholder {
-	background: $orange;
+	background: transparent;
+	padding: 0;
+	margin-top: 0px;
+	img {
+		width: 480px;
+		margin-top: 4px;
+		margin-bottom: 40px;
+	}
 }
+
 
 .graphic-caption {
 	background: $light_grey;
+	margin-top: 20px;
+	margin-bottom: 40px;
 	h3 {
 		padding-top: 10px;
 		padding-bottom: 0;
@@ -24,6 +34,18 @@
 		font-size: 18px;
 	}
 }
+
+#collaborate {
+	margin-top: 29px;
+}
+
+#educate {
+	margin-top: 27px;
+}
+
+/*#innovate {
+	margin-top: 27px;
+}*/
 
 #quote {
 	background: $accent_color;
@@ -55,7 +77,7 @@
 
 
 .after-the-summit {
-	background: url(../img/landing_hero.png);
+	background: url(../img/outcomes_background@2x.jpg);
 	height: 400px;
 	margin-top: 40px;
 	margin-bottom: 40px;
@@ -131,7 +153,7 @@
 		margin-top: 30%;
 		left: 0;
 		right: 0;
-		width: 50px;
+		width: 40px;
 		polygon {
 			fill: $grey;
 		}
