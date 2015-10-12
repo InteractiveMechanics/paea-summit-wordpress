@@ -146,17 +146,11 @@ get_header(); ?>
     </section>
     <div class="bottom_divider"></div>
     <section id="after-the-summit-container">
-      <div class="container">
-        <div class="row">
           <div class="after-the-summit" style="background-image:url('<?php echo $after_the_summit_background_img; ?>');">
             <div class="col-sm-8 col-sm-offset-2">
               <h3><?php echo $after_the_summit_heading; ?></h3>
               <p><?php echo $after_the_summit_description; ?></p>
             </div>
-
-        </div>
-      </div>
-
     </section>
     </main>
    
