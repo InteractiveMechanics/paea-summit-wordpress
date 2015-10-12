@@ -287,7 +287,8 @@ footer {
   .logistics-block p {
     font-size: 20px;
     font-weight: 300;
-    padding: 75px 15px; }
+    padding: 75px 15px;
+    color: #000000; }
   .logistics-block strong {
     color: #e24e34; }
 
