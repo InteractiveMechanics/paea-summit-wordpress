@@ -53,11 +53,19 @@ a {
     .generic-page p a, .about-page p a, #objectives p a, .after-the-summit p a, #attendees-page p a, #discussion-page p a, #schedule-page p a, #faq-page p a {
       color: #007964; }
 
-.generic-page > li {
+.generic-page h3, .generic-page .top_banner {
+  margin-top: 40px;
+  margin-bottom: 20px; }
+.generic-page li {
   color: #000000;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.6; }
+.generic-page p {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 15px; }
 
 .navbar-default {
   background-color: #fff;
