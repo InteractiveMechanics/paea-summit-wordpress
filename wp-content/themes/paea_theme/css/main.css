@@ -628,6 +628,7 @@ a[data-scribe="element:hashtag"] {
 .top_banner {
   margin-top: 3em;
   margin-bottom: 2em;
+  padding-left: 0;
   color: #63686c;
   text-align: center; }
   .top_banner li {
@@ -637,9 +638,12 @@ a[data-scribe="element:hashtag"] {
   text-align: center; }
 
 .hero_btn {
-  display: inline-block; }
+  display: inline-block;
+  font-size: 20px;
+  padding: 18px 32px; }
   .hero_btn:nth-of-type(1) {
-    margin-right: 20px; }
+    margin-right: 20px;
+    margin-left: 20px; }
 
 .callout {
   width: 300px;
