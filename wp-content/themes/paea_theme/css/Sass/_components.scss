@@ -1,12 +1,11 @@
 //JUMBOTRON
 
 .jumbotron {
-	background: url(../img/landing_hero@2x.png);
 	background-size: cover;
 	height: 500px;
 	position: relative;
 	margin-bottom: 0;
-	h2 {
+	p {
 		text-align: center;
 		font-size: 36px;
 		margin-top: 0px;
@@ -16,6 +15,7 @@
 	}
 }
 
+/*
 .top_banner {
 	margin-top: 3em;
 	margin-bottom: 2em;
@@ -37,7 +37,7 @@
 	&:nth-of-type(1) {
 		margin-right: 20px;
 	}
-}
+}*/
 
 //BUTTONS
 
@@ -78,14 +78,111 @@
 		}
 }
 
-// VIDEO SECTION ON MAIN PAGE
+// VIDEO SECTION ON HOME PAGE
 
 .video-container {
 	position: relative;
 	margin: 0px 85px 40px 85px;
-	background: url(../img/video_placeholder@2x.png);
+	//width: 100%;
+	//background: url(../img/video_placeholder@2x.png);
 	background-size: cover;
-	height: 500px;
+	//height: 500px;
+}
+
+//$color-button:       #fff;
+//$color-button-hover: #f00;
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  &43 {
+    padding-top: 75%;
+  } 
+  &169 {
+    padding-top: 56%;
+  } 
+}
+.videoIframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.videoPoster {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  background-size: cover;
+  //text-indent: -999em;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transition: opacity 800ms, height 0s;
+  -moz-transition: opacity 800ms, height 0s;
+  transition: opacity 800ms, height 0s;
+  -webkit-transition-delay: 0s, 0s;
+  -moz-transition-delay: 0s, 0s;
+  transition-delay: 0s, 0s;
+  /*&:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin: -40px 0 0 -40px;
+    border: 5px solid $color-button;
+    border-radius: 100%;
+    -webkit-transition: border-color 300ms;
+    -moz-transition: border-color 300ms;
+    transition: border-color 300ms;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin: -20px 0 0 -10px;
+    border-left: 40px solid $color-button;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    -webkit-transition: border-color 300ms;
+    -moz-transition: border-color 300ms;
+    transition: border-color 300ms;
+  }
+  &:hover,
+  &:focus {
+    &:before {
+      border-color: $color-button-hover;
+    }
+    &:after {
+      border-left-color: $color-button-hover;
+    }
+  }*/
+  .videoWrapperActive & {
+    opacity: 0;
+    height: 0;
+    -webkit-transition-delay: 0s, 800ms;
+    -moz-transition-delay: 0s, 800ms;
+    transition-delay: 0s, 800ms;
+  }
 }
 
 .video-caption {
@@ -93,8 +190,18 @@
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	padding: 15px 15px 15px 30px;
+	padding: 15px 15px 15px 20px;
+	transition: $transition;
+	svg {
+		display: inline-block;
+		width: 30px;
+		margin-top: 25px;
+		float: left;
+		margin-right: 20px;
+		transition: $transition;
+	}
 	p {
+		overflow: hidden;
 		font-size: 18px;
 		font-weight: 600;
 		color: $white;
@@ -107,18 +214,52 @@
 
 // TWITTER FEED
 
-.twitter-feed {
+.social-feed {
 	background: $light_grey;
 	padding-top: 50px;
 	h3 {
 		margin-left: 85px;
 		color: $pink_orange;
 	}
-	h4 {
-		font-family: $secondary_font;
+
+	#twitter-block {
+		position: relative;
+	}
+
+	.user, .timePosted {
 		display: inline-block;
-		color: $medium_grey;
-		text-transform: uppercase;
+		span[data-scribe="element:screen_name"] {
+			font-family: $secondary_font;
+		}
+		a {
+			color: $medium_grey !important;
+			font-family: $secondary_font;
+			font-size: 16px;
+			text-transform: uppercase;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	svg {
+		width: 20px;
+	}
+
+	img, span[data-scribe="element:verified_badge"], span[data-scribe="element:name"] {
+		position: absolute;
+		left: -5000px;
+	}
+}
+
+a[data-scribe="element:hashtag"] {
+	color: $accent_color;
+	font-weight: 500;
+}
+
+.tweet {
+	a {
+	color: $accent_color;
 	}
 }
 
@@ -144,17 +285,27 @@
 	border: 1px solid $pink_orange;
 }
 
-.down-arrow {	
+.down-arrow, .right-arrow {	
 	float: right;
-	margin-top: 6px;
+	margin-top: 12px;
 	transition: $transition;
 	svg {
-		width: 14px;
 		polygon {
 			fill: $medium_grey;
 		}
 	}
-	
+}
+
+.right-arrow {
+	svg {
+		width: 20px;
+	}
+}
+
+.down-arrow {
+	svg {
+		width: 14px;
+	}
 }
 
 #button-text {
@@ -196,3 +347,9 @@
 		margin-bottom: 10px;
 	}
 }
+
+// IE FAlLBACK FOR BLEND MODE
+
+.no-background-blend-mode  {
+  background-image: none !important;
+}    

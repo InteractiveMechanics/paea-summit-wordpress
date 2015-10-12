@@ -13,6 +13,8 @@ footer {
 		padding: 20px 0 40px 10px;
 		margin-bottom: 25px;
 		h2 {
+			font-family: $primary_font;
+			text-transform: initial;
 			text-align: center;
 			font-size: 32px;
 			font-weight: 300;
@@ -45,6 +47,7 @@ footer {
 		height: 55px;
 		background: transparent;
 		position: absolute;
+		padding: 0;
 		right: 26px;
 		color: $white;
 		font-size: 16px;
@@ -58,7 +61,6 @@ footer {
 	}
 
 	.form-control {
-		margin-left: 3em;
 		margin-top: 1em;
 		height: 55px;
 		border-radius: 0px !important;
@@ -67,19 +69,21 @@ footer {
 		font-size: 20px;
 		border: 1px solid $medium_grey;
 		background-color: transparent;
-		color: $white;
+		color: $black;
 		font-family: $secondary_font;
 		text-transform: uppercase;
 		font-weight: 500;
 		box-shadow: none;
 		transition: $transition;
 		&:focus, &:active, &:hover {
-			background-color: #B1B4B7;
 			border-color: $medium_grey;
 			box-shadow: none;
 		}
 	}
 
+	.input-group-btn:last-child>.btn, {
+		margin-left: -47px;
+	}
 	.btn {
 		transition: $transition;
 		&:active, &:focus {
@@ -95,12 +99,23 @@ footer {
 		border-color: transparent;
 	}
 
+	#right-arrow svg {
+		margin-top: 5px;
+		width: 36px;
+		&:focus, &:active, &:hover  {
+			polygon {
+			fill: $medium_grey;
+			}
+		}
+	}
+
 
 	ul { 
 		margin-top: 25px;
 		margin-bottom: 25px;
 		text-align: center;
 		li {
+		margin-right: 20px;
 		display: inline-block;
 			&:nth-of-type(1) {
 				margin-right: 20px;

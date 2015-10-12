@@ -21,7 +21,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
-	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<title><?php wp_title( '|', true, 'right' ); ?> PAEA Stakeholder Summit</title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<title>PAEA 2016 Stakeholder Summit</title>
@@ -48,18 +48,19 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="<?php printThemePath(); ?>/img/logo.png" alt="PAEA logo"</a>
+            <a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php printThemePath(); ?>/img/logo.png" alt="PAEA logo"</a>
             <h1 class="sr-only">PAEA 2016 Stakeholder Summit</h1>
           </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="about.html">About the Summit</a></li>
-            <li><a href="attendees.html">For attendees</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="discussion.html">Join the Discussion</a></li>
-          </ul>
+          <!-- <ul class="nav navbar-nav navbar-right"> -->
+            <?php wp_nav_menu( array( 
+              'theme_location' => 'primary-menu',
+              'container' => false,
+              'menu_class' => 'nav navbar-nav navbar-right',
+               ) ); ?>
+          <!-- </ul> -->
         </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>

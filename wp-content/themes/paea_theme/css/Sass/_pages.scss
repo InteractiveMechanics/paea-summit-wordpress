@@ -1,4 +1,40 @@
+// HOME PAGE
+
+.top_banner {
+	margin-top: 3em;
+	margin-bottom: 2em;
+	@extend h3;
+	color: $grey;
+	text-align: center;
+	li {
+	display: inline-block;
+	}
+}
+
+.hero_btn_group {
+	text-align: center;
+}
+
+.hero_btn  {
+	display: inline-block;
+
+	&:nth-of-type(1) {
+		margin-right: 20px;
+	}
+}
+
+
 // ABOUT PAGE
+
+.callout {
+	width: 300px;
+	background-color: $light_grey;
+	float: right;
+	padding: 20px;
+	margin: 20px;
+}
+
+
 
 .infographic {
 	border-bottom: 1px dashed $grey;
@@ -7,45 +43,80 @@
 }
 
 
-.graphic-placeholder {
-	background: transparent;
-	padding: 0;
-	margin-top: 0px;
-	img {
-		width: 480px;
-		margin-top: 4px;
-		margin-bottom: 40px;
+.infographic-section {
+	width: 100%;
+	position: relative;
+	margin-bottom: 50px;
+	height: 315px;
+	.graphic1, .graphic3 {
+		width: 48%;
+		position: absolute;
+		bottom: 0;
+		left: 0;	
+	}
+	.caption1, .caption3 {
+		width: 52%;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin-left: -3px;
+	}
+
+	.graphic2 {
+		width: 48%;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+	.caption2 {
+		width: 52%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		margin-right: -3px;
 	}
 }
 
-
-.graphic-caption {
+.caption1, .caption2, .caption3 {
+	padding: 25px;
 	background: $light_grey;
-	margin-top: 20px;
-	margin-bottom: 40px;
+	height: 95%;
 	h3 {
 		padding-top: 10px;
+		padding-left: 10px;
 		padding-bottom: 0;
 	}
 	p {
 		font-weight: 300;
+		padding-left: 10px;
 		line-height: 1.6;
 		color: $grey;
 		font-size: 18px;
 	}
 }
 
-#collaborate {
-	margin-top: 29px;
+.caption1 {
+	height: 94%;
 }
 
-#educate {
-	margin-top: 27px;
+.graphic1, .graphic2, .graphic3 {
+	//display: inline-block;
+	overflow: hidden;
+	height: 100%;
+	background-position: center center;
+	background: #ff000;
+	background-size: cover;
+	//margin-top: -23px;
 }
 
-/*#innovate {
-	margin-top: 27px;
-}*/
+
+.clearfix:after {
+  content: " "; /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
 
 #quote {
 	background: $accent_color;
@@ -67,18 +138,19 @@
 }
 
 .photo-placeholder {
-
 	height: 175px;
 	width: 250px;
-	background: $pearl;
 	margin: 70px 35px 70px 70px;;
+	
 }
 
 
 
 .after-the-summit {
-	background: url(../img/outcomes_background@2x.jpg);
-	height: 400px;
+	background: no-repeat center center; 
+	//background: url(../img/outcomes_background@2x.jpg);
+	background-size: contain;
+	height: 500px;
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
@@ -93,13 +165,17 @@
 	.accented_text {
 	color: $accent_color;
 	}
+	img {
+		width: 100%;
+	}
+
 	.graphic-caption>p {
 		font-size: 18px;
 	}
 	.grid {
 		margin-bottom: 0;
 	}
-	#grey-section {
+	#blurbs {
 		background: $grey;
 		padding: 30px;
 		h3 {
@@ -111,6 +187,34 @@
 
 			font-size: 16px;
 		}
+	}
+}
+
+// SCHEDULE PAGE 
+
+#schedule-page {
+	.bottom_divider {
+		padding-bottom: 20px;
+	}
+}
+
+
+#schedule-summary, #faq-summary {
+	padding-bottom: 50px;
+}
+
+.schedule-item {
+	position: relative;
+	margin-top: 20px;
+	ul {
+		padding-left: 0;
+		li {
+			display: inline-block;
+			color: $grey;
+			font-family: $secondary_font;
+			text-transform: uppercase;
+			padding-left: 0;
+			}
 	}
 }
 
@@ -132,7 +236,9 @@
 	position: relative;
 	margin-top: 20px;
 	ul {
+		display: inline-block;
 		padding-left: 0;
+		margin-top: -5px;
 		li {
 			display: inline-block;
 			color: $grey;
@@ -146,7 +252,7 @@
 		padding-bottom: 0;
 	}
 
-	svg {
+	#right-arrow {
 		position: absolute;
 		margin-left: auto;
 		margin-right: auto;
@@ -164,12 +270,14 @@
 			polygon {
 			fill: $pink_orange;
 			}
-			line {
-			stroke: $pink_orange;
-			}
 		}
 	}
 
+}
+
+#comment-bubble{
+	width: 14px;
+	margin-right: 5px;
 }
 
 // DISCUSSION DETAIL PAGE
@@ -178,7 +286,7 @@
 		background: $light_grey;
 
 		#comments-container {
-			margin-top: -20%;
+			margin-top: -16%;
 			margin-bottom: 5em;
 			background: $white;
 			border: 5px solid rgba(170, 170, 170, 0.3);
@@ -243,3 +351,13 @@
 		}
 
 	}
+
+// FAQ PAGE 
+
+.question {
+	padding-top: 10px;
+}
+
+.answer {
+	padding-bottom: 20px;
+}	

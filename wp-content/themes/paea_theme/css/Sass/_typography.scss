@@ -4,13 +4,26 @@
 	font-family: $primary-font;
 }
 
-.accented_text {
+img, video {
+	max-width: 100%;
+}
+
+strong, .accented_text {
 	color: $pink_orange;
 	font-weight: 500;
 }
 
+h2 {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+
 h3 {
 	font-size: 16px;
+}
+
+h2, h3 {
 	font-weight: 600;
 	text-transform: uppercase;
 	font-family: $secondary_font;
@@ -38,15 +51,15 @@ a {
 }
 
 .bottom_divider {
-	border-bottom: 1px dotted $medium_grey;
+	border-bottom: 1px dashed $medium_grey;
 }
 
 // BASIC HEADING AND PARAGRAPH STYLE
 
-.about-page, #objectives, .after-the-summit, #attendees-page, #discussion-page  {
+.generic-page, .about-page, #objectives, .after-the-summit, #attendees-page, #discussion-page, #schedule-page, #faq-page  {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	h3 {
+	h2, h3 {
 		color: $pink_orange;
 	}
 	p {
@@ -54,5 +67,16 @@ a {
 		font-size: 20px;
 		font-weight: 300;
 		line-height: 1.6;
+		a {
+			color: $accent_color;
+		}
 	}
+}
+
+.generic-page>li {
+	color: $black;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.6;
+
 }

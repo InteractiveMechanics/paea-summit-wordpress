@@ -10,20 +10,23 @@
 	margin-left: 2em;
 }
 
+.navbar-nav {
+	position: relative;
+}
+
 .navbar-nav>li>a {
 	padding-top: 25px;
 	padding-bottom: 10px;
 	padding-left: 25px;
 	&:hover {
-		position: relative;
+		//position: relative;
 		color: $accent_color !important;
 			&:after {
 				content: "";
 				border-bottom: 1px dashed $grey;
 				position: absolute;
-				width: 78%;
-				margin-left: 25px;
-				left: 0;
+				margin-right: 15px;
+				left: 25px;
 				right: 0;
 				bottom: 0px;
 			}
