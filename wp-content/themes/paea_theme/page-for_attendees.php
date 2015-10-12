@@ -40,7 +40,7 @@ get_header(); ?>
         </div>
       	<div class="grid-item grid-item--sm-square">
       		<h3><?php echo $venue_heading; ?></h3>
-      	 <p><?php echo $venue_description; ?></p>
+      	 <?php echo $venue_description; ?>
         </div>
       </section>
       <section>
@@ -56,7 +56,7 @@ get_header(); ?>
 
       			<div class="col-sm-3">
       				<h3><?php echo $blurb_heading; ?></h3>
-      				<p><?php echo $blurb_description; ?></p>
+      				<?php echo $blurb_description; ?>
       			</div>
       			
               <?php endwhile; ?>
@@ -71,7 +71,7 @@ get_header(); ?>
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3><?php echo $resources_heading; ?></h3>
-            <p><?php echo $resources_description; ?></p>
+            <?php echo $resources_description; ?>
 
              <!-- ACF REPEATER STARTS -->
             <?php if( have_rows('resources') ): ?>

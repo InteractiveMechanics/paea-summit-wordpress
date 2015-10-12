@@ -752,8 +752,8 @@ a[data-scribe="element:hashtag"] {
   margin-bottom: 40px; }
 
 #attendees-page .bottom_divider {
-  margin-top: 60px;
-  margin-bottom: 20px; }
+  margin-top: 30px;
+  margin-bottom: 30px; }
 #attendees-page .accented_text {
   color: #007964; }
 #attendees-page img {
@@ -772,6 +772,9 @@ a[data-scribe="element:hashtag"] {
     color: #f1f2f2;
     padding: 10px 20px 20px 0;
     font-size: 16px; }
+
+#objectives h3, #objectives .top_banner {
+  margin-bottom: 25px; }
 
 #schedule-page .bottom_divider {
   padding-bottom: 20px; }
