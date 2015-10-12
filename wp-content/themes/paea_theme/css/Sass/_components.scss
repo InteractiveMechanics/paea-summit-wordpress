@@ -190,12 +190,13 @@
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	padding: 15px 15px 15px 20px;
+	padding: 10px 30px;
 	transition: $transition;
 	svg {
 		display: inline-block;
 		width: 30px;
 		margin-top: 25px;
+		margin-bottom: 25px;
 		float: left;
 		margin-right: 20px;
 		transition: $transition;
@@ -205,6 +206,7 @@
 		font-size: 18px;
 		font-weight: 600;
 		color: $white;
+		padding-top: 18px;
 		text-transform: uppercase;
 	}
 	&:hover {

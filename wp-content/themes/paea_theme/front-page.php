@@ -120,7 +120,7 @@ get_header(); ?>
               <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/FxPhDHjFrlI?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
               <!-- the poster frame - in the form of a button to make it keyboard accessible -->
               <div class="videoPoster js-videoPoster" style="background-image:url('<?php echo $video_image; ?>');">
-                  <div class="col-sm-6 video-caption">
+                  <div class="col-sm-12 video-caption">
                      <svg version="1.1" id="play-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="9 -25.4 61.4 61.4" enable-background="new 9 -25.4 61.4 61.4" xml:space="preserve">
                     <g>
                       <g>
