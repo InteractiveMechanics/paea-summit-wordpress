@@ -591,11 +591,16 @@ a[data-scribe="element:hashtag"] {
   .down-arrow svg polygon, .right-arrow svg polygon {
     fill: #A1A4A7; }
 
-.right-arrow svg {
-  width: 20px; }
+.right-arrow {
+  margin-right: 10px; }
+  .right-arrow svg {
+    width: 20px; }
 
-.down-arrow svg {
-  width: 14px; }
+.down-arrow {
+  margin-top: 8px;
+  margin-right: 5px; }
+  .down-arrow svg {
+    width: 14px; }
 
 #button-text {
   font-size: 19px;
@@ -609,7 +614,7 @@ a[data-scribe="element:hashtag"] {
   width: 100%;
   border: 1px solid transparent;
   color: #000000;
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 10px 16px;
   border-radius: 5px;
   text-align: left;
@@ -775,6 +780,8 @@ a[data-scribe="element:hashtag"] {
 
 #objectives h3, #objectives .top_banner {
   margin-bottom: 25px; }
+#objectives p:last-of-type {
+  margin-bottom: 35px; }
 
 #schedule-page .bottom_divider {
   padding-bottom: 20px; }

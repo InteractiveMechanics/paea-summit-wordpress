@@ -115,7 +115,7 @@ get_header(); ?>
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
             <h3><?php echo $objectives_heading; ?></h3>
-            <p><?php echo $objectives_summary; ?></p>
+            <?php echo $objectives_summary; ?>
 
             <!-- ACF REPEATER STARTS -->
             <?php if( have_rows('objectives_links') ): ?>
