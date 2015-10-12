@@ -25,7 +25,8 @@ h2, h3, .top_banner {
 
 a {
   text-decoration: none;
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.5s ease-in-out;
+  font-weight: 500; }
 
 .hashtag {
   color: #007964;
