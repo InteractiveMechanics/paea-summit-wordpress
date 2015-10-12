@@ -4,7 +4,7 @@
 	background-size: cover;
 	height: 500px;
 	position: relative;
-	margin-bottom: 0;
+	margin-bottom: 80px;
 	p {
 		text-align: center;
 		font-size: 36px;
@@ -217,6 +217,7 @@
 .social-feed {
 	background: $light_grey;
 	padding-top: 50px;
+	padding-bottom: 100px;
 	h3 {
 		margin-left: 85px;
 		color: $pink_orange;
@@ -246,11 +247,12 @@
 		width: 20px;
 	}
 
-	img, span[data-scribe="element:verified_badge"], span[data-scribe="element:name"] {
+	img, span[data-scribe="element:verified_badge"], span[data-scribe="element:name"], span[title="Verified Account"] {
 		position: absolute;
 		left: -5000px;
 	}
 }
+
 
 a[data-scribe="element:hashtag"] {
 	color: $accent_color;

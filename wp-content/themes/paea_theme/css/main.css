@@ -257,7 +257,6 @@ footer {
   background-blend-mode: overlay;
   color: #f1f2f2; }
   #about-block p {
-    margin-top: 30px;
     font-weight: 300;
     font-size: 18px;
     line-height: 1.6; }
@@ -304,7 +303,7 @@ footer {
   background-size: cover;
   height: 500px;
   position: relative;
-  margin-bottom: 0; }
+  margin-bottom: 80px; }
   .jumbotron p {
     text-align: center;
     font-size: 36px;
@@ -530,7 +529,8 @@ footer {
 
 .social-feed {
   background: #e8e8e8;
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-bottom: 100px; }
   .social-feed h3, .social-feed .top_banner {
     margin-left: 85px;
     color: #e24e34; }
@@ -549,7 +549,7 @@ footer {
         text-decoration: none; }
   .social-feed svg {
     width: 20px; }
-  .social-feed img, .social-feed span[data-scribe="element:verified_badge"], .social-feed span[data-scribe="element:name"] {
+  .social-feed img, .social-feed span[data-scribe="element:verified_badge"], .social-feed span[data-scribe="element:name"], .social-feed span[title="Verified Account"] {
     position: absolute;
     left: -5000px; }
 
