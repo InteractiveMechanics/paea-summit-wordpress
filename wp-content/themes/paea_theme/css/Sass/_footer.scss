@@ -69,14 +69,14 @@ footer {
 		font-size: 20px;
 		border: 1px solid $medium_grey;
 		background-color: transparent;
-		color: $black;
+		color: $white;
 		font-family: $secondary_font;
 		text-transform: uppercase;
 		font-weight: 500;
 		box-shadow: none;
 		transition: $transition;
 		&:focus, &:active, &:hover {
-			border-color: $medium_grey;
+			border-color: $white;
 			box-shadow: none;
 		}
 	}
@@ -104,7 +104,7 @@ footer {
 		width: 36px;
 		&:focus, &:active, &:hover  {
 			polygon {
-			fill: $medium_grey;
+			fill: $white;
 			}
 		}
 	}
