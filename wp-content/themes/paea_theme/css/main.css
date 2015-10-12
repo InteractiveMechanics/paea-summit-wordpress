@@ -24,7 +24,6 @@ h2, h3, .top_banner {
   color: #f1f2f2; }
 
 a {
-  text-decoration: none;
   transition: all 0.5s ease-in-out;
   font-weight: 500; }
 
@@ -234,6 +233,10 @@ footer {
   overflow: hidden;
   margin: 0;
   padding: 0; }
+  .grid-item--sm-square h3, .grid-item--sm-square .top_banner {
+    padding: 35px 10px 5px 40px; }
+  .grid-item--sm-square p {
+    padding: 10px 40px; }
 
 .grid-item--portrait-rectangle {
   width: 240px;
@@ -761,7 +764,8 @@ a[data-scribe="element:hashtag"] {
   margin-bottom: 0; }
 #attendees-page #blurbs {
   background: #63686c;
-  padding: 30px; }
+  padding: 30px;
+  overflow: auto; }
   #attendees-page #blurbs h3, #attendees-page #blurbs .top_banner {
     color: #f1f2f2; }
   #attendees-page #blurbs p {

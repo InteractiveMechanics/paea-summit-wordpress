@@ -34,22 +34,17 @@ get_header(); ?>
       </section>
       <div class="bottom_divider"></div>
       <section>
-      	<div class="container">
-      		<div class="row">
-      				<!-- NO .GRID REMOVES MARGINS -->
-      				<div class="grid-item grid-item--sm-square">
-                <img src="<?php echo $venue_image ; ?>" alt="">
-              </div>
-      				<div class="grid-item grid-item--sm-square">
-      					<h3><?php echo $venue_heading; ?></h3>
-      					<p><?php echo $venue_description; ?></p>
-   						</div>
-      		</div>
-      	</div>
+      	<!-- NO .GRID REMOVES MARGINS -->
+      	<div class="grid-item grid-item--sm-square">
+          <img src="<?php echo $venue_image ; ?>" alt="">
+        </div>
+      	<div class="grid-item grid-item--sm-square">
+      		<h3><?php echo $venue_heading; ?></h3>
+      	 <p><?php echo $venue_description; ?></p>
+        </div>
       </section>
       <section>
-      	<div class="container">
-      		<div class="row" id="blurbs">
+      	<div id="blurbs">
 
             <!-- ACF REPEATER STARTS -->
             <?php if( have_rows('blurbs') ): ?>
@@ -69,8 +64,8 @@ get_header(); ?>
             <!-- END ACF REPEATER -->  
 
       		</div>
-      	</div>
       </section>
+      <div class="bottom_divider"></div>
       <section id="objectives">
       <div class="container">
         <div class="row">
