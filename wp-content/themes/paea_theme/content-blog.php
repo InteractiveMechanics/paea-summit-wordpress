@@ -1,6 +1,5 @@
 <div class="container">
 	<div class="row">
-
 		<section class="discussion-question" id="post-<?php the_ID(); ?>">
 			<div class="col-sm-8 col-sm-offset-1">
 
@@ -20,18 +19,16 @@
 					<li><span class="vertical_divider"></span></li>
 					<li><?php the_date(); ?></li>
 				</ul>
-
-				<p><?php the_title(); ?></p>
-
-			</div>
-
-			<div class="col-sm-2">
 				<a href="<? the_permalink(); ?>">
-					<svg version="1.1" id="right-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="-2 -3.4 38.6 16.4" enable-background="new -2 -3.4 38.6 16.4" xml:space="preserve">
-		        <polygon fill="" points="27.8,-3.4 26.5,-1.9 32.6,3.8 -2,3.8 -2,5.8 32.6,5.8 26.5,11.5 27.8,13 36.6,4.8 "/>
-		     </svg>
+				<p><?php the_title(); ?>
+					
+				<svg version="1.1" id="right-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="-2 -3.4 38.6 16.4" enable-background="new -2 -3.4 38.6 16.4" xml:space="preserve">
+		       <polygon fill="" points="27.8,-3.4 26.5,-1.9 32.6,3.8 -2,3.8 -2,5.8 32.6,5.8 26.5,11.5 27.8,13 36.6,4.8 "/>
+		    </svg>
+		  </p>
 				</a>
 			</div>
+			</a>
 		</section>
 
 	</div> <!-- END ROW -->

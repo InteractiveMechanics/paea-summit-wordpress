@@ -801,15 +801,18 @@ a[data-scribe="element:hashtag"] {
       text-transform: uppercase;
       padding-left: 0; }
 
-#discussion-page p:nth-of-type(1) {
-  margin-bottom: 40px; }
 #discussion-page .bottom_divider {
   margin-top: 10px;
   margin-bottom: 10px; }
 
+.discussion-header {
+  padding-bottom: 40px; }
+
 .discussion-question {
   position: relative;
   margin-top: 20px; }
+  .discussion-question a {
+    color: #007964; }
   .discussion-question ul {
     display: inline-block;
     padding-left: 0;
@@ -822,21 +825,19 @@ a[data-scribe="element:hashtag"] {
       padding-left: 0; }
   .discussion-question p {
     font-size: 28px !important;
-    padding-bottom: 0; }
+    width: 75%;
+    padding-bottom: 20px;
+    transition: all 0.5s ease-in-out; }
   .discussion-question #right-arrow {
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30%;
-    left: 0;
-    right: 0;
+    right: -20%;
+    bottom: 50%;
     width: 40px; }
     .discussion-question #right-arrow polygon {
+      transition: all 0.5s ease-in-out;
       fill: #63686c; }
-    .discussion-question #right-arrow line {
-      stroke: #63686c; }
     .discussion-question #right-arrow:hover polygon, .discussion-question #right-arrow:focus polygon, .discussion-question #right-arrow:active:focus polygon {
-      fill: #e24e34; }
+      fill: #007964; }
 
 #comment-bubble {
   width: 14px;

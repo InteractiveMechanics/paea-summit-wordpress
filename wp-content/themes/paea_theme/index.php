@@ -19,9 +19,9 @@ get_header(); ?>
 			<main id="discussion-page">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-8 col-sm-offset-2">
+					<div class="col-sm-8 col-sm-offset-2 discussion-header">
             	<h2><?php the_field('page_heading', get_option('page_for_posts')); ?></h2>
-            	<p><?php the_field('page_summary', get_option('page_for_posts')); ?></p>
+            	<?php the_field('page_summary', get_option('page_for_posts')); ?>
 					</div>
 				</div> <!-- END ROW -->
 			</div> <!-- END CONTAINER -->

@@ -239,19 +239,25 @@
 
 #discussion-page {
 	p {
-		&:nth-of-type(1) {
-		margin-bottom: 40px;
+		//&:nth-of-type(1) {
+		//margin-bottom: 40px;
 		}
-	}
 	.bottom_divider {
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
 }
 
+.discussion-header {
+	padding-bottom: 40px;
+}
+
 .discussion-question {
 	position: relative;
 	margin-top: 20px;
+	a {
+		color: $accent_color;
+	}
 	ul {
 		display: inline-block;
 		padding-left: 0;
@@ -266,26 +272,23 @@
 	}
 	p {
 		font-size: 28px !important;
-		padding-bottom: 0;
+		width: 75%;
+		padding-bottom: 20px;
+		transition: $transition;
 	}
 
 	#right-arrow {
 		position: absolute;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 30%;
-		left: 0;
-		right: 0;
+		right: -20%;
+		bottom: 50%;
 		width: 40px;
 		polygon {
+			transition: $transition;
 			fill: $grey;
-		}
-		line {
-			stroke: $grey;
 		}
 		&:hover, &:focus, &:active:focus  {
 			polygon {
-			fill: $pink_orange;
+			fill: $accent_color;
 			}
 		}
 	}
