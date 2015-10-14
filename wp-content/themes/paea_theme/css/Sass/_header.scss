@@ -20,6 +20,22 @@
 	padding-left: 25px;
 	position: relative;
 	&:hover {
+		position: relative; 
+		color: $accent_color !important;
+	}
+	&:after {
+		content: "";
+		border-bottom: 1px dashed $grey;
+		position: absolute;
+		margin-right: 15px;
+		left: 50%;
+		right: 50%;
+		bottom: 0px;
+		transition: left 0.5s ease, right 0.5s ease;
+	}
+	
+	/*
+	&:hover {
 		//position: relative;
 		color: $accent_color !important;
 			&:after {
@@ -31,11 +47,16 @@
 				right: 0;
 				bottom: 0px;
 			}
-		}
+		} */
 		&:visited {
 			color: $grey;
 		}
 
+}
+
+.navbar-nav>li>a:hover:after, nav a.active:after {
+	right: 0;
+	left: 24px;
 }
 
 ul#menu-primary-navigation li.menu-item.current-menu-item a {

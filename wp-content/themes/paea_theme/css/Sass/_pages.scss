@@ -279,16 +279,17 @@
 
 	#right-arrow {
 		position: absolute;
-		right: -20%;
+		right: -180px;  // -20%
 		bottom: 50%;
 		width: 40px;
+		transition: $transition;
 		polygon {
-			transition: $transition;
 			fill: $grey;
 		}
 		&:hover, &:focus, &:active:focus  {
+			right: -185px;
 			polygon {
-			fill: $accent_color;
+			fill: $accent_color;	
 			}
 		}
 	}
@@ -306,7 +307,7 @@
 		background: $light_grey;
 
 		#comments-container {
-			margin-top: -16%;
+			margin-top: -12%;
 			margin-bottom: 5em;
 			background: $white;
 			border: 5px solid rgba(170, 170, 170, 0.3);
