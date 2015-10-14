@@ -18,6 +18,7 @@
 	padding-top: 32px;
 	padding-bottom: 10px;
 	padding-left: 25px;
+	position: relative;
 	&:hover {
 		//position: relative;
 		color: $accent_color !important;
@@ -37,7 +38,7 @@
 
 }
 
-#active_page {
+ul#menu-primary-navigation li.menu-item.current-menu-item a {
 	color: $accent_color;
 }
 

@@ -33,7 +33,7 @@ get_header(); ?>
         </div>
       </section>
       <div class="bottom_divider"></div>
-      <section>
+      <section id="venue-section">
       	<!-- NO .GRID REMOVES MARGINS -->
       	<div class="grid-item grid-item--sm-square">
           <img src="<?php echo $venue_image ; ?>" alt="">

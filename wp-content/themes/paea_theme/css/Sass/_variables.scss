@@ -30,6 +30,11 @@ $transition: all 0.5s ease-in-out;
 		background-color: $color_1;
 		border-color: $color_1;
 		color: $color_2;
+		fill: $color_2;
+	}
+	&:hover svg {
+		fill: $color_2;
+		left: 5px;
 	}
 	&:active {
 		background-color: $color_1;
@@ -37,11 +42,19 @@ $transition: all 0.5s ease-in-out;
 		color: $color_2;
 		box-shadow: none;
 	}
+	&:active svg {
+		fill: $color_2;
+		left: 5px;
+	}
 	&:focus, &:active:focus {
 		background-color: $color_1;
 		border-color: $color_1;
 		color: $color_2;
 		outline: 5px auto $color_1;
+	}
+	&:focus, &:active:focus svg {
+		fill: $color_2;
+		left: 5px;
 	}
 	&:visited {
 		background-color: $color_1;

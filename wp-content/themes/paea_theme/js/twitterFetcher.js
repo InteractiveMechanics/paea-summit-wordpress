@@ -262,7 +262,7 @@
             }
           }
           if (printUser) {
-           op += '<p class="tweet">' + strip(tweets[n].innerHTML) + '</p>';
+           op += '<p class="tweet">' + strip(tweets[n].innerHTML) + '<svg version="1.1" id="twitter-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="-14 -0.7 13.2 10.7" enable-background="new -14 -0.7 13.2 10.7" xml:space="preserve"><path fill="#27AAE1" d="M-0.8,0.6C-1.3,0.8-1.8,1-2.4,1c0.6-0.3,1-0.9,1.2-1.5C-1.7-0.2-2.3,0-2.9,0.2c-0.5-0.6-1.2-0.9-2-0.9 c-1.5,0-2.7,1.2-2.7,2.7c0,0.2,0,0.4,0.1,0.6c-2.3-0.1-4.2-1.2-5.6-2.8c-0.2,0.4-0.3,0.9-0.3,1.4c0,0.9,0.5,1.8,1.2,2.3 c-0.5-0.1-0.9-0.2-1.3-0.4l0,0c0,1.3,0.9,2.4,2.2,2.7c-0.2,0-0.5,0-0.7,0s-0.3,0-0.5,0c0.3,1.1,1.3,1.9,2.5,1.9 c-0.9,0.7-2.1,1.1-3.4,1.1c-0.2,0-0.4,0-0.6,0c1.2,0.8,2.6,1.2,4.1,1.2c5,0,7.7-4.1,7.7-7.7c0-0.1,0-0.2,0-0.3 C-1.6,1.6-1.2,1.1-0.8,0.6z"/></svg></p>';
           }
           op += '<h4 class="user twitter-handle">' + strip(authors[n].innerHTML) +
                 '</h4> <span class="vertical_divider"></span>';
@@ -278,7 +278,7 @@
         } else {
           if (tweets[n].innerText) {
             if (printUser) {
-              op += '<p class="tweet">' +  tweets[n].innerText + '</p>';
+              op += '<p class="tweet">' +  tweets[n].innerText + '<svg version="1.1" id="twitter-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="-14 -0.7 13.2 10.7" enable-background="new -14 -0.7 13.2 10.7" xml:space="preserve"><path fill="#27AAE1" d="M-0.8,0.6C-1.3,0.8-1.8,1-2.4,1c0.6-0.3,1-0.9,1.2-1.5C-1.7-0.2-2.3,0-2.9,0.2c-0.5-0.6-1.2-0.9-2-0.9 c-1.5,0-2.7,1.2-2.7,2.7c0,0.2,0,0.4,0.1,0.6c-2.3-0.1-4.2-1.2-5.6-2.8c-0.2,0.4-0.3,0.9-0.3,1.4c0,0.9,0.5,1.8,1.2,2.3 c-0.5-0.1-0.9-0.2-1.3-0.4l0,0c0,1.3,0.9,2.4,2.2,2.7c-0.2,0-0.5,0-0.7,0s-0.3,0-0.5,0c0.3,1.1,1.3,1.9,2.5,1.9 c-0.9,0.7-2.1,1.1-3.4,1.1c-0.2,0-0.4,0-0.6,0c1.2,0.8,2.6,1.2,4.1,1.2c5,0,7.7-4.1,7.7-7.7c0-0.1,0-0.2,0-0.3 C-1.6,1.6-1.2,1.1-0.8,0.6z"/></svg></p>';
             }
             op += '<h4 class="user twitter-handle">' + authors[n].innerText + '</h4> <span class="vertical_divider"></span>';
             if (printTime) {
@@ -287,7 +287,7 @@
 
           } else {
             if (printUser) {
-              op += '<p class="tweet">' +  tweets[n].textContent + '</p>';
+              op += '<p class="tweet">' +  tweets[n].textContent + '<svg version="1.1" id="twitter-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="-14 -0.7 13.2 10.7" enable-background="new -14 -0.7 13.2 10.7" xml:space="preserve"><path fill="#27AAE1" d="M-0.8,0.6C-1.3,0.8-1.8,1-2.4,1c0.6-0.3,1-0.9,1.2-1.5C-1.7-0.2-2.3,0-2.9,0.2c-0.5-0.6-1.2-0.9-2-0.9 c-1.5,0-2.7,1.2-2.7,2.7c0,0.2,0,0.4,0.1,0.6c-2.3-0.1-4.2-1.2-5.6-2.8c-0.2,0.4-0.3,0.9-0.3,1.4c0,0.9,0.5,1.8,1.2,2.3 c-0.5-0.1-0.9-0.2-1.3-0.4l0,0c0,1.3,0.9,2.4,2.2,2.7c-0.2,0-0.5,0-0.7,0s-0.3,0-0.5,0c0.3,1.1,1.3,1.9,2.5,1.9 c-0.9,0.7-2.1,1.1-3.4,1.1c-0.2,0-0.4,0-0.6,0c1.2,0.8,2.6,1.2,4.1,1.2c5,0,7.7-4.1,7.7-7.7c0-0.1,0-0.2,0-0.3 C-1.6,1.6-1.2,1.1-0.8,0.6z"/></svg></p>';
             }
              op += '<h4 class="user twitter-handle">' + authors[n].textContent + '</h4> <span class="vertical_divider"></span> ';
             if (printTime) {

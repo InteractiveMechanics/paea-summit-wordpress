@@ -82,7 +82,8 @@ a {
 .navbar-nav > li > a {
   padding-top: 32px;
   padding-bottom: 10px;
-  padding-left: 25px; }
+  padding-left: 25px;
+  position: relative; }
   .navbar-nav > li > a:hover {
     color: #007964 !important; }
     .navbar-nav > li > a:hover:after {
@@ -96,7 +97,7 @@ a {
   .navbar-nav > li > a:visited {
     color: #63686c; }
 
-#active_page {
+ul#menu-primary-navigation li.menu-item.current-menu-item a {
   color: #007964; }
 
 .container-fluid > .navbar-collapse {
@@ -188,10 +189,15 @@ footer {
     background-color: transparent;
     border-color: transparent; }
   footer #right-arrow svg {
-    margin-top: 5px;
-    width: 36px; }
-    footer #right-arrow svg:focus polygon, footer #right-arrow svg:active polygon, footer #right-arrow svg:hover polygon {
-      fill: #f1f2f2; }
+    margin-top: 25px;
+    position: relative;
+    left: 0;
+    width: 36px;
+    fill: #A1A4A7;
+    transition: all 0.5s ease-in-out; }
+    footer #right-arrow svg:focus, footer #right-arrow svg:active, footer #right-arrow svg:hover {
+      fill: #f1f2f2;
+      left: 10px; }
   footer ul {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -275,27 +281,36 @@ footer {
 
 .discussion-block {
   background: #63686c;
-  color: #f1f2f2; }
+  color: #f1f2f2;
+  transition: all 0.5s ease-in-out; }
   .discussion-block p {
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 20px; }
+  .discussion-block:hover, .discussion-block:focus, .discussion-block:active, .discussion-block:active:focus {
+    box-shadow: 0px 4px 0px #e8e8e8;
+    transform: translate(0px, -5px); }
 
 .after-summit-block {
   background: #007964;
-  text-align: center; }
+  text-align: center;
+  transition: all 0.5s ease-in-out; }
   .after-summit-block p {
     color: #f1f2f2;
     font-size: 20px;
     font-weight: 300;
     padding: 75px 15px; }
+  .after-summit-block:hover, .after-summit-block:focus, .after-summit-block:active, .after-summit-block:active:focus {
+    box-shadow: 0px 4px 0px #e8e8e8;
+    transform: translate(0px, -5px); }
 
 .logistics-block {
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center center;
   background-color: #e8e8e8;
   background-blend-mode: overlay;
-  text-align: center; }
+  text-align: center;
+  transition: all 0.5s ease-in-out; }
   .logistics-block p {
     font-size: 20px;
     font-weight: 300;
@@ -303,6 +318,8 @@ footer {
     color: #000000; }
   .logistics-block strong {
     color: #e24e34; }
+  .logistics-block:hover, .logistics-block:focus, .logistics-block:active, .logistics-block:active:focus {
+    background-size: 150% 150%; }
 
 .twitter-block {
   background: #f4f5f5; }
@@ -312,12 +329,10 @@ footer {
     font-size: 18px;
     line-height: 1.6; }
 
-.jumbotron {
-  background-size: cover;
-  height: 500px;
-  position: relative;
-  margin-bottom: 80px; }
-  .jumbotron p {
+.hero {
+  height: 680px;
+  padding-top: 240px; }
+  .hero p {
     text-align: center;
     font-size: 36px;
     margin-top: 0px;
@@ -325,29 +340,29 @@ footer {
     line-height: 1.4em;
     margin-bottom: 1.7em; }
 
-/*
-.top_banner {
-	margin-top: 3em;
-	margin-bottom: 2em;
-	@extend h3;
-	color: $grey;
-	text-align: center;
-	li {
-	display: inline-block;
-	}
-}
+.jumbotron .container {
+  position: relative;
+  z-index: 2; }
 
-.hero_btn_group {
-	text-align: center;
-}
+.hero-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 680px;
+  overflow: hidden;
+  z-index: 1; }
 
-.hero_btn  {
-	display: inline-block;
+.hero-video-container video {
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto; }
 
-	&:nth-of-type(1) {
-		margin-right: 20px;
-	}
-}*/
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
 .btn-primary {
   font-family: "Avenir Next Condensed", Arial, sans-serif;
   color: #007964;
@@ -363,17 +378,27 @@ footer {
   .btn-primary:hover {
     background-color: #007964;
     border-color: #007964;
-    color: #f1f2f2; }
+    color: #f1f2f2;
+    fill: #f1f2f2; }
+  .btn-primary:hover svg {
+    fill: #f1f2f2;
+    left: 5px; }
   .btn-primary:active {
     background-color: #007964;
     border-color: #007964;
     color: #f1f2f2;
     box-shadow: none; }
+  .btn-primary:active svg {
+    fill: #f1f2f2;
+    left: 5px; }
   .btn-primary:focus, .btn-primary:active:focus {
     background-color: #007964;
     border-color: #007964;
     color: #f1f2f2;
     outline: 5px auto #007964; }
+  .btn-primary:focus, .btn-primary:active:focus svg {
+    fill: #f1f2f2;
+    left: 5px; }
   .btn-primary:visited {
     background-color: #007964;
     border-color: #007964; }
@@ -399,30 +424,42 @@ footer {
   .about-block-button:hover {
     background-color: #f1f2f2;
     border-color: #f1f2f2;
-    color: #e24e34; }
+    color: #e24e34;
+    fill: #e24e34; }
+  .about-block-button:hover svg {
+    fill: #e24e34;
+    left: 5px; }
   .about-block-button:active {
     background-color: #f1f2f2;
     border-color: #f1f2f2;
     color: #e24e34;
     box-shadow: none; }
+  .about-block-button:active svg {
+    fill: #e24e34;
+    left: 5px; }
   .about-block-button:focus, .about-block-button:active:focus {
     background-color: #f1f2f2;
     border-color: #f1f2f2;
     color: #e24e34;
     outline: 5px auto #f1f2f2; }
+  .about-block-button:focus, .about-block-button:active:focus svg {
+    fill: #e24e34;
+    left: 5px; }
   .about-block-button:visited {
     background-color: #f1f2f2;
     border-color: #f1f2f2; }
   .about-block-button svg {
-    width: 35px;
+    position: relative;
+    left: 0;
+    width: 30px;
     margin-left: 25px;
+    margin-top: 5px;
     fill: #f1f2f2; }
-    .about-block-button svg line {
-      stroke: #f1f2f2; }
-  .about-block-button:hover polygon, .about-block-button:focus polygon, .about-block-button:active:focus polygon {
-    fill: #e24e34; }
-  .about-block-button:hover line, .about-block-button:focus line, .about-block-button:active:focus line {
-    stroke: #e24e34; }
+
+.btn svg {
+  position: relative;
+  left: 0;
+  transition: all 0.5s ease-in-out; }
 
 .video-container {
   position: relative;
@@ -563,7 +600,8 @@ footer {
       .social-feed .user a:hover, .social-feed .timePosted a:hover {
         text-decoration: none; }
   .social-feed svg {
-    width: 20px; }
+    width: 17px;
+    margin-left: 8px; }
   .social-feed img, .social-feed span[data-scribe="element:verified_badge"], .social-feed span[data-scribe="element:name"], .social-feed span[title="Verified Account"] {
     position: absolute;
     left: -5000px; }

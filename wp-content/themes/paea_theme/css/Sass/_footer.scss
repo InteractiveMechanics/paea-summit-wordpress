@@ -100,12 +100,15 @@ footer {
 	}
 
 	#right-arrow svg {
-		margin-top: 5px;
+		margin-top: 25px;
+		position: relative;
+		left: 0;
 		width: 36px;
+		fill: $medium_grey;
+		transition: $transition;
 		&:focus, &:active, &:hover  {
-			polygon {
 			fill: $white;
-			}
+			left: 10px;
 		}
 	}
 

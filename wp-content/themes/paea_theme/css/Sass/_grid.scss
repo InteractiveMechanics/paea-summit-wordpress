@@ -91,30 +91,41 @@
 .discussion-block {
 	background: $grey;
 	color: $white;
+	transition: $transition;
 	p {
 		font-size: 24px;
 		font-weight: 300;
 		margin-bottom: 20px;
 	}
+	&:hover, &:focus, &:active, &:active:focus {
+		box-shadow: 0px 4px 0px $light_grey;
+  	transform: translate(0px, -5px);
+  }
 }
 
 .after-summit-block {
 	background: $accent_color;
 	text-align: center;
+	transition: $transition;
 	p {
 		color: $white;
 		font-size: 20px;
 		font-weight: 300;
 		padding: 75px 15px;
 	}
+	&:hover, &:focus, &:active, &:active:focus {
+		box-shadow: 0px 4px 0px $light_grey;
+  	transform: translate(0px, -5px);
+	}
 }
 
 .logistics-block {
-	background-size: cover;
+	background-size: 100% 100%;
 	background-position: center center;
 	background-color: $light_grey;
 	background-blend-mode: overlay;
 	text-align: center;
+	transition: $transition;
 	p {
 		font-size: 20px;
 		font-weight: 300;
@@ -123,6 +134,9 @@
 	}
 	strong {
 		color: $pink_orange;
+	}
+	&:hover, &:focus, &:active, &:active:focus {
+		background-size: 150% 150%;
 	}
 }
 
