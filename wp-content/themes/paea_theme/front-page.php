@@ -11,7 +11,7 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); 
 
-      $hero_image = get_field('hero_image');
+      $hero_poster = get_field('hero_poster');
 			$top_banner_dates = get_field( 'top_banner_dates');
       $top_banner_location = get_field('top_banner_location');
       $top_banner_guest_list = get_field('top_banner_guest_list');
@@ -32,24 +32,32 @@ get_header(); ?>
       $video_image = get_field('video_image');
       $video_caption = get_field('video_caption_');
       $video_link = get_field('video_link');
+      $hero_video_mp4 = get_field('hero_video_mp4');
+      $hero_video_WEBM = get_field('hero_video_WEBM');
 
 
 
       ?>
 
-      <main>
-			<div class="jumbotron" style="background-image:url('<?php echo $hero_image; ?>');">
-      	<div class="container">
-      		<div class="row">
-      			<ul class="top_banner">
-      				<li><?php echo $top_banner_dates; ?></li>
-      				<li><span class="vertical_divider"></span></li>
-      				<li><?php echo $top_banner_location; ?></li>
-      				<li><span class="vertical_divider"></span></li>
-      				<li><?php echo $top_banner_guest_list; ?></li>
-      			</ul>
+      <main class="homepage">
+			<section class="hero">
+        <div class="hero-video-container">
+          <video width="100%" height="auto" poster="<?php echo $hero_poster; ?>" autoplay loop>
+            <source src="<?php echo $hero_video_mp4; ?>" type="video/mp4">
+            <source src="<?php echo $hero_video_WEBM; ?>" type="video/webm">
+        </video>
+        </div>
+        <div class="container">
+          <div class="row">
+            <ul class="top_banner">
+              <li><?php echo $top_banner_dates; ?></li>
+              <li><span class="vertical_divider"></span></li>
+              <li><?php echo $top_banner_location; ?></li>
+              <li><span class="vertical_divider"></span></li>
+              <li><?php echo $top_banner_guest_list; ?></li>
+            </ul>
             <div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1 page-subtitle">
-      			 <?php echo $conference_description; ?>
+             <?php echo $conference_description; ?>
 
               
               <div class="hero_btn_group">
@@ -62,7 +70,7 @@ get_header(); ?>
                 $button_link = get_sub_field('button_link_');
                 
                 ?>
-      			     <a class="btn btn-primary btn-lg hero_btn" href="<?php echo $button_link; ?>" role="button"><?php echo $button_text; ?></a>
+                 <a class="btn btn-primary btn-lg hero_btn" href="<?php echo $button_link; ?>" role="button"><?php echo $button_text; ?></a>
 
               <?php endwhile; ?>
               <?php endif; ?>
@@ -70,10 +78,10 @@ get_header(); ?>
               
               </div> <!-- END HERO BTN GROUP -->
 
-          </div>
-      		</div> <!-- END ROW -->
-      	</div> <!-- END CONTAINER -->
-      </div> <!-- END JUMBOTRON -->
+          </div> <!-- END PAGE SUBTITLE -->
+          </div> <!-- END ROW -->
+        </div> <!-- END CONTAINER -->
+      </section> <!-- END HERO -->
 
       <section>
         <div class="container">
@@ -82,7 +90,7 @@ get_header(); ?>
             <div class="grid-item grid-item--lg-square" id="about-block" style="background-image:url('<?php echo $lg_block_background_image; ?>');">
                 <h3><?php echo $lg_block_heading; ?></h3>
                 <?php echo $lg_block_description; ?>
-                <a class="btn btn-primary btn-lg about-block-button" href="<php? echo $lg_block_link; ?>" role="button"><?php echo $lg_block_button; ?>
+                <a href="<?php echo $lg_block_link; ?>" class="btn btn-primary btn-lg about-block-button" role="button"><?php echo $lg_block_button; ?>
                   <svg version="1.1" id="right-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="-2 -3.4 38.6 16.4" enable-background="new -2 -3.4 38.6 16.4" xml:space="preserve">
                   <polygon fill="" points="27.8,-3.4 26.5,-1.9 32.6,3.8 -2,3.8 -2,5.8 32.6,5.8 26.5,11.5 27.8,13 36.6,4.8 "/>
                 </svg>
@@ -90,15 +98,25 @@ get_header(); ?>
             </div>
              <a href="<?php echo $rectangle_block_link; ?>">
               <div class="grid-item grid-item--rectangle discussion-block">
+
               <h3><?php echo $rectangle_block_heading; ?></h3>
-              <p><?php echo $rectangle_block_content; ?></p>
-            </div></a>
-            <a href="<?php echo $left_block_link; ?>">
+
+                  <?php 
+                        $args = array( 'numberposts' => '1' );
+                        $recent_posts = wp_get_recent_posts( $args );
+                        foreach( $recent_posts as $recent ) {
+                        echo '<p>' . $recent['post_title']. '</p>';
+                        }
+                  ?>
+
+              </div>
+            </a>
+            <a href="<?php echo site_url('/about/#after-the-summit-container') ?>">
               <div class="grid-item after-summit-block">
                 <?php echo $left_block_content; ?>
               </div>
             </a>
-            <a href="<?php echo $right_block_link; ?>">
+            <a href="<?php echo site_url('/for-attendees/#venue-section') ?>">
               <div class="grid-item logistics-block" style="background-image:url('<?php echo $right_block_background_image; ?>');">
                 <?php echo $right_block_content; ?>
               </div>
