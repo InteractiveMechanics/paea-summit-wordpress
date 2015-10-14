@@ -48,7 +48,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php printThemePath(); ?>/img/logo.png" alt="PAEA logo"</a>
+            <a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php printThemePath(); ?>/img/logo.svg" alt="PAEA logo"</a>
             <h1 class="sr-only">PAEA 2016 Stakeholder Summit</h1>
           </div>
 

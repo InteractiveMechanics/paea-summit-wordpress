@@ -3,7 +3,7 @@ $( window ).load(function() {
 /* TWITTER FETCHER */
 
 var config1 = {
-	"id": '585143034179940352',
+	"id": '651125719506923520', // #amreading hashtag
 	"domId":'',
 	"maxTweets": 4,
 	"enableLinks": true,
@@ -20,7 +20,7 @@ function momentDateFormatter(date, dateString) {
 }
 
 function handleTweets(tweets) {
-	alert('your function is working!');
+	
 	var x = tweets.length;
 	var n = 0;
 	var element = document.getElementById('twitter-feed');

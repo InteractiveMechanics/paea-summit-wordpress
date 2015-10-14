@@ -15,7 +15,7 @@
 				<ul>
 					<li><?php echo get_comments_number() ?> Responses</li>
 					<li><span class="vertical_divider"></span></li>
-					<li>Question #4</li>
+					<li>Question No. <?php echo get_post_meta($post->ID,'incr_number',true); ?></li>
 					<li><span class="vertical_divider"></span></li>
 					<li><?php the_date(); ?></li>
 				</ul>
