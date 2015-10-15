@@ -16,6 +16,10 @@ get_header(); ?>
       $top_banner_location = get_field('top_banner_location');
       $top_banner_guest_list = get_field('top_banner_guest_list');
       $conference_description = get_field('conference_description_');
+      $left_hero_button_text = get_field('left_hero_button_text');
+      $right_hero_button_text = get_field('right_hero_button_text_');
+      $right_hero_button_link = get_field('right_hero_button_link');
+
       $lg_block_background_image = get_field('lg_block_background_image');
       $lg_block_heading = get_field('lg_block_heading');
       $lg_block_description = get_field('lg_block_description');
@@ -62,19 +66,9 @@ get_header(); ?>
               
               <div class="hero_btn_group">
 
-                <!-- ACF REPEATER STARTS -->
-                <?php if( have_rows('hero_button_group') ): ?>
-                <?php while( have_rows('hero_button_group') ): the_row(); 
+                <a class="btn btn-primary btn-lg hero_btn" href="#video-section" role="button"><?php echo $left_hero_button_text; ?></a>
+                <a class="btn btn-primary btn-lg hero_btn" href="<?php echo $right_hero_button_link; ?>" role="button"><?php echo $right_hero_button_text; ?></a>
 
-                $button_text = get_sub_field('button_text');
-                $button_link = get_sub_field('button_link_');
-                
-                ?>
-                 <a class="btn btn-primary btn-lg hero_btn" href="<?php echo $button_link; ?>" role="button"><?php echo $button_text; ?></a>
-
-              <?php endwhile; ?>
-              <?php endif; ?>
-              <!-- END ACF REPEATER -->  
               
               </div> <!-- END HERO BTN GROUP -->
 
@@ -125,7 +119,7 @@ get_header(); ?>
           </div> <!-- END ROW -->
         </div> <!-- END CONTAINER -->
       </section>
-      <section class="video-section">
+      <section id="video-section">
         <div class="container">
           <div class="row">
             <div class="video-container" style="background-image:url('<?php echo $video_image; ?>');">
