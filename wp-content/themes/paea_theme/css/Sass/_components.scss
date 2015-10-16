@@ -99,14 +99,9 @@ video {
 .video-container {
 	position: relative;
 	margin: 0px 85px 40px 85px;
-	//width: 100%;
-	//background: url(../img/video_placeholder@2x.png);
 	background-size: cover;
-	//height: 500px;
 }
 
-//$color-button:       #fff;
-//$color-button-hover: #f00;
 
 .videoWrapper {
   position: relative;
@@ -154,44 +149,7 @@ video {
   -webkit-transition-delay: 0s, 0s;
   -moz-transition-delay: 0s, 0s;
   transition-delay: 0s, 0s;
-  /*&:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 80px;
-    height: 80px;
-    margin: -40px 0 0 -40px;
-    border: 5px solid $color-button;
-    border-radius: 100%;
-    -webkit-transition: border-color 300ms;
-    -moz-transition: border-color 300ms;
-    transition: border-color 300ms;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    margin: -20px 0 0 -10px;
-    border-left: 40px solid $color-button;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-    -webkit-transition: border-color 300ms;
-    -moz-transition: border-color 300ms;
-    transition: border-color 300ms;
-  }
-  &:hover,
-  &:focus {
-    &:before {
-      border-color: $color-button-hover;
-    }
-    &:after {
-      border-left-color: $color-button-hover;
-    }
-  }*/
+  
   .videoWrapperActive & {
     opacity: 0;
     height: 0;
