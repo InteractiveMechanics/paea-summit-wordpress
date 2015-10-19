@@ -90,21 +90,22 @@ get_header(); ?>
                 </svg>
                 </a>
             </div>
-             <a href="<?php echo $rectangle_block_link; ?>">
-              <div class="grid-item grid-item--rectangle discussion-block">
 
-              <h3><?php echo $rectangle_block_heading; ?></h3>
+              
+                  <!-- JOIN THE DISCUSSION BLOCK -->
 
                   <?php 
                         $args = array( 'numberposts' => '1' );
                         $recent_posts = wp_get_recent_posts( $args );
                         foreach( $recent_posts as $recent ) {
-                        echo '<p>' . $recent['post_title']. '</p>';
+                        echo '
+                        <a href="' . get_permalink($recent["ID"]) . '">
+                        <div class="grid-item grid-item--rectangle discussion-block">
+                        <h3>Join the Conversation</h3><p>' . $recent['post_title']. '</p></div></a>';
                         }
                   ?>
 
-              </div>
-            </a>
+             
             <a href="<?php echo site_url('/about/#after-the-summit-container') ?>">
               <div class="grid-item after-summit-block">
                 <?php echo $left_block_content; ?>
