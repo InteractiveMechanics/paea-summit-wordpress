@@ -15,6 +15,14 @@
 		font-weight: 400;
 		line-height: 1.4em;
 		margin-bottom: 1.7em;
+		@include tablet {
+			font-size: 28px;
+			margin-bottom: 1em;
+		}
+		@include phone {
+			font-size: 28px;
+			margin-bottom: 1em;
+		}
   }
 }
 
@@ -26,6 +34,11 @@
   height: 680px;
   overflow: hidden;
   z-index: -1;
+  @include phone {
+  	position: relative;
+  	top: 0;
+  	height: initial;
+  }
 }
 
 .hero-video-container video {

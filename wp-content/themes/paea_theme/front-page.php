@@ -154,9 +154,6 @@ get_header(); ?>
               
 
 
-
-
-
               <!--
                 <a href="<?php echo $video_link; ?>">
                   <div class="col-sm-6 video-caption">
@@ -187,61 +184,7 @@ get_header(); ?>
             <h3>What you're saying about the summit</h3>
             <div class="grid">
               <div id="twitter-feed">
-              <!-- TWITTER FETCHER -->
-
-              <!--
-              <div class="grid-item grid-item--rectangle twitter-block">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget scelerisque ipsum. Aenean vulputate lacus bibendum ligula suscipit fringilla.<span class="hashtag"> #PAEASummit16</span
-                  >
-                  <svg version="1.1" id="twitter-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="-14 -0.7 13.2 10.7" enable-background="new -14 -0.7 13.2 10.7" xml:space="preserve">
-                    <path fill="#27AAE1" d="M-0.8,0.6C-1.3,0.8-1.8,1-2.4,1c0.6-0.3,1-0.9,1.2-1.5C-1.7-0.2-2.3,0-2.9,0.2c-0.5-0.6-1.2-0.9-2-0.9
-                    c-1.5,0-2.7,1.2-2.7,2.7c0,0.2,0,0.4,0.1,0.6c-2.3-0.1-4.2-1.2-5.6-2.8c-0.2,0.4-0.3,0.9-0.3,1.4c0,0.9,0.5,1.8,1.2,2.3
-                    c-0.5-0.1-0.9-0.2-1.3-0.4l0,0c0,1.3,0.9,2.4,2.2,2.7c-0.2,0-0.5,0-0.7,0s-0.3,0-0.5,0c0.3,1.1,1.3,1.9,2.5,1.9
-                    c-0.9,0.7-2.1,1.1-3.4,1.1c-0.2,0-0.4,0-0.6,0c1.2,0.8,2.6,1.2,4.1,1.2c5,0,7.7-4.1,7.7-7.7c0-0.1,0-0.2,0-0.3
-                    C-1.6,1.6-1.2,1.1-0.8,0.6z"/>
-                  </svg>
-                </p>
-                <h4 class="twitter-handle">@ThatTwitterUser</h4>
-                <span class="vertical_divider"></span>
-                <h4>4 hours ago</h4>
-              </div>
-              <div class="grid-item grid-item--rectangle twitter-block">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget scelerisque ipsum. Aenean vulputate lacus bibendum ligula suscipit fringilla.<span class="hashtag"> #PAEASummit16</span>
-                   <svg version="1.1" id="twitter-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="-14 -0.7 13.2 10.7" enable-background="new -14 -0.7 13.2 10.7" xml:space="preserve">
-                    <path fill="#27AAE1" d="M-0.8,0.6C-1.3,0.8-1.8,1-2.4,1c0.6-0.3,1-0.9,1.2-1.5C-1.7-0.2-2.3,0-2.9,0.2c-0.5-0.6-1.2-0.9-2-0.9
-                    c-1.5,0-2.7,1.2-2.7,2.7c0,0.2,0,0.4,0.1,0.6c-2.3-0.1-4.2-1.2-5.6-2.8c-0.2,0.4-0.3,0.9-0.3,1.4c0,0.9,0.5,1.8,1.2,2.3
-                    c-0.5-0.1-0.9-0.2-1.3-0.4l0,0c0,1.3,0.9,2.4,2.2,2.7c-0.2,0-0.5,0-0.7,0s-0.3,0-0.5,0c0.3,1.1,1.3,1.9,2.5,1.9
-                    c-0.9,0.7-2.1,1.1-3.4,1.1c-0.2,0-0.4,0-0.6,0c1.2,0.8,2.6,1.2,4.1,1.2c5,0,7.7-4.1,7.7-7.7c0-0.1,0-0.2,0-0.3
-                    C-1.6,1.6-1.2,1.1-0.8,0.6z"/>
-                  </svg>
-
-                </p>
-                <h4 class="twitter-handle">@ThatTwitterUser</h4>
-                <span class="vertical_divider"></span>
-                <h4>1 day ago</h4>
-              </div>
-              <div class="grid-item grid-item--rectangle twitter-block">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Te occidere possunt sed te edere non possunt nefas est. <span class="hashtag"> #PAEASummit16</span></p>
-                <h4 class="twitter-handle">Jane Doe, PA Practitioner</h4>
-              </div>
-              <div class="grid-item grid-item--rectangle twitter-block">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget scelerisque ipsum. Aenean vulputate lacus bibendum ligula suscipit fringilla. Cogito ergo sum. <span class="hashtag"> #PAEASummit16</span>
-                 <svg version="1.1" id="twitter-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="-14 -0.7 13.2 10.7" enable-background="new -14 -0.7 13.2 10.7" xml:space="preserve">
-                    <path fill="#27AAE1" d="M-0.8,0.6C-1.3,0.8-1.8,1-2.4,1c0.6-0.3,1-0.9,1.2-1.5C-1.7-0.2-2.3,0-2.9,0.2c-0.5-0.6-1.2-0.9-2-0.9
-                    c-1.5,0-2.7,1.2-2.7,2.7c0,0.2,0,0.4,0.1,0.6c-2.3-0.1-4.2-1.2-5.6-2.8c-0.2,0.4-0.3,0.9-0.3,1.4c0,0.9,0.5,1.8,1.2,2.3
-                    c-0.5-0.1-0.9-0.2-1.3-0.4l0,0c0,1.3,0.9,2.4,2.2,2.7c-0.2,0-0.5,0-0.7,0s-0.3,0-0.5,0c0.3,1.1,1.3,1.9,2.5,1.9
-                    c-0.9,0.7-2.1,1.1-3.4,1.1c-0.2,0-0.4,0-0.6,0c1.2,0.8,2.6,1.2,4.1,1.2c5,0,7.7-4.1,7.7-7.7c0-0.1,0-0.2,0-0.3
-                    C-1.6,1.6-1.2,1.1-0.8,0.6z"/>
-                  </svg>  
-                </p>
-                <h4 class="twitter-handle">@ThatTwitterUser</h4>
-                <span class="vertical_divider"></span>
-                <h4>3 days ago</h4>
-              </div> -->
-              <!-- END TWITTER FETCHER -->
+              <!-- TWITTER FETCHER CODE IS IN TWITTER-FEED.JS -->
             </div>
             </div> <!-- END GRID -->
           </div>
