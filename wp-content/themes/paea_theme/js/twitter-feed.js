@@ -3,7 +3,7 @@ $( window ).load(function() {
 /* TWITTER FETCHER */
 
 var config1 = {
-	"id": '651125719506923520', // #amreading hashtag
+	"id": '657514433682501632', // Tweets by @paeaonline
 	"domId":'',
 	"maxTweets": 4,
 	"enableLinks": true,
