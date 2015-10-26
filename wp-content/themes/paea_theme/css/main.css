@@ -284,7 +284,7 @@ footer {
   background-blend-mode: overlay;
   color: #f1f2f2; }
   #about-block p {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
     line-height: 1.6; }
 
@@ -710,6 +710,8 @@ a[data-scribe="element:hashtag"] {
   float: right;
   padding: 20px;
   margin: 20px; }
+  .callout p {
+    font-size: 16px; }
 
 .infographic {
   border-bottom: 1px dashed #63686c;
@@ -802,6 +804,8 @@ a[data-scribe="element:hashtag"] {
   height: 500px;
   margin-top: 40px;
   margin-bottom: 40px; }
+  .after-the-summit p {
+    font-weight: 400; }
 
 #attendees-page .bottom_divider {
   margin-top: 30px;
