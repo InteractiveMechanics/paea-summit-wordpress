@@ -835,7 +835,9 @@ a[data-scribe="element:hashtag"] {
   margin-bottom: 35px; }
 
 #schedule-page .bottom_divider {
-  padding-bottom: 20px; }
+  padding-bottom: 10px; }
+#schedule-page h3, #schedule-page .top_banner {
+  margin-top: 35px; }
 
 #schedule-summary, #faq-summary {
   padding-bottom: 50px; }
@@ -843,14 +845,19 @@ a[data-scribe="element:hashtag"] {
 .schedule-item {
   position: relative;
   margin-top: 20px; }
+  .schedule-item h4 {
+    margin-top: 5px; }
   .schedule-item ul {
-    padding-left: 0; }
+    padding-left: 0;
+    margin-bottom: 5px; }
     .schedule-item ul li {
       display: inline-block;
       color: #63686c;
       font-family: "Avenir Next Condensed", Arial, sans-serif;
       text-transform: uppercase;
       padding-left: 0; }
+  .schedule-item:last-of-type {
+    margin-bottom: 20px; }
 
 #discussion-page .bottom_divider {
   margin-top: 10px;
