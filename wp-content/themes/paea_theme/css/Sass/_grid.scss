@@ -49,6 +49,16 @@
 	}
 	p {
 		padding: 10px 40px;
+		@media screen and (max-width: #{$desktop-width - 1px}) {
+			overflow-wrap: break-word;
+		}
+	}
+	@media screen and (max-width: #{$desktop-width - 1px}) {
+		width: 100%;
+		height: initial;
+	}
+	@media screen and (min-width: #{$desktop-width}) and (max-width: 1200px) {
+		height: 320px;
 	}
 }
 

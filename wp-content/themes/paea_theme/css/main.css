@@ -260,6 +260,16 @@ footer {
     padding: 35px 10px 5px 40px; }
   .grid-item--sm-square p {
     padding: 10px 40px; }
+    @media screen and (max-width: 1023px) {
+      .grid-item--sm-square p {
+        overflow-wrap: break-word; } }
+  @media screen and (max-width: 1023px) {
+    .grid-item--sm-square {
+      width: 100%;
+      height: initial; } }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .grid-item--sm-square {
+      height: 320px; } }
 
 .grid-item--portrait-rectangle {
   width: 240px;
@@ -813,7 +823,7 @@ a[data-scribe="element:hashtag"] {
 #attendees-page .accented_text {
   color: #007964; }
 #attendees-page img {
-  width: 100%; }
+  max-width: 100%; }
 #attendees-page .graphic-caption > p {
   font-size: 18px; }
 #attendees-page .grid {
