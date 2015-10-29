@@ -4,6 +4,10 @@
 	margin-left: 70px;
 	margin-right: 70px;
 	margin-bottom: 25px;
+	@include phone {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
 }
 
 /* clear fix */

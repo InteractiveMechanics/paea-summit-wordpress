@@ -39,7 +39,7 @@
 	padding: 20px;
 	margin: 20px;
 	p {
-		font-size: 16px; // originally 20px
+		font-size: 18px; // originally 20px
 	}
 }
 
@@ -57,11 +57,19 @@
 	position: relative;
 	margin-bottom: 50px;
 	height: 315px;
+	@include phone {
+		height: auto;
+	}
 	.graphic1, .graphic3 {
 		width: 48%;
 		position: absolute;
 		bottom: 0;
-		left: 0;	
+		left: 0;
+		@include phone {
+			width: 100%;
+			position: relative;
+			height: 300px;
+		}	
 	}
 	.caption1, .caption3 {
 		width: 52%;
@@ -69,6 +77,12 @@
 		bottom: 0;
 		right: 0;
 		margin-left: -3px;
+		@include phone {
+			width: 100%;
+			position: relative;
+			height: auto;
+			margin-bottom: 30px;
+		}	
 	}
 
 	.graphic2 {
@@ -76,6 +90,11 @@
 		position: absolute;
 		bottom: 0;
 		right: 0;
+		@include phone {
+			width: 100%;
+			position: relative;
+			height: 300px;
+		}	
 	}
 	.caption2 {
 		width: 52%;
@@ -83,7 +102,14 @@
 		bottom: 0;
 		left: 0;
 		margin-right: -3px;
+		@include phone {
+			width: 100%;
+			position: relative;
+			height: auto;
+			margin-bottom: 30px;
+		}	
 	}
+
 }
 
 .caption1, .caption2, .caption3 {
@@ -102,10 +128,16 @@
 		color: $grey;
 		font-size: 18px;
 	}
+	@include tablet {
+		height: 93%
+	}
 }
 
 .caption1 {
 	height: 94%;
+	@include tablet {
+		height: 92%;
+	}
 }
 
 .graphic1, .graphic2, .graphic3 {
@@ -134,6 +166,12 @@
 		font-size: 28px;
 		line-height: 1.6;
 		margin-top: 70px;
+		@include tablet {
+			font-size: 24px;
+		}
+		@include phone {
+			font-size: 24px;
+		}
 	}
 	.accented_text {
 		color: $white;
@@ -141,14 +179,25 @@
 
 	h3 {
 		color: $white;
+		@include phone {
+			margin-bottom: 70px;
+			float: right;
+		}
 	}
 }
 
 .photo-placeholder {
 	height: 175px;
 	width: 250px;
-	margin: 70px 35px 70px 70px;;
-	
+	margin: 70px 35px 70px 70px;
+	@include tablet {
+		margin: 70px 0px 0px 35px;
+	}
+	@include phone {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
 }
 
 
@@ -255,6 +304,12 @@
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
+	.vertical_divider {
+		@include phone {
+			margin-left: 3px;
+			margin-right: 3px;
+		}
+	}
 }
 
 .discussion-header {
@@ -284,6 +339,9 @@
 		width: 75%;
 		padding-bottom: 20px;
 		transition: $transition;
+		@include not-desktop {
+			font-size: 24px !important;
+		} 
 	}
 
 	#right-arrow {
@@ -292,6 +350,10 @@
 		bottom: 50%;
 		width: 40px;
 		transition: $transition;
+		@include tablet {
+			right: -125px;
+			width: 35px;
+		}
 		polygon {
 			fill: $grey;
 		}
@@ -312,6 +374,35 @@
 
 // DISCUSSION DETAIL PAGE
 
+
+.single-discussion-post {
+	@include phone {
+		top: 50px;
+	}
+	p {
+		@include phone {
+			font-size: 30px;
+		}
+	}
+	.top-banner {
+		@include phone {
+			padding-top: 50px;
+		}
+	}
+}
+
+.single-discussion-post ul li {
+	@include phone {
+		display: block;
+	}
+}
+
+.single-discussion-post .vertical_divider {
+	@include phone {
+		visibility: hidden;
+	}
+}
+
 #comments {
 		background: $light_grey;
 
@@ -324,6 +415,9 @@
 			background-clip: padding-box;
 			-webkit-background-clip: padding;
 			-moz-background-clip: padding;
+			@include phone {
+				margin-top: 0%;
+			}
 		}
 
 		.comments-header {

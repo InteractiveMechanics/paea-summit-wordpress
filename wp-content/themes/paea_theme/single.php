@@ -16,7 +16,7 @@ get_header(); ?>
 		?>
 
 	<main id="post-<?php the_ID(); ?>">
-				<div class="jumbotron" style="background-image:url('<?php echo $hero_image; ?>');">
+				<div class="jumbotron single-discussion-post" style="background-image:url('<?php echo $hero_image; ?>');">
       	<div class="container">
       		<div class="row">
       			<ul class="top_banner">
@@ -36,7 +36,7 @@ get_header(); ?>
 			
 			<section id="comments">
 			<div class="row">
-				<div id="comments-container" class="col-sm-6 col-sm-offset-3">
+				<div id="comments-container" class="col-xs-10 col-sm-8 col-xs-offset-1 col-sm-offset-2">
 					<div class="comments-header">
 							<h3><?php echo get_comments_number() ?> Comments</h3>
 					</div> <!-- END COMMENTS HEADER -->

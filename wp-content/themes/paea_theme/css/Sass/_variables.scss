@@ -79,6 +79,12 @@ $desktop-width: 1024px;
 	}
 }
 
+@mixin not-desktop {
+	@media (max-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
 @mixin retina {
   @media
     only screen and (-webkit-min-device-pixel-ratio: 2),

@@ -48,7 +48,9 @@ get_header(); ?>
               <h3><?php echo $callout_heading; ?></h3>
               <?php echo  $callout_text; ?>
             </div>
-            <p><?php echo $page_summary; ?></p>
+              <div class="page-summary">
+                <?php echo $page_summary; ?>
+              </div>
           </div>
         </div>
       </div>
@@ -70,12 +72,16 @@ get_header(); ?>
             </div> <!-- END INFOGRAPHIC SECTION ODD -->
 
             <div class="infographic-section">
-             <div class="caption2">
+             <div class="caption2 hidden-xs">
                 <h3><?php echo $info_middle_heading; ?></h3>
                 <?php echo $info_middle_description; ?>
              </div> 
             <div class="graphic2" style="background-image:url('<?php echo $info_middle_img; ?>');">
             </div>
+            <div class="caption2 visible-xs">
+                <h3><?php echo $info_middle_heading; ?></h3>
+                <?php echo $info_middle_description; ?>
+             </div> 
             <div class="clearfix"></div>
           </div> <!-- END INFOGRAPHIC SECTION EVEN -->
 

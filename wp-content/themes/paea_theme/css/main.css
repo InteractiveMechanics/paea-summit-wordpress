@@ -53,6 +53,10 @@ a {
     .generic-page p a, .about-page p a, #objectives p a, .after-the-summit p a, #attendees-page p a, #discussion-page p a, #schedule-page p a, #faq-page p a {
       color: #007964; }
 
+/* EXCEPTION FOR "ABOUT THE SUMMIT" PAGE */
+.about-page .page-summary p {
+  font-size: 18px; }
+
 .generic-page h3, .generic-page .top_banner {
   margin-top: 40px;
   margin-bottom: 20px; }
@@ -78,6 +82,10 @@ a {
 
 .navbar-nav {
   position: relative; }
+
+@media (max-width: 640px) {
+  .navbar-nav > li {
+    text-align: center; } }
 
 .navbar-nav > li > a {
   padding-top: 32px;
@@ -116,6 +124,9 @@ nav {
 
 .navbar {
   margin-bottom: 0; }
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent; }
 
 footer {
   background: #63686c;
@@ -224,6 +235,10 @@ footer {
   margin-left: 70px;
   margin-right: 70px;
   margin-bottom: 25px; }
+  @media (max-width: 640px) {
+    .grid {
+      margin-left: 0px;
+      margin-right: 0px; } }
 
 /* clear fix */
 .grid:after {
@@ -721,7 +736,7 @@ a[data-scribe="element:hashtag"] {
   padding: 20px;
   margin: 20px; }
   .callout p {
-    font-size: 16px; }
+    font-size: 18px; }
 
 .infographic {
   border-bottom: 1px dashed #63686c;
@@ -733,28 +748,53 @@ a[data-scribe="element:hashtag"] {
   position: relative;
   margin-bottom: 50px;
   height: 315px; }
+  @media (max-width: 640px) {
+    .infographic-section {
+      height: auto; } }
   .infographic-section .graphic1, .infographic-section .graphic3 {
     width: 48%;
     position: absolute;
     bottom: 0;
     left: 0; }
+    @media (max-width: 640px) {
+      .infographic-section .graphic1, .infographic-section .graphic3 {
+        width: 100%;
+        position: relative;
+        height: 300px; } }
   .infographic-section .caption1, .infographic-section .caption3 {
     width: 52%;
     position: absolute;
     bottom: 0;
     right: 0;
     margin-left: -3px; }
+    @media (max-width: 640px) {
+      .infographic-section .caption1, .infographic-section .caption3 {
+        width: 100%;
+        position: relative;
+        height: auto;
+        margin-bottom: 30px; } }
   .infographic-section .graphic2 {
     width: 48%;
     position: absolute;
     bottom: 0;
     right: 0; }
+    @media (max-width: 640px) {
+      .infographic-section .graphic2 {
+        width: 100%;
+        position: relative;
+        height: 300px; } }
   .infographic-section .caption2 {
     width: 52%;
     position: absolute;
     bottom: 0;
     left: 0;
     margin-right: -3px; }
+    @media (max-width: 640px) {
+      .infographic-section .caption2 {
+        width: 100%;
+        position: relative;
+        height: auto;
+        margin-bottom: 30px; } }
 
 .caption1, .caption2, .caption3 {
   padding: 25px;
@@ -770,9 +810,15 @@ a[data-scribe="element:hashtag"] {
     line-height: 1.6;
     color: #63686c;
     font-size: 18px; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .caption1, .caption2, .caption3 {
+      height: 93%; } }
 
 .caption1 {
   height: 94%; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .caption1 {
+      height: 92%; } }
 
 .graphic1, .graphic2, .graphic3 {
   overflow: hidden;
@@ -798,15 +844,33 @@ a[data-scribe="element:hashtag"] {
     font-size: 28px;
     line-height: 1.6;
     margin-top: 70px; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #quote p {
+        font-size: 24px; } }
+    @media (max-width: 640px) {
+      #quote p {
+        font-size: 24px; } }
   #quote .accented_text {
     color: #f1f2f2; }
   #quote h3, #quote .top_banner {
     color: #f1f2f2; }
+    @media (max-width: 640px) {
+      #quote h3, #quote .top_banner {
+        margin-bottom: 70px;
+        float: right; } }
 
 .photo-placeholder {
   height: 175px;
   width: 250px;
   margin: 70px 35px 70px 70px; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .photo-placeholder {
+      margin: 70px 0px 0px 35px; } }
+  @media (max-width: 640px) {
+    .photo-placeholder {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center; } }
 
 .after-the-summit {
   background: no-repeat center center;
@@ -872,6 +936,10 @@ a[data-scribe="element:hashtag"] {
 #discussion-page .bottom_divider {
   margin-top: 10px;
   margin-bottom: 10px; }
+@media (max-width: 640px) {
+  #discussion-page .vertical_divider {
+    margin-left: 3px;
+    margin-right: 3px; } }
 
 .discussion-header {
   padding-bottom: 40px; }
@@ -896,12 +964,19 @@ a[data-scribe="element:hashtag"] {
     width: 75%;
     padding-bottom: 20px;
     transition: all 0.5s ease-in-out; }
+    @media (max-width: 1024px) {
+      .discussion-question p {
+        font-size: 24px !important; } }
   .discussion-question #right-arrow {
     position: absolute;
     right: -180px;
     bottom: 50%;
     width: 40px;
     transition: all 0.5s ease-in-out; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .discussion-question #right-arrow {
+        right: -125px;
+        width: 35px; } }
     .discussion-question #right-arrow polygon {
       fill: #63686c; }
     .discussion-question #right-arrow:hover, .discussion-question #right-arrow:focus, .discussion-question #right-arrow:active:focus {
@@ -912,6 +987,24 @@ a[data-scribe="element:hashtag"] {
 #comment-bubble {
   width: 14px;
   margin-right: 5px; }
+
+@media (max-width: 640px) {
+  .single-discussion-post {
+    top: 50px; } }
+@media (max-width: 640px) {
+  .single-discussion-post p {
+    font-size: 30px; } }
+@media (max-width: 640px) {
+  .single-discussion-post .top-banner {
+    padding-top: 50px; } }
+
+@media (max-width: 640px) {
+  .single-discussion-post ul li {
+    display: block; } }
+
+@media (max-width: 640px) {
+  .single-discussion-post .vertical_divider {
+    visibility: hidden; } }
 
 #comments {
   background: #e8e8e8; }
@@ -924,6 +1017,9 @@ a[data-scribe="element:hashtag"] {
     background-clip: padding-box;
     -webkit-background-clip: padding;
     -moz-background-clip: padding; }
+    @media (max-width: 640px) {
+      #comments #comments-container {
+        margin-top: 0%; } }
   #comments .comments-header {
     padding-top: 30px;
     padding-bottom: 40px; }
