@@ -9,15 +9,26 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content">
-		<div id="content" role="main">
+	
 			<?php while ( have_posts() ) : the_post();?>
+
+			<section>
+    		<div class="container">
+      		<div class="row">
+       			<div class="col-sm-8 col-sm-offset-2 generic-page">
+
+         			<h2><?php the_title(); ?></h2>
+
+         			<?php the_content(); ?>
+         	
+       			</div>
+     			</div>
+   			</div>
+  		</section>
+
 
 			<?php endwhile; // end of the loop. ?>
 
 
- 
-		</div><!-- #content -->
-	</div><!-- #primary -->
 
 <?php get_footer(); ?>

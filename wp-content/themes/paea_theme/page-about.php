@@ -44,7 +44,7 @@ get_header(); ?>
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2 about-page">
             <h2><?php echo $page_heading; ?></h2>
-            <div class="callout">
+            <div class="callout hidden-xs">
               <h3><?php echo $callout_heading; ?></h3>
               <?php echo  $callout_text; ?>
             </div>
@@ -133,7 +133,7 @@ get_header(); ?>
                 ?>
 
 
-                <a class="btn btn-default hidden-xs hidden-sm pdf-button" href="<?php echo $resource_file; ?>" role="button"><span class="resource-type"><?php echo $resource_type; ?></span>
+                <a class="btn btn-default pdf-button" href="<?php echo $resource_file; ?>" role="button"><span class="resource-type"><?php echo $resource_type; ?></span>
                   <h4 id="button-text"><?php echo $resource_title; ?></h4>
                   <div class="down-arrow">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-13 -7.3 16.4 25.3" enable-background="new -13 -7.3 16.4 25.3" xml:space="preserve">
@@ -155,7 +155,7 @@ get_header(); ?>
           <div class="after-the-summit" style="background-image:url('<?php echo $after_the_summit_background_img; ?>');">
             <div class="col-sm-8 col-sm-offset-2">
               <h3><?php echo $after_the_summit_heading; ?></h3>
-              <p><?php echo $after_the_summit_description; ?></p>
+              <?php echo $after_the_summit_description; ?>
             </div>
     </section>
     </main>

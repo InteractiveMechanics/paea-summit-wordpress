@@ -40,17 +40,17 @@ a {
 .bottom_divider {
   border-bottom: 1px dashed #A1A4A7; }
 
-.generic-page, .about-page, #objectives, .after-the-summit, #attendees-page, #discussion-page, #schedule-page, #faq-page {
+.generic-page, #outcomes-page, .about-page, #objectives, .after-the-summit, #attendees-page, #discussion-page, #schedule-page, #faq-page {
   padding-top: 60px;
   padding-bottom: 60px; }
-  .generic-page h2, .generic-page h3, .generic-page .top_banner, .about-page h2, .about-page h3, .about-page .top_banner, #objectives h2, #objectives h3, #objectives .top_banner, .after-the-summit h2, .after-the-summit h3, .after-the-summit .top_banner, #attendees-page h2, #attendees-page h3, #attendees-page .top_banner, #discussion-page h2, #discussion-page h3, #discussion-page .top_banner, #schedule-page h2, #schedule-page h3, #schedule-page .top_banner, #faq-page h2, #faq-page h3, #faq-page .top_banner {
+  .generic-page h2, .generic-page h3, .generic-page .top_banner, #outcomes-page h2, #outcomes-page h3, #outcomes-page .top_banner, .about-page h2, .about-page h3, .about-page .top_banner, #objectives h2, #objectives h3, #objectives .top_banner, .after-the-summit h2, .after-the-summit h3, .after-the-summit .top_banner, #attendees-page h2, #attendees-page h3, #attendees-page .top_banner, #discussion-page h2, #discussion-page h3, #discussion-page .top_banner, #schedule-page h2, #schedule-page h3, #schedule-page .top_banner, #faq-page h2, #faq-page h3, #faq-page .top_banner {
     color: #e24e34; }
-  .generic-page p, .about-page p, #objectives p, .after-the-summit p, #attendees-page p, #discussion-page p, #schedule-page p, #faq-page p {
+  .generic-page p, #outcomes-page p, .about-page p, #objectives p, .after-the-summit p, #attendees-page p, #discussion-page p, #schedule-page p, #faq-page p {
     color: #000000;
     font-size: 20px;
     font-weight: 300;
     line-height: 1.6; }
-    .generic-page p a, .about-page p a, #objectives p a, .after-the-summit p a, #attendees-page p a, #discussion-page p a, #schedule-page p a, #faq-page p a {
+    .generic-page p a, #outcomes-page p a, .about-page p a, #objectives p a, .after-the-summit p a, #attendees-page p a, #discussion-page p a, #schedule-page p a, #faq-page p a {
       color: #007964; }
 
 /* EXCEPTION FOR "ABOUT THE SUMMIT" PAGE */
@@ -651,6 +651,11 @@ a[data-scribe="element:hashtag"] {
   text-transform: uppercase;
   font-weight: 600;
   border: 1px solid #e24e34; }
+  @media (max-width: 640px) {
+    .resource-type {
+      padding: 4px 8px;
+      font-size: 10px;
+      margin-left: 0px; } }
 
 .down-arrow, .right-arrow {
   float: right;
@@ -669,11 +674,17 @@ a[data-scribe="element:hashtag"] {
   margin-right: 5px; }
   .down-arrow svg {
     width: 14px; }
+    @media (max-width: 640px) {
+      .down-arrow svg {
+        width: 12px; } }
 
 #button-text {
   font-size: 19px;
   font-weight: 500;
   text-transform: initial; }
+  @media (max-width: 640px) {
+    #button-text {
+      font-size: 16px; } }
 
 .pdf-button {
   background-color: #f1f2f2; }
@@ -854,10 +865,9 @@ a[data-scribe="element:hashtag"] {
     color: #f1f2f2; }
   #quote h3, #quote .top_banner {
     color: #f1f2f2; }
-    @media (max-width: 640px) {
+    @media (max-width: 1024px) {
       #quote h3, #quote .top_banner {
-        margin-bottom: 70px;
-        float: right; } }
+        margin-bottom: 70px; } }
 
 .photo-placeholder {
   height: 175px;
@@ -880,6 +890,15 @@ a[data-scribe="element:hashtag"] {
   margin-bottom: 40px; }
   .after-the-summit p {
     font-weight: 400; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .after-the-summit {
+      height: 600px; } }
+  @media (max-width: 640px) {
+    .after-the-summit {
+      height: 700px; } }
+  @media (max-width: 384px) {
+    .after-the-summit {
+      height: 900px; } }
 
 #attendees-page .bottom_divider {
   margin-top: 30px;
@@ -1054,6 +1073,27 @@ a[data-scribe="element:hashtag"] {
     #comments .comments-body .comment-border {
       padding-top: 15px;
       border-bottom: 1px solid #e8e8e8; }
+
+.outcomes-post {
+  margin-bottom: 40px; }
+  .outcomes-post a {
+    color: #007964; }
+  .outcomes-post ul {
+    display: inline-block;
+    padding-left: 0;
+    margin-top: 20px; }
+    .outcomes-post ul li {
+      display: inline-block;
+      color: #63686c;
+      font-family: "Avenir Next Condensed", Arial, sans-serif;
+      text-transform: uppercase;
+      padding-left: 0; }
+  .outcomes-post p {
+    font-size: 18px;
+    padding-bottom: 20px;
+    width: 100%; }
+  .outcomes-post .bottom_divider:last-of-type {
+    margin-bottom: 80px; }
 
 .question {
   padding-top: 10px; }
