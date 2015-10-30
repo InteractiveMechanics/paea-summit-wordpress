@@ -246,7 +246,7 @@
 	#blurbs {
 		background: $grey;
 		padding: 30px;
-		overflow: auto;
+		float: left; 
 		h3 {
 			color: $white;
 		}

@@ -521,6 +521,9 @@ video {
   left: 0;
   transition: all 0.5s ease-in-out; }
 
+.btn {
+  white-space: initial; }
+
 .video-container {
   position: relative;
   margin: 0px 85px 40px 85px;
@@ -914,7 +917,7 @@ a[data-scribe="element:hashtag"] {
 #attendees-page #blurbs {
   background: #63686c;
   padding: 30px;
-  overflow: auto; }
+  float: left; }
   #attendees-page #blurbs h3, #attendees-page #blurbs .top_banner {
     color: #f1f2f2; }
   #attendees-page #blurbs p {
