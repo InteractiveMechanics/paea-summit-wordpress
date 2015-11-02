@@ -21,6 +21,7 @@ $desktop-width: 1024px;
 
 // MIXINS
 
+
 @mixin big-button($color_1, $color_2) {
 	font-family: $secondary_font;
 	color: $color_1;

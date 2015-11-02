@@ -100,6 +100,16 @@ get_header(); ?>
         </div> <!-- END ROW -->
       </div> <!-- END CONTAINER -->
     </section>
+    <section id="special-thanks">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+          <h3><?php echo get_field('special_thanks_heading'); ?></h3>
+          <?php echo get_field('special_thanks_body'); ?>
+        </div>
+        </div>
+      </div>
+    </section>
     <section id="quote">
       <div class="container">
         <div class="row">

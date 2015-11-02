@@ -190,6 +190,32 @@ get_header(); ?>
           </div>
         </div> 
       </section>
+      <section class="sponsors">
+        <div class="container">
+          <div class="row">
+            <h3><?php echo get_field('sponsor_logos_heading'); ?></h3>
+            <ul class="sponsor-list">
+
+            <!-- ACF REPEATER STARTS -->
+            <?php if( have_rows('sponsor_logos') ): ?>
+              <?php while( have_rows('sponsor_logos') ): the_row(); 
+
+               $sponsor_logo_file = get_sub_field('sponsor_logo_file');
+               $sponsor_logo_link = get_sub_field('sponsor_logo_link');
+               ?>   
+              <li class="sponsor-logo">
+                <a href="<?php echo $sponsor_logo_link; ?>">
+                  <img src="<?php echo $sponsor_logo_file; ?>" alt="">
+                </a>
+              </li>
+            
+              <?php endwhile; ?>
+            <?php endif; ?>
+            <!-- END ACF REPEATER -->  
+           </ul>
+          </div>
+        </div>
+      </section>
 
 
 		</main>

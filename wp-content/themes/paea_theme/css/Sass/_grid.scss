@@ -30,16 +30,31 @@
 	p {
 		padding: 10px 25px;
 	}
-
+	@include not-desktop {
+		width: 100%;
+	}
+	@include not-desktop {
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 .grid-item--rectangle {
 		width: 480px;
+		@include not-desktop {
+			width: 100%;
+		}
 	}
 
 .grid-item--lg-square {
 		width: 480px;
 		height: 480px;
+		@include not-desktop {
+			width: 100%;
+		}
+		@include sm-phone {
+			height: 580px;
+		}
 	}
 
 .grid-item--sm-square {
@@ -162,6 +177,9 @@
 		font-size: 18px;
 		line-height: 1.6;
 		overflow: hidden;
+	}
+	@include sm-phone {
+		height: 300px;
 	}
 }
 

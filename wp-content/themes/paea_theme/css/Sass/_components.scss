@@ -2,6 +2,12 @@
 
 .homepage section.hero {
 	height: 680px;
+	@include tablet {
+		height: 700px;
+	}
+	@include phone {
+		height: 780px;
+	}
 }
 
 
@@ -15,11 +21,7 @@
 		font-weight: 400;
 		line-height: 1.4em;
 		margin-bottom: 1.7em;
-		@include tablet {
-			font-size: 28px;
-			margin-bottom: 1em;
-		}
-		@include phone {
+		@include not-desktop {
 			font-size: 28px;
 			margin-bottom: 1em;
 		}
@@ -34,10 +36,11 @@
   height: 680px;
   overflow: hidden;
   z-index: -1;
+  @include tablet {
+  	height: 700px;
+  }
   @include phone {
-  	position: relative;
-  	top: 0;
-  	height: initial;
+  	height: 780px;
   }
 }
 
@@ -115,8 +118,11 @@ video {
 
 .video-container {
 	position: relative;
-	margin: 0px 85px 40px 85px;
+	margin: 0px 70px 40px 70px;
 	background-size: cover;
+	@include phone {
+		margin: 30px 0px;
+	}
 }
 
 
@@ -191,6 +197,20 @@ video {
 		float: left;
 		margin-right: 20px;
 		transition: $transition;
+		@include phone {
+			position: relative;
+  		top: 50%;
+  		margin-top: 0;
+  		-webkit-transform: translateY(-50%);
+  		-ms-transform: translateY(-50%);
+  		transform: translateY(-50%);
+		}
+	}
+	@include phone {
+		height: 100%;
+		-webkit-transform-style: preserve-3d;
+  	-moz-transform-style: preserve-3d;
+  	transform-style: preserve-3d;
 	}
 	p {
 		overflow: hidden;
@@ -199,7 +219,15 @@ video {
 		color: $white;
 		padding-top: 18px;
 		text-transform: uppercase;
+		@include phone {
+			position: relative;
+  		top: 50%;
+  		-webkit-transform: translateY(-50%);
+  		-ms-transform: translateY(-50%);
+  		transform: translateY(-50%);
+		}
 	}
+
 	&:hover {
 		background-color: rgba(0, 121, 100, 0.9);
 	}

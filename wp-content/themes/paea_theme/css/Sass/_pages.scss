@@ -10,6 +10,9 @@
 	li {
 	display: inline-block;
 	}
+	@include not-desktop {
+		padding-top: 50px;
+	}
 }
 
 .hero_btn_group {
@@ -26,7 +29,57 @@
 	&:nth-of-type(1) {
 		margin-right: 20px;
 		margin-left: 20px;
+		@include not-desktop {
+			margin-right: 0;
+			margin-left: 0;
+		}
 	}
+	@include not-desktop {
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+
+video {
+	@include not-desktop {
+		max-width: initial;
+	}
+}
+
+.sponsors {
+	border-top: 1px solid #dedede;
+	padding: 60px 0;
+	margin-left: 70px;
+	margin-right: 70px;
+	h3 {
+		color: $pink_orange;
+		text-align: center;
+	}
+}
+
+ul.sponsor-list {
+	list-style-type: none;
+	padding-left: 0;
+	text-align: center;
+	li {
+		display: inline-block;
+	}
+}
+
+
+.sponsor-logo img {
+	width: 250px;
+	margin: 50px;
+	transition: $transition;
+	&:hover, &:focus, &:active, &:active:focus {
+		box-shadow: 0px 4px 0px transparent;
+  	transform: translate(0px, -5px);
+  }
+  @include not-desktop {
+  	width: 80%;
+  	margin-left: 0;
+  	margin-right: 0;
+  }
 }
 
 
@@ -156,6 +209,25 @@
   height: 0;
   clear: both;
 }
+
+
+#special-thanks {
+	background-color: $grey;
+	padding: 60px 0px;
+	h3 {
+		text-align: center;
+		color: $white;
+	}
+	p {
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 1.6;
+		color: $white;
+	}
+}
+
+
+
 
 #quote {
 	background: $accent_color;

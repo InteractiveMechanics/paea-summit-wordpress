@@ -8,6 +8,11 @@
 .navbar-brand img {
 	height: 50px;
 	margin-left: 2em;
+	@include sm-phone {
+		height: 36px;
+		margin-left: 0.5em;
+		margin-top: 0.5em;
+	}
 }
 
 .navbar-nav {
