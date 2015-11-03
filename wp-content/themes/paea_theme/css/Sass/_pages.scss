@@ -564,19 +564,26 @@ ul.sponsor-list {
 
 	}
 
-// OUTCOMES PAGE
-
-
+// OUTCOMES ARCHIVE
 
 .outcomes-post {
 	margin-bottom: 40px;
 	a {
 		color: $accent_color;
 	}
+	h2 {
+		padding-top: 20px;
+		margin-bottom: 15px;
+		text-transform: initial;
+		font-size: 28px;
+		font-weight: 400;
+		font-family: $primary_font;
+	}
 	ul {
 		display: inline-block;
 		padding-left: 0;
-		margin-top: 20px;
+		padding-bottom: 20px;
+		padding-top: 15px;
 		li {
 			display: inline-block;
 			color: $grey;
@@ -587,7 +594,6 @@ ul.sponsor-list {
 	}
 	p {
 		font-size: 18px;
-		padding-bottom: 20px;
 		width: 100%;
 	}
 	.bottom_divider {
@@ -595,6 +601,24 @@ ul.sponsor-list {
 			margin-bottom: 80px;
 		}
 	}
+}
+
+// SINGLE OUTCOME
+
+.single-outcome {
+	#comments #comments-container {
+		margin-top: 80px;
+	}
+	img {
+		margin-bottom: 60px;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.outcome-video {
+	min-width: 100%;
+	min-height: 100%;
 }
 
 

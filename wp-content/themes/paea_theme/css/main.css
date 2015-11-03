@@ -1192,10 +1192,18 @@ ul.sponsor-list {
   margin-bottom: 40px; }
   .outcomes-post a {
     color: #007964; }
+  .outcomes-post h2 {
+    padding-top: 20px;
+    margin-bottom: 15px;
+    text-transform: initial;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Avenir Next", Arial, sans-serif; }
   .outcomes-post ul {
     display: inline-block;
     padding-left: 0;
-    margin-top: 20px; }
+    padding-bottom: 20px;
+    padding-top: 15px; }
     .outcomes-post ul li {
       display: inline-block;
       color: #63686c;
@@ -1204,10 +1212,20 @@ ul.sponsor-list {
       padding-left: 0; }
   .outcomes-post p {
     font-size: 18px;
-    padding-bottom: 20px;
     width: 100%; }
   .outcomes-post .bottom_divider:last-of-type {
     margin-bottom: 80px; }
+
+.single-outcome #comments #comments-container {
+  margin-top: 80px; }
+.single-outcome img {
+  margin-bottom: 60px;
+  width: 100%;
+  height: 100%; }
+
+.outcome-video {
+  min-width: 100%;
+  min-height: 100%; }
 
 .question {
   padding-top: 10px; }

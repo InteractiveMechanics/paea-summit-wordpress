@@ -1,5 +1,9 @@
   <?php
 
+
+add_theme_support( 'post-thumbnails' );
+add_theme_support( 'post-formats', array( 'image', 'video' ) ); 
+
 function printThemePath() {
    echo get_site_url() . '/wp-content/themes/' . get_template();
 }
@@ -24,10 +28,13 @@ function create_custom_post_types() {
             'public' => true,
             'has_archive' => true,
             'rewrite' => array( 'slug' => 'outcomes' ),
+            'supports' => array( 'title', 'editor', 'comments', 'post-formats', 'thumbnail', 'custom-fields', 'post-templates'),
         )
     );
 }
 add_action( 'init', 'create_custom_post_types' );
+add_post_type_support( 'outcomes', 'post-formats' );
+
 
 function updateNumbers() {
     /* numbering the published posts, starting with 1 for oldest;
@@ -53,4 +60,13 @@ endif;
 add_action ( 'publish_post', 'updateNumbers', 11 );
 add_action ( 'deleted_post', 'updateNumbers' );
 add_action ( 'edit_post', 'updateNumbers' );
+
+
+function ld_new_excerpt_more($more) {
+    global $post;
+    return '<a class="more-link" href="'. get_permalink($post->ID) . '"> Continue Reading &raquo;</a>';
+}
+add_filter('excerpt_more', 'ld_new_excerpt_more');
+?>
+
 
