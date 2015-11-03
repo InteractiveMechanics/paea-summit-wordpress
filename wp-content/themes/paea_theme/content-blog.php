@@ -20,12 +20,11 @@
 					<li><?php the_date(); ?></li>
 				</ul>
 				<a href="<? the_permalink(); ?>">
-					<p><?php the_title(); ?>
+					<p><?php the_title(); ?></p>
 					
 						<svg version="1.1" id="right-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="-2 -3.4 38.6 16.4" enable-background="new -2 -3.4 38.6 16.4" xml:space="preserve">
 		       	<polygon fill="" points="27.8,-3.4 26.5,-1.9 32.6,3.8 -2,3.8 -2,5.8 32.6,5.8 26.5,11.5 27.8,13 36.6,4.8 "/>
 		    		</svg>
-					</p>
 				<!-- </a> -->
 				</div>
 			</a>

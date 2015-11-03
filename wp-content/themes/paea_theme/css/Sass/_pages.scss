@@ -402,6 +402,15 @@ ul.sponsor-list {
 	margin-top: 20px;
 	a {
 		color: $accent_color;
+		transition: $transition;
+		&:hover, &:focus, &:active:focus {
+			color: $accent_color;
+			#right-arrow {
+				polygon {
+					fill: $accent_color;
+				}
+			}
+		}
 	}
 	ul {
 		display: inline-block;
@@ -422,27 +431,25 @@ ul.sponsor-list {
 		transition: $transition;
 		@include not-desktop {
 			font-size: 24px !important;
-		} 
+		}
 	}
+
 
 	#right-arrow {
 		position: absolute;
 		right: -180px;  // -20%
 		bottom: 50%;
 		width: 40px;
-		transition: $transition;
 		@include tablet {
 			right: -125px;
 			width: 35px;
 		}
+		@include phone {
+			visibility: hidden;
+			right: 0;
+		}
 		polygon {
 			fill: $grey;
-		}
-		&:hover, &:focus, &:active:focus  {
-			right: -185px;
-			polygon {
-			fill: $accent_color;	
-			}
 		}
 	}
 
