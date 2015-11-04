@@ -47,6 +47,9 @@ get_header(); ?>
 
               get_template_part('content-video', get_post_format()); 
 
+               } else if (has_post_format('link')) {
+
+              get_template_part('content-link', get_post_format());
 
               } else {
 

@@ -82,7 +82,7 @@ get_header(); ?>
                 $resource_link = get_sub_field('resource_link');
                 ?>
 
-            <a class="btn btn-default hidden-xs hidden-sm pdf-button" href="<?php echo $resource_link; ?>" role="button">  <span class="resource-type"><?php echo $resource_type; ?></span>
+            <a class="btn btn-default pdf-button" href="<?php echo $resource_link; ?>" role="button">  <span class="resource-type"><?php echo $resource_type; ?></span>
               <h4 id="button-text"><?php echo $resource_title; ?></h4>
               <div class="right-arrow">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-8 -3.4 25.3 16.4" enable-background="new -8 -3.4 25.3 16.4" xml:space="preserve">

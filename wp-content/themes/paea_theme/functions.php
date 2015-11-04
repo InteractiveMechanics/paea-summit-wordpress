@@ -2,7 +2,15 @@
 
 
 add_theme_support( 'post-thumbnails' );
-add_theme_support( 'post-formats', array( 'image', 'video' ) ); 
+add_theme_support( 'post-formats', array( 'image', 'video', 'link' ) ); 
+
+
+// override default oEmbed size
+function your_own_embed_size() { 
+  return array( 'width' => 600, 'height' => 450 );
+}
+add_filter( 'embed_defaults', 'your_own_embed_size' );
+
 
 function printThemePath() {
    echo get_site_url() . '/wp-content/themes/' . get_template();
