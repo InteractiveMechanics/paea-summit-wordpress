@@ -110,6 +110,8 @@ get_header(); ?>
         </div>
       </div>
     </section>
+     <div class="bottom_divider" id="special-thanks-divider"></div>
+     <div class="bottom_divider"></div>
     <section id="quote">
       <div class="container">
         <div class="row">
@@ -124,7 +126,7 @@ get_header(); ?>
           </div>
         </div>
       </div>
-    </section>
+    </section> 
      <div class="bottom_divider"></div>
     <section id="objectives">
       <div class="container">

@@ -214,6 +214,8 @@ ul.sponsor-list {
 #special-thanks {
 	background-color: $grey;
 	padding: 60px 0px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	h3 {
 		text-align: center;
 		color: $white;
@@ -226,12 +228,16 @@ ul.sponsor-list {
 	}
 }
 
+#special-thanks-divider {
+	margin-bottom: 80px;
+}
 
 
 
 #quote {
 	background: $accent_color;
 	margin-bottom: 20px;
+	margin-top: 20px;
 	p {
 		color: $white;
 		font-weight: 300;
@@ -333,6 +339,7 @@ ul.sponsor-list {
 
 #objectives {
 	h3 {
+		margin-top: 60px;
 		margin-bottom: 25px;
 	}
 	p:last-of-type {
@@ -439,10 +446,12 @@ ul.sponsor-list {
 		position: absolute;
 		right: -180px;  // -20%
 		bottom: 50%;
-		width: 40px;
+		width: 36px;
+		height: 15px;
 		@include tablet {
 			right: -125px;
-			width: 35px;
+			width: 30px;
+			height: 13px;
 		}
 		@include phone {
 			visibility: hidden;
@@ -621,13 +630,3 @@ ul.sponsor-list {
 	min-height: 100%;
 }
 
-
-// FAQ PAGE 
-
-.question {
-	padding-top: 10px;
-}
-
-.answer {
-	padding-bottom: 20px;
-}	

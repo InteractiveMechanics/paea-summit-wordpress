@@ -97,6 +97,7 @@ video {
 		position: relative;
 		left: 0;
 		width: 30px;
+		height: 13px;
 		margin-left: 25px;
 		margin-top: 5px;
 		fill: $white;
@@ -192,6 +193,7 @@ video {
 	svg {
 		display: inline-block;
 		width: 30px;
+		height: 30px;
 		margin-top: 25px;
 		margin-bottom: 25px;
 		float: left;
@@ -211,21 +213,22 @@ video {
 		-webkit-transform-style: preserve-3d;
   	-moz-transform-style: preserve-3d;
   	transform-style: preserve-3d;
-	}
+  }
+
 	p {
 		overflow: hidden;
 		font-size: 18px;
 		font-weight: 600;
 		color: $white;
-		padding-top: 18px;
+		padding-top: 27px;
 		text-transform: uppercase;
 		@include phone {
-			position: relative;
-  		top: 50%;
-  		-webkit-transform: translateY(-50%);
-  		-ms-transform: translateY(-50%);
-  		transform: translateY(-50%);
-		}
+		position: relative;
+  	top: 50%;
+  	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+ 		 }
 	}
 
 	&:hover {
@@ -266,6 +269,7 @@ video {
 
 	svg {
 		width: 17px;
+		height: 14px;
 		margin-left: 8px;
 	}
 
@@ -329,6 +333,7 @@ a[data-scribe="element:hashtag"] {
 	margin-right: 10px;
 	svg {
 		width: 20px;
+		height: 13px;
 	}
 }
 
@@ -337,8 +342,10 @@ a[data-scribe="element:hashtag"] {
 	margin-right: 5px;
 	svg {
 		width: 14px;
+		height: 22px;
 		@include phone {
 			width: 12px;
+			height: 21px;
 		}
 	}
 }
@@ -394,6 +401,6 @@ a[data-scribe="element:hashtag"] {
 
 // IE FAlLBACK FOR BLEND MODE
 
-.no-background-blend-mode  {
+.no-background-blend-mode #about-block, .no-background-blend-mode .logistics-block {
   background-image: none !important;
 }    

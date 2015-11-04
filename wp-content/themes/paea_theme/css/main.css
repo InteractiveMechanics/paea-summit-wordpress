@@ -218,6 +218,7 @@ footer {
     position: relative;
     left: 0;
     width: 36px;
+    height: 15px;
     fill: #A1A4A7;
     transition: all 0.5s ease-in-out; }
     footer #right-arrow svg:focus, footer #right-arrow svg:active, footer #right-arrow svg:hover {
@@ -539,6 +540,7 @@ video {
     position: relative;
     left: 0;
     width: 30px;
+    height: 13px;
     margin-left: 25px;
     margin-top: 5px;
     fill: #f1f2f2; }
@@ -619,6 +621,7 @@ video {
   .video-caption svg {
     display: inline-block;
     width: 30px;
+    height: 30px;
     margin-top: 25px;
     margin-bottom: 25px;
     float: left;
@@ -643,7 +646,7 @@ video {
     font-size: 18px;
     font-weight: 600;
     color: #f1f2f2;
-    padding-top: 18px;
+    padding-top: 27px;
     text-transform: uppercase; }
     @media (max-width: 640px) {
       .video-caption p {
@@ -677,6 +680,7 @@ video {
         text-decoration: none; }
   .social-feed svg {
     width: 17px;
+    height: 14px;
     margin-left: 8px; }
   .social-feed img, .social-feed span[data-scribe="element:verified_badge"], .social-feed span[data-scribe="element:name"], .social-feed span[title="Verified Account"] {
     position: absolute;
@@ -721,16 +725,19 @@ a[data-scribe="element:hashtag"] {
 .right-arrow {
   margin-right: 10px; }
   .right-arrow svg {
-    width: 20px; }
+    width: 20px;
+    height: 13px; }
 
 .down-arrow {
   margin-top: 8px;
   margin-right: 5px; }
   .down-arrow svg {
-    width: 14px; }
+    width: 14px;
+    height: 22px; }
     @media (max-width: 640px) {
       .down-arrow svg {
-        width: 12px; } }
+        width: 12px;
+        height: 21px; } }
 
 #button-text {
   font-size: 19px;
@@ -771,7 +778,7 @@ a[data-scribe="element:hashtag"] {
     margin-top: 10px;
     margin-bottom: 10px; }
 
-.no-background-blend-mode {
+.no-background-blend-mode #about-block, .no-background-blend-mode .logistics-block {
   background-image: none !important; }
 
 .top_banner {
@@ -946,7 +953,9 @@ ul.sponsor-list {
 
 #special-thanks {
   background-color: #63686c;
-  padding: 60px 0px; }
+  padding: 60px 0px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
   #special-thanks h3, #special-thanks .top_banner {
     text-align: center;
     color: #f1f2f2; }
@@ -956,9 +965,13 @@ ul.sponsor-list {
     line-height: 1.6;
     color: #f1f2f2; }
 
+#special-thanks-divider {
+  margin-bottom: 80px; }
+
 #quote {
   background: #007964;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-top: 20px; }
   #quote p {
     color: #f1f2f2;
     font-weight: 300;
@@ -1033,6 +1046,7 @@ ul.sponsor-list {
     font-size: 16px; }
 
 #objectives h3, #objectives .top_banner {
+  margin-top: 60px;
   margin-bottom: 25px; }
 #objectives p:last-of-type {
   margin-bottom: 35px; }
@@ -1105,11 +1119,13 @@ ul.sponsor-list {
     position: absolute;
     right: -180px;
     bottom: 50%;
-    width: 40px; }
+    width: 36px;
+    height: 15px; }
     @media (min-width: 768px) and (max-width: 1023px) {
       .discussion-question #right-arrow {
         right: -125px;
-        width: 35px; } }
+        width: 30px;
+        height: 13px; } }
     @media (max-width: 640px) {
       .discussion-question #right-arrow {
         visibility: hidden;
@@ -1226,11 +1242,5 @@ ul.sponsor-list {
 .outcome-video {
   min-width: 100%;
   min-height: 100%; }
-
-.question {
-  padding-top: 10px; }
-
-.answer {
-  padding-bottom: 20px; }
 
 /*# sourceMappingURL=main.css.map */
