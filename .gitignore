@@ -29,9 +29,7 @@ wp-content/backup-db/
 wp-content/backups/
 wp-content/blogs.dir/
 wp-content/cache/
-wp-content/plugins/akismet/
-wp-content/plugins/hello.php
-wp-content/plugins/index.php
+wp-content/plugins/
 wp-content/themes/twentyfifteen/
 wp-content/themes/twentyfourteen/
 wp-content/themes/twentythirteen/

@@ -43,7 +43,7 @@ get_header(); ?>
       	 <?php echo $venue_description; ?>
         </div>
       </section>
-      <section>
+      <section id="blurbs-section">
       	<div id="blurbs">
 
             <!-- ACF REPEATER STARTS -->

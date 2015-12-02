@@ -227,7 +227,8 @@ footer {
   footer ul {
     margin-top: 25px;
     margin-bottom: 25px;
-    text-align: center; }
+    text-align: center;
+    padding-left: 0; }
     footer ul li {
       margin-right: 20px;
       display: inline-block; }
@@ -665,6 +666,10 @@ video {
   .social-feed h3, .social-feed .top_banner {
     margin-left: 85px;
     color: #e24e34; }
+    @media (max-width: 1024px) {
+      .social-feed h3, .social-feed .top_banner {
+        margin-left: initial;
+        text-align: center; } }
   .social-feed #twitter-block {
     position: relative; }
   .social-feed .user, .social-feed .timePosted {
@@ -1018,10 +1023,12 @@ ul.sponsor-list {
       height: 600px; } }
   @media (max-width: 640px) {
     .after-the-summit {
-      height: 700px; } }
+      height: 700px;
+      background-image: none; } }
   @media (max-width: 384px) {
     .after-the-summit {
-      height: 900px; } }
+      height: 900px;
+      background-image: none; } }
 
 #attendees-page .bottom_divider {
   margin-top: 30px;
@@ -1034,6 +1041,8 @@ ul.sponsor-list {
   font-size: 18px; }
 #attendees-page .grid {
   margin-bottom: 0; }
+#attendees-page #blurbs-section {
+  overflow: auto; }
 #attendees-page #blurbs {
   background: #63686c;
   padding: 30px;

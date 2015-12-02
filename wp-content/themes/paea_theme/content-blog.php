@@ -19,7 +19,7 @@
 					<li><span class="vertical_divider"></span></li>
 					<li><?php the_date(); ?></li>
 				</ul>
-				<a href="<? the_permalink(); ?>">
+				<a href="<php? the_permalink(); ?>">
 					<p><?php the_title(); ?></p>
 					
 						<svg version="1.1" id="right-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="-2 -3.4 38.6 16.4" enable-background="new -2 -3.4 38.6 16.4" xml:space="preserve">

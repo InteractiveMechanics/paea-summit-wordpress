@@ -294,9 +294,11 @@ ul.sponsor-list {
 	}
 	@include phone {
 		height: 700px;
+		background-image: none;
 	}
 	@include sm-phone {
 		height: 900px;
+		background-image: none;
 	}
 }
 
@@ -320,6 +322,9 @@ ul.sponsor-list {
 	}
 	.grid {
 		margin-bottom: 0;
+	}
+	#blurbs-section {
+		overflow: auto;
 	}
 	#blurbs {
 		background: $grey;

@@ -54,6 +54,8 @@
     <meta name="theme-color" content="#ffffff">
 
 
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
+
     <!-- GOOGLE ANALYTICS -->
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

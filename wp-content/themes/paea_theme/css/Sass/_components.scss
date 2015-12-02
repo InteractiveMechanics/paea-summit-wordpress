@@ -245,6 +245,10 @@ video {
 	h3 {
 		margin-left: 85px;
 		color: $pink_orange;
+		@include not-desktop {
+			margin-left: initial;
+			text-align: center;
+		}
 	}
 
 	#twitter-block {

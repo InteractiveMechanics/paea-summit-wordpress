@@ -33,7 +33,7 @@ get_header(); ?>
 		<section class="outcomes-post" id="post-<?php the_ID(); ?>">
 			<div class="col-sm-8 col-sm-offset-2">
 
-							<a href="<? the_permalink(); ?>">
+							<a href="<php? the_permalink(); ?>">
 							<h2><?php the_title(); ?></h2></a>
 							<p>
 
