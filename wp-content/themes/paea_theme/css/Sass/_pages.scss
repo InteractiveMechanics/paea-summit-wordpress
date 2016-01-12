@@ -298,7 +298,17 @@ ul.sponsor-list {
 	}
 	@include sm-phone {
 		height: 900px;
-		background-image: none;
+	}
+}
+
+// to override inline style
+.after-the-summit[style] {
+	@include phone {
+		background-image: none !important;
+	}
+
+	@include sm-phone {
+		background-image: none !important;
 	}
 }
 
@@ -509,7 +519,7 @@ ul.sponsor-list {
 		background: $light_grey;
 
 		#comments-container {
-			margin-top: -12%;
+			margin-top: -110px;
 			margin-bottom: 5em;
 			background: $white;
 			border: 5px solid rgba(170, 170, 170, 0.3);

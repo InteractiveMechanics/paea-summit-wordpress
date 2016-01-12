@@ -1027,8 +1027,14 @@ ul.sponsor-list {
       background-image: none; } }
   @media (max-width: 384px) {
     .after-the-summit {
-      height: 900px;
-      background-image: none; } }
+      height: 900px; } }
+
+@media (max-width: 640px) {
+  .after-the-summit[style] {
+    background-image: none !important; } }
+@media (max-width: 384px) {
+  .after-the-summit[style] {
+    background-image: none !important; } }
 
 #attendees-page .bottom_divider {
   margin-top: 30px;
@@ -1167,7 +1173,7 @@ ul.sponsor-list {
 #comments {
   background: #e8e8e8; }
   #comments #comments-container {
-    margin-top: -12%;
+    margin-top: -110px;
     margin-bottom: 5em;
     background: #f1f2f2;
     border: 5px solid rgba(170, 170, 170, 0.3);
